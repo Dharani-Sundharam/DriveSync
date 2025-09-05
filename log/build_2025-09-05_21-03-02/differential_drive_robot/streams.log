@@ -1,0 +1,27 @@
+[0.024s] Invoking command in '/home/dharani/Desktop/V2V/build/differential_drive_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dharani/Desktop/V2V/V2V-main/differential_drive_robot -DCMAKE_INSTALL_PREFIX=/home/dharani/Desktop/V2V/install/differential_drive_robot
+[0.223s] -- The C compiler identification is GNU 13.3.0
+[0.398s] -- The CXX compiler identification is GNU 13.3.0
+[0.442s] -- Detecting C compiler ABI info
+[0.635s] -- Detecting C compiler ABI info - done
+[0.658s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.661s] -- Detecting C compile features
+[0.662s] -- Detecting C compile features - done
+[0.687s] -- Detecting CXX compiler ABI info
+[0.904s] -- Detecting CXX compiler ABI info - done
+[0.928s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.928s] -- Detecting CXX compile features
+[0.929s] -- Detecting CXX compile features - done
+[0.938s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.287s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.547s] -- Found rclpy: 7.1.5 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.805s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[1.805s]   ament_python_install_package() the Python package folder
+[1.806s]   '/home/dharani/Desktop/V2V/V2V-main/differential_drive_robot/differential_drive_robot'
+[1.806s]   doesn't contain an '__init__.py' file
+[1.806s] Call Stack (most recent call first):
+[1.806s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[1.807s]   CMakeLists.txt:19 (ament_python_install_package)
+[1.807s] 
+[1.807s] [0m
+[1.807s] -- Configuring incomplete, errors occurred!
+[1.816s] Invoked command in '/home/dharani/Desktop/V2V/build/differential_drive_robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dharani/Desktop/V2V/V2V-main/differential_drive_robot -DCMAKE_INSTALL_PREFIX=/home/dharani/Desktop/V2V/install/differential_drive_robot

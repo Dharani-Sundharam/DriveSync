@@ -1,0 +1,3 @@
+source;share/differential_drive_robot/environment/ament_prefix_path.sh
+source;share/differential_drive_robot/environment/path.sh
+source;share/differential_drive_robot/environment/pythonpath.sh
