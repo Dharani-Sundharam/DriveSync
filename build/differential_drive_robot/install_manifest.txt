@@ -14,6 +14,8 @@
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//launch/rviz_display.launch.py
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//launch/test_system.launch.py
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//launch/robot_bringup.launch.py
+/home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//launch/pi_robot_nodes.launch.py
+/home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//launch/pc_visualization.launch.py
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//urdf/differential_drive_robot.urdf.xacro
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//urdf/differential_drive_robot_static.urdf
 /home/dharani/Desktop/V2V/install/differential_drive_robot/share/differential_drive_robot//urdf/differential_drive_robot.urdf
