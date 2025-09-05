@@ -1,6 +1,0 @@
-setup.py
-differential_drive_robot/__init__.py
-differential_drive_robot.egg-info/PKG-INFO
-differential_drive_robot.egg-info/SOURCES.txt
-differential_drive_robot.egg-info/dependency_links.txt
-differential_drive_robot.egg-info/top_level.txt

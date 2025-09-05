@@ -15,8 +15,7 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclpy REQUIRED)
 
-# Install Python modules
-ament_python_install_package(${PROJECT_NAME})
+# Python modules not needed for this package
 
 # Install Python scripts
 install(PROGRAMS

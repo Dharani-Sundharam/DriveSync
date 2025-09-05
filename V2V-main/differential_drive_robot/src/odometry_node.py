@@ -11,7 +11,6 @@ from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped, Quaternion, Twist
 from std_msgs.msg import Int32MultiArray
 from tf2_ros import TransformBroadcaster
-import tf_transformations
 import math
 import time
 
@@ -138,8 +137,8 @@ class OdometryNode(Node):
     
     def publish_odometry(self, current_time):
         """Publish odometry message and transform"""
-        # Create quaternion from yaw
-        q = tf_transformations.quaternion_from_euler(0, 0, self.theta)
+        # Create quaternion from yaw (simple conversion)
+        q = [0.0, 0.0, math.sin(self.theta/2.0), math.cos(self.theta/2.0)]
         
         # Create odometry message
         odom = Odometry()

@@ -69,7 +69,7 @@ class TeleopKeyboard(Node):
     
     def get_key(self):
         """Get keyboard input"""
-        tty.setcraw(sys.stdin.fileno())
+        tty.setraw(sys.stdin.fileno())
         select.select([sys.stdin], [], [], 0)
         key = sys.stdin.read(1)
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, self.settings)
