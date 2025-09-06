@@ -1,0 +1,933 @@
+2025-09-06 19:07:58,853 - INFO - ✅ Arduino ready and optimized
+2025-09-06 19:07:58,853 - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-06 19:07:58,853 - INFO - 📐 Differential Drive Specifications:
+2025-09-06 19:07:58,853 - INFO -    Wheel diameter: 5.0 cm
+2025-09-06 19:07:58,853 - INFO -    Wheel base: 15.0 cm
+2025-09-06 19:07:58,853 - INFO -    Left motor: 4993 ticks/rev
+2025-09-06 19:07:58,853 - INFO -    Right motor: 4966 ticks/rev
+2025-09-06 19:07:58,853 - INFO -    Left resolution: 0.031 mm/tick
+2025-09-06 19:07:58,853 - INFO -    Right resolution: 0.032 mm/tick
+2025-09-06 19:07:58,853 - INFO -    360° turn needs: L=14979 ticks, R=14898 ticks
+2025-09-06 19:07:58,854 - INFO - 🔄 High-performance threads started
+2025-09-06 19:08:00,894 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=12 ticks (0.4mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:00,915 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=14 ticks (0.4mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:00,920 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=12 ticks (0.4mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:00,936 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=19 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:00,942 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=14 ticks (0.4mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:00,953 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=21 ticks (0.7mm), Center=0.7mm, Turn=-0.1°
+2025-09-06 19:08:00,963 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=16 ticks (0.5mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:00,974 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=22 ticks (0.7mm), Center=0.8mm, Turn=-0.1°
+2025-09-06 19:08:00,985 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=20 ticks (0.6mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:00,995 - INFO - 🔄 Movement: L=29 ticks (0.9mm), R=24 ticks (0.8mm), Center=0.8mm, Turn=-0.1°
+2025-09-06 19:08:01,006 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,017 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,027 - INFO - 🔄 Movement: L=29 ticks (0.9mm), R=26 ticks (0.8mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:01,038 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=24 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,049 - INFO - 🔄 Movement: L=32 ticks (1.0mm), R=28 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:01,054 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,065 - INFO - 🔄 Movement: L=36 ticks (1.1mm), R=32 ticks (1.0mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:01,075 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,086 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=32 ticks (1.0mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:01,096 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,107 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=36 ticks (1.1mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,118 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:01,128 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=37 ticks (1.2mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,134 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=20 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:01,150 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=40 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:01,155 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=21 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:01,171 - INFO - 🔄 Movement: L=41 ticks (1.3mm), R=40 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:01,177 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=19 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:01,187 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=42 ticks (1.3mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:01,198 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=22 ticks (0.7mm), Center=0.7mm, Turn=0.0°
+2025-09-06 19:08:01,208 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=43 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:01,214 - INFO - 🔄 Movement: L=19 ticks (0.6mm), R=17 ticks (0.5mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:01,229 - INFO - 🔄 Movement: L=50 ticks (1.6mm), R=48 ticks (1.5mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:01,235 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=16 ticks (0.5mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:01,251 - INFO - 🔄 Movement: L=52 ticks (1.6mm), R=49 ticks (1.5mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:01,256 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=17 ticks (0.5mm), Center=0.5mm, Turn=0.0°
+2025-09-06 19:08:01,272 - INFO - 🔄 Movement: L=54 ticks (1.7mm), R=50 ticks (1.6mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:01,277 - INFO - 🔄 Movement: L=12 ticks (0.4mm), R=11 ticks (0.3mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:01,293 - INFO - 🔄 Movement: L=56 ticks (1.8mm), R=54 ticks (1.7mm), Center=1.7mm, Turn=-0.0°
+2025-09-06 19:08:01,299 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=11 ticks (0.3mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:01,315 - INFO - 🔄 Movement: L=57 ticks (1.8mm), R=55 ticks (1.7mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,336 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=56 ticks (1.8mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,341 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=11 ticks (0.3mm), Center=0.3mm, Turn=0.0°
+2025-09-06 19:08:01,357 - INFO - 🔄 Movement: L=58 ticks (1.8mm), R=55 ticks (1.7mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,373 - INFO - 🔄 Movement: L=62 ticks (2.0mm), R=59 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,394 - INFO - 🔄 Movement: L=60 ticks (1.9mm), R=57 ticks (1.8mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,415 - INFO - 🔄 Movement: L=64 ticks (2.0mm), R=62 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:01,436 - INFO - 🔄 Movement: L=65 ticks (2.0mm), R=62 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:01,457 - INFO - 🔄 Movement: L=67 ticks (2.1mm), R=63 ticks (2.0mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:01,478 - INFO - 🔄 Movement: L=67 ticks (2.1mm), R=65 ticks (2.1mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:01,498 - INFO - 🔄 Movement: L=70 ticks (2.2mm), R=66 ticks (2.1mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:01,519 - INFO - 🔄 Movement: L=66 ticks (2.1mm), R=63 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:01,539 - INFO - 🔄 Movement: L=67 ticks (2.1mm), R=64 ticks (2.0mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:01,560 - INFO - 🔄 Movement: L=61 ticks (1.9mm), R=59 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,581 - INFO - 🔄 Movement: L=63 ticks (2.0mm), R=60 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,602 - INFO - 🔄 Movement: L=62 ticks (2.0mm), R=60 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,618 - INFO - 🔄 Movement: L=62 ticks (2.0mm), R=58 ticks (1.8mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,638 - INFO - 🔄 Movement: L=62 ticks (2.0mm), R=60 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:01,660 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=56 ticks (1.8mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,665 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=13 ticks (0.4mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:01,681 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=57 ticks (1.8mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:01,687 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=13 ticks (0.4mm), Center=0.4mm, Turn=0.0°
+2025-09-06 19:08:01,703 - INFO - 🔄 Movement: L=55 ticks (1.7mm), R=53 ticks (1.7mm), Center=1.7mm, Turn=-0.0°
+2025-09-06 19:08:01,703 - INFO - 🔄 Movement: L=19 ticks (0.6mm), R=16 ticks (0.5mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:01,719 - INFO - 🔄 Movement: L=54 ticks (1.7mm), R=53 ticks (1.7mm), Center=1.7mm, Turn=-0.0°
+2025-09-06 19:08:01,724 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=16 ticks (0.5mm), Center=0.5mm, Turn=0.0°
+2025-09-06 19:08:01,740 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=50 ticks (1.6mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:01,745 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=20 ticks (0.6mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:01,761 - INFO - 🔄 Movement: L=51 ticks (1.6mm), R=49 ticks (1.5mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:01,767 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=21 ticks (0.7mm), Center=0.7mm, Turn=0.0°
+2025-09-06 19:08:01,783 - INFO - 🔄 Movement: L=48 ticks (1.5mm), R=46 ticks (1.5mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:01,788 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=24 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:01,799 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:01,810 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=26 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-06 19:08:01,820 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=41 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:01,831 - INFO - 🔄 Movement: L=29 ticks (0.9mm), R=27 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:01,841 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=43 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:01,852 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=28 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:01,863 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=38 ticks (1.2mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,868 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=32 ticks (1.0mm), Center=1.0mm, Turn=-0.0°
+2025-09-06 19:08:01,884 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=38 ticks (1.2mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,889 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=32 ticks (1.0mm), Center=1.0mm, Turn=-0.0°
+2025-09-06 19:08:01,905 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=38 ticks (1.2mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,910 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=33 ticks (1.0mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:01,921 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=34 ticks (1.1mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:01,932 - INFO - 🔄 Movement: L=38 ticks (1.2mm), R=36 ticks (1.1mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,942 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=34 ticks (1.1mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:01,953 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=37 ticks (1.2mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:01,963 - INFO - 🔄 Movement: L=32 ticks (1.0mm), R=29 ticks (0.9mm), Center=1.0mm, Turn=-0.0°
+2025-09-06 19:08:01,974 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=41 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:01,984 - INFO - 🔄 Movement: L=31 ticks (1.0mm), R=30 ticks (0.9mm), Center=1.0mm, Turn=-0.0°
+2025-09-06 19:08:01,995 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=40 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:02,000 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=26 ticks (0.8mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,015 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,021 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=26 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-06 19:08:02,036 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=44 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,042 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=22 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:02,057 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=46 ticks (1.5mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,062 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=25 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:02,078 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=44 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,083 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=23 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:02,099 - INFO - 🔄 Movement: L=51 ticks (1.6mm), R=48 ticks (1.5mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:02,104 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=22 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:02,120 - INFO - 🔄 Movement: L=51 ticks (1.6mm), R=49 ticks (1.5mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:02,125 - INFO - 🔄 Movement: L=20 ticks (0.6mm), R=19 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:02,141 - INFO - 🔄 Movement: L=55 ticks (1.7mm), R=52 ticks (1.6mm), Center=1.7mm, Turn=-0.0°
+2025-09-06 19:08:02,146 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=17 ticks (0.5mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:02,162 - INFO - 🔄 Movement: L=57 ticks (1.8mm), R=54 ticks (1.7mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:02,162 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=14 ticks (0.4mm), Center=0.4mm, Turn=0.0°
+2025-09-06 19:08:02,182 - INFO - 🔄 Movement: L=61 ticks (1.9mm), R=58 ticks (1.8mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:02,183 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=12 ticks (0.4mm), Center=0.4mm, Turn=-0.0°
+2025-09-06 19:08:02,203 - INFO - 🔄 Movement: L=62 ticks (2.0mm), R=60 ticks (1.9mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:02,219 - INFO - 🔄 Movement: L=63 ticks (2.0mm), R=61 ticks (1.9mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,239 - INFO - 🔄 Movement: L=64 ticks (2.0mm), R=60 ticks (1.9mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,244 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=11 ticks (0.3mm), Center=0.3mm, Turn=0.0°
+2025-09-06 19:08:02,260 - INFO - 🔄 Movement: L=63 ticks (2.0mm), R=62 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,281 - INFO - 🔄 Movement: L=67 ticks (2.1mm), R=64 ticks (2.0mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:02,302 - INFO - 🔄 Movement: L=65 ticks (2.0mm), R=63 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,323 - INFO - 🔄 Movement: L=70 ticks (2.2mm), R=67 ticks (2.1mm), Center=2.2mm, Turn=-0.0°
+2025-09-06 19:08:02,344 - INFO - 🔄 Movement: L=68 ticks (2.1mm), R=66 ticks (2.1mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:02,365 - INFO - 🔄 Movement: L=72 ticks (2.3mm), R=68 ticks (2.2mm), Center=2.2mm, Turn=-0.0°
+2025-09-06 19:08:02,385 - INFO - 🔄 Movement: L=71 ticks (2.2mm), R=69 ticks (2.2mm), Center=2.2mm, Turn=-0.0°
+2025-09-06 19:08:02,406 - INFO - 🔄 Movement: L=74 ticks (2.3mm), R=69 ticks (2.2mm), Center=2.3mm, Turn=-0.1°
+2025-09-06 19:08:02,427 - INFO - 🔄 Movement: L=69 ticks (2.2mm), R=67 ticks (2.1mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:02,448 - INFO - 🔄 Movement: L=69 ticks (2.2mm), R=66 ticks (2.1mm), Center=2.1mm, Turn=-0.0°
+2025-09-06 19:08:02,464 - INFO - 🔄 Movement: L=65 ticks (2.0mm), R=62 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,470 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=10 ticks (0.3mm), Center=0.3mm, Turn=-0.0°
+2025-09-06 19:08:02,485 - INFO - 🔄 Movement: L=64 ticks (2.0mm), R=62 ticks (2.0mm), Center=2.0mm, Turn=-0.0°
+2025-09-06 19:08:02,506 - INFO - 🔄 Movement: L=61 ticks (1.9mm), R=58 ticks (1.8mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:02,511 - INFO - 🔄 Movement: L=15 ticks (0.5mm), R=14 ticks (0.4mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:02,527 - INFO - 🔄 Movement: L=60 ticks (1.9mm), R=58 ticks (1.8mm), Center=1.9mm, Turn=-0.0°
+2025-09-06 19:08:02,532 - INFO - 🔄 Movement: L=15 ticks (0.5mm), R=14 ticks (0.4mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:02,548 - INFO - 🔄 Movement: L=60 ticks (1.9mm), R=57 ticks (1.8mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:02,553 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=14 ticks (0.4mm), Center=0.4mm, Turn=0.0°
+2025-09-06 19:08:02,568 - INFO - 🔄 Movement: L=57 ticks (1.8mm), R=54 ticks (1.7mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:02,574 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=17 ticks (0.5mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:02,589 - INFO - 🔄 Movement: L=57 ticks (1.8mm), R=54 ticks (1.7mm), Center=1.8mm, Turn=-0.0°
+2025-09-06 19:08:02,590 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=17 ticks (0.5mm), Center=0.5mm, Turn=0.0°
+2025-09-06 19:08:02,605 - INFO - 🔄 Movement: L=54 ticks (1.7mm), R=51 ticks (1.6mm), Center=1.7mm, Turn=-0.0°
+2025-09-06 19:08:02,610 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=20 ticks (0.6mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:02,626 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=51 ticks (1.6mm), Center=1.6mm, Turn=-0.0°
+2025-09-06 19:08:02,632 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=22 ticks (0.7mm), Center=0.7mm, Turn=-0.0°
+2025-09-06 19:08:02,647 - INFO - 🔄 Movement: L=49 ticks (1.5mm), R=46 ticks (1.5mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,653 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=26 ticks (0.8mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,668 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,674 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=26 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-06 19:08:02,690 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=42 ticks (1.3mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,695 - INFO - 🔄 Movement: L=29 ticks (0.9mm), R=27 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,706 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,716 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=24 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:02,727 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=43 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,737 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=27 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,748 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,753 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=25 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:02,769 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=42 ticks (1.3mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,775 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=28 ticks (0.9mm), Center=0.9mm, Turn=0.0°
+2025-09-06 19:08:02,790 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=45 ticks (1.4mm), Center=1.5mm, Turn=-0.0°
+2025-09-06 19:08:02,796 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=24 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:02,806 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=43 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,817 - INFO - 🔄 Movement: L=31 ticks (1.0mm), R=29 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,827 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=43 ticks (1.4mm), Center=1.4mm, Turn=-0.0°
+2025-09-06 19:08:02,838 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=27 ticks (0.9mm), Center=0.9mm, Turn=-0.0°
+2025-09-06 19:08:02,848 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=40 ticks (1.3mm), Center=1.3mm, Turn=-0.0°
+2025-09-06 19:08:02,859 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=34 ticks (1.1mm), Center=1.1mm, Turn=-0.0°
+2025-09-06 19:08:02,869 - INFO - 🔄 Movement: L=38 ticks (1.2mm), R=36 ticks (1.1mm), Center=1.2mm, Turn=-0.0°
+2025-09-06 19:08:02,880 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=25 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-06 19:08:02,891 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=26 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-06 19:08:02,901 - INFO - 🔄 Movement: L=19 ticks (0.6mm), R=18 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-06 19:08:02,907 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=15 ticks (0.5mm), Center=0.5mm, Turn=-0.0°
+2025-09-06 19:08:02,917 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=15 ticks (0.5mm), Center=0.5mm, Turn=0.0°
+2025-09-06 19:08:02,928 - INFO - 🔄 Movement: L=12 ticks (0.4mm), R=12 ticks (0.4mm), Center=0.4mm, Turn=0.0°
+2025-09-06 19:08:04,899 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=-12 ticks (-0.4mm), Center=-0.5mm, Turn=0.1°
+2025-09-06 19:08:04,920 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=-19 ticks (-0.6mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:04,941 - INFO - 🔄 Movement: L=-31 ticks (-1.0mm), R=-24 ticks (-0.8mm), Center=-0.9mm, Turn=0.1°
+2025-09-06 19:08:04,962 - INFO - 🔄 Movement: L=-36 ticks (-1.1mm), R=-30 ticks (-0.9mm), Center=-1.0mm, Turn=0.1°
+2025-09-06 19:08:04,983 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=-35 ticks (-1.1mm), Center=-1.2mm, Turn=0.1°
+2025-09-06 19:08:05,003 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-38 ticks (-1.2mm), Center=-1.3mm, Turn=0.1°
+2025-09-06 19:08:05,024 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-42 ticks (-1.3mm), Center=-1.5mm, Turn=0.1°
+2025-09-06 19:08:05,045 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-44 ticks (-1.4mm), Center=-1.5mm, Turn=0.1°
+2025-09-06 19:08:05,066 - INFO - 🔄 Movement: L=-57 ticks (-1.8mm), R=-49 ticks (-1.5mm), Center=-1.7mm, Turn=0.1°
+2025-09-06 19:08:05,087 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=-52 ticks (-1.6mm), Center=-1.7mm, Turn=0.1°
+2025-09-06 19:08:05,107 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=-55 ticks (-1.7mm), Center=-1.8mm, Turn=0.1°
+2025-09-06 19:08:05,128 - INFO - 🔄 Movement: L=-62 ticks (-2.0mm), R=-56 ticks (-1.8mm), Center=-1.9mm, Turn=0.1°
+2025-09-06 19:08:05,144 - INFO - 🔄 Movement: L=-61 ticks (-1.9mm), R=-54 ticks (-1.7mm), Center=-1.8mm, Turn=0.1°
+2025-09-06 19:08:05,165 - INFO - 🔄 Movement: L=-61 ticks (-1.9mm), R=-57 ticks (-1.8mm), Center=-1.9mm, Turn=0.0°
+2025-09-06 19:08:05,186 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=-54 ticks (-1.7mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:05,207 - INFO - 🔄 Movement: L=-61 ticks (-1.9mm), R=-56 ticks (-1.8mm), Center=-1.8mm, Turn=0.1°
+2025-09-06 19:08:05,228 - INFO - 🔄 Movement: L=-59 ticks (-1.9mm), R=-55 ticks (-1.7mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:05,248 - INFO - 🔄 Movement: L=-59 ticks (-1.9mm), R=-55 ticks (-1.7mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:05,249 - INFO - 🔄 Movement: L=-11 ticks (-0.3mm), R=-10 ticks (-0.3mm), Center=-0.3mm, Turn=0.0°
+2025-09-06 19:08:05,264 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=-52 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:05,270 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=-11 ticks (-0.3mm), Center=-0.4mm, Turn=0.0°
+2025-09-06 19:08:05,285 - INFO - 🔄 Movement: L=-57 ticks (-1.8mm), R=-53 ticks (-1.7mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:05,306 - INFO - 🔄 Movement: L=-56 ticks (-1.8mm), R=-52 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:05,312 - INFO - 🔄 Movement: L=-14 ticks (-0.4mm), R=-14 ticks (-0.4mm), Center=-0.4mm, Turn=-0.0°
+2025-09-06 19:08:05,327 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=-52 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:05,333 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=-12 ticks (-0.4mm), Center=-0.4mm, Turn=0.0°
+2025-09-06 19:08:05,349 - INFO - 🔄 Movement: L=-54 ticks (-1.7mm), R=-50 ticks (-1.6mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:05,354 - INFO - 🔄 Movement: L=-17 ticks (-0.5mm), R=-16 ticks (-0.5mm), Center=-0.5mm, Turn=0.0°
+2025-09-06 19:08:05,370 - INFO - 🔄 Movement: L=-53 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:05,370 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=-15 ticks (-0.5mm), Center=-0.5mm, Turn=0.0°
+2025-09-06 19:08:05,385 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,391 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=-17 ticks (-0.5mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:05,407 - INFO - 🔄 Movement: L=-53 ticks (-1.7mm), R=-49 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:05,412 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=-16 ticks (-0.5mm), Center=-0.5mm, Turn=-0.0°
+2025-09-06 19:08:05,428 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,433 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=-20 ticks (-0.6mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:05,449 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-47 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,454 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=-20 ticks (-0.6mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:05,470 - INFO - 🔄 Movement: L=-49 ticks (-1.5mm), R=-47 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,475 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=-21 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:05,491 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:05,496 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-23 ticks (-0.7mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:05,507 - INFO - 🔄 Movement: L=-45 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:05,517 - INFO - 🔄 Movement: L=-25 ticks (-0.8mm), R=-24 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:05,528 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=-40 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:05,538 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-28 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:05,549 - INFO - 🔄 Movement: L=-42 ticks (-1.3mm), R=-40 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:05,559 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-28 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:05,570 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=-36 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,580 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-32 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:05,591 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=-36 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,596 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=-32 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:05,607 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-33 ticks (-1.0mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:05,617 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=-33 ticks (-1.0mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:05,628 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=-35 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,638 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=-32 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:05,649 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-34 ticks (-1.1mm), Center=-1.1mm, Turn=-0.0°
+2025-09-06 19:08:05,659 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=-35 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,670 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=-33 ticks (-1.0mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:05,681 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=-36 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,691 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-29 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:05,701 - INFO - 🔄 Movement: L=-39 ticks (-1.2mm), R=-36 ticks (-1.1mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,712 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-32 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:05,722 - INFO - 🔄 Movement: L=-39 ticks (-1.2mm), R=-38 ticks (-1.2mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:05,728 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=-27 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:05,743 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=-39 ticks (-1.2mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:05,749 - INFO - 🔄 Movement: L=-31 ticks (-1.0mm), R=-30 ticks (-0.9mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:05,764 - INFO - 🔄 Movement: L=-42 ticks (-1.3mm), R=-40 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:05,770 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-28 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:05,780 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=-39 ticks (-1.2mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:05,791 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=-26 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:05,801 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-43 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:05,812 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-26 ticks (-0.8mm), Center=-0.8mm, Turn=-0.0°
+2025-09-06 19:08:05,822 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-43 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:05,833 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=-21 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:05,843 - INFO - 🔄 Movement: L=-49 ticks (-1.5mm), R=-47 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,854 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=-22 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:05,864 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-47 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:05,869 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=-18 ticks (-0.6mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:05,885 - INFO - 🔄 Movement: L=-54 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:05,890 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=-18 ticks (-0.6mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:05,905 - INFO - 🔄 Movement: L=-52 ticks (-1.6mm), R=-50 ticks (-1.6mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:05,911 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=-15 ticks (-0.5mm), Center=-0.5mm, Turn=0.0°
+2025-09-06 19:08:05,927 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=-56 ticks (-1.8mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:05,932 - INFO - 🔄 Movement: L=-15 ticks (-0.5mm), R=-12 ticks (-0.4mm), Center=-0.4mm, Turn=0.0°
+2025-09-06 19:08:05,948 - INFO - 🔄 Movement: L=-57 ticks (-1.8mm), R=-56 ticks (-1.8mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:05,953 - INFO - 🔄 Movement: L=-11 ticks (-0.3mm), R=-11 ticks (-0.3mm), Center=-0.3mm, Turn=-0.0°
+2025-09-06 19:08:05,969 - INFO - 🔄 Movement: L=-63 ticks (-2.0mm), R=-59 ticks (-1.9mm), Center=-1.9mm, Turn=0.0°
+2025-09-06 19:08:05,989 - INFO - 🔄 Movement: L=-61 ticks (-1.9mm), R=-57 ticks (-1.8mm), Center=-1.9mm, Turn=0.0°
+2025-09-06 19:08:06,010 - INFO - 🔄 Movement: L=-67 ticks (-2.1mm), R=-64 ticks (-2.0mm), Center=-2.1mm, Turn=0.0°
+2025-09-06 19:08:06,031 - INFO - 🔄 Movement: L=-64 ticks (-2.0mm), R=-61 ticks (-1.9mm), Center=-2.0mm, Turn=0.0°
+2025-09-06 19:08:06,051 - INFO - 🔄 Movement: L=-68 ticks (-2.1mm), R=-66 ticks (-2.1mm), Center=-2.1mm, Turn=0.0°
+2025-09-06 19:08:06,072 - INFO - 🔄 Movement: L=-68 ticks (-2.1mm), R=-65 ticks (-2.1mm), Center=-2.1mm, Turn=0.0°
+2025-09-06 19:08:06,093 - INFO - 🔄 Movement: L=-71 ticks (-2.2mm), R=-67 ticks (-2.1mm), Center=-2.2mm, Turn=0.0°
+2025-09-06 19:08:06,114 - INFO - 🔄 Movement: L=-72 ticks (-2.3mm), R=-68 ticks (-2.2mm), Center=-2.2mm, Turn=0.0°
+2025-09-06 19:08:06,135 - INFO - 🔄 Movement: L=-68 ticks (-2.1mm), R=-64 ticks (-2.0mm), Center=-2.1mm, Turn=0.0°
+2025-09-06 19:08:06,155 - INFO - 🔄 Movement: L=-67 ticks (-2.1mm), R=-65 ticks (-2.1mm), Center=-2.1mm, Turn=0.0°
+2025-09-06 19:08:06,171 - INFO - 🔄 Movement: L=-63 ticks (-2.0mm), R=-60 ticks (-1.9mm), Center=-1.9mm, Turn=0.0°
+2025-09-06 19:08:06,192 - INFO - 🔄 Movement: L=-64 ticks (-2.0mm), R=-62 ticks (-2.0mm), Center=-2.0mm, Turn=0.0°
+2025-09-06 19:08:06,213 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=-56 ticks (-1.8mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:06,218 - INFO - 🔄 Movement: L=-14 ticks (-0.4mm), R=-13 ticks (-0.4mm), Center=-0.4mm, Turn=0.0°
+2025-09-06 19:08:06,233 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=-56 ticks (-1.8mm), Center=-1.8mm, Turn=0.0°
+2025-09-06 19:08:06,239 - INFO - 🔄 Movement: L=-14 ticks (-0.4mm), R=-14 ticks (-0.4mm), Center=-0.4mm, Turn=-0.0°
+2025-09-06 19:08:06,255 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=-53 ticks (-1.7mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,260 - INFO - 🔄 Movement: L=-17 ticks (-0.5mm), R=-16 ticks (-0.5mm), Center=-0.5mm, Turn=0.0°
+2025-09-06 19:08:06,276 - INFO - 🔄 Movement: L=-56 ticks (-1.8mm), R=-53 ticks (-1.7mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,281 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=-18 ticks (-0.6mm), Center=-0.6mm, Turn=-0.0°
+2025-09-06 19:08:06,291 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,302 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=-21 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:06,313 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,318 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=-20 ticks (-0.6mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:06,334 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=-46 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:06,339 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=-22 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:06,355 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,360 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=-20 ticks (-0.6mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:06,376 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=-46 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:06,382 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=-26 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:06,397 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,403 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-25 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:06,413 - INFO - 🔄 Movement: L=-47 ticks (-1.5mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,424 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-25 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:06,435 - INFO - 🔄 Movement: L=-44 ticks (-1.4mm), R=-42 ticks (-1.3mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,445 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-25 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:06,455 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,466 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=-27 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:06,477 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=-39 ticks (-1.2mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,482 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-29 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:06,498 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=-41 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,504 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=-27 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:06,514 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=-39 ticks (-1.2mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,525 - INFO - 🔄 Movement: L=-32 ticks (-1.0mm), R=-31 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:06,536 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=-39 ticks (-1.2mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,546 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-32 ticks (-1.0mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:06,557 - INFO - 🔄 Movement: L=-36 ticks (-1.1mm), R=-34 ticks (-1.1mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:06,567 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=-37 ticks (-1.2mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:06,578 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=-33 ticks (-1.0mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:06,589 - INFO - 🔄 Movement: L=-39 ticks (-1.2mm), R=-37 ticks (-1.2mm), Center=-1.2mm, Turn=0.0°
+2025-09-06 19:08:06,594 - INFO - 🔄 Movement: L=-31 ticks (-1.0mm), R=-30 ticks (-0.9mm), Center=-1.0mm, Turn=0.0°
+2025-09-06 19:08:06,610 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=-41 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,615 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=-28 ticks (-0.9mm), Center=-0.9mm, Turn=0.0°
+2025-09-06 19:08:06,631 - INFO - 🔄 Movement: L=-44 ticks (-1.4mm), R=-41 ticks (-1.3mm), Center=-1.3mm, Turn=0.0°
+2025-09-06 19:08:06,636 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=-26 ticks (-0.8mm), Center=-0.8mm, Turn=-0.0°
+2025-09-06 19:08:06,647 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,657 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=-25 ticks (-0.8mm), Center=-0.8mm, Turn=0.0°
+2025-09-06 19:08:06,668 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=-44 ticks (-1.4mm), Center=-1.4mm, Turn=0.0°
+2025-09-06 19:08:06,679 - INFO - 🔄 Movement: L=-24 ticks (-0.8mm), R=-23 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:06,689 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:06,700 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=-22 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:06,710 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-49 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,716 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=-17 ticks (-0.5mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:06,731 - INFO - 🔄 Movement: L=-54 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,737 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=-20 ticks (-0.6mm), Center=-0.6mm, Turn=-0.0°
+2025-09-06 19:08:06,752 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=-48 ticks (-1.5mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,758 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=-21 ticks (-0.7mm), Center=-0.7mm, Turn=0.0°
+2025-09-06 19:08:06,773 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=-47 ticks (-1.5mm), Center=-1.5mm, Turn=0.0°
+2025-09-06 19:08:06,779 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=-20 ticks (-0.6mm), Center=-0.6mm, Turn=-0.0°
+2025-09-06 19:08:06,795 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=-52 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,800 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=-17 ticks (-0.5mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:06,811 - INFO - 🔄 Movement: L=-53 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,816 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=-16 ticks (-0.5mm), Center=-0.5mm, Turn=-0.0°
+2025-09-06 19:08:06,831 - INFO - 🔄 Movement: L=-56 ticks (-1.8mm), R=-53 ticks (-1.7mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,837 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=-17 ticks (-0.5mm), Center=-0.6mm, Turn=0.0°
+2025-09-06 19:08:06,852 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.7mm, Turn=0.0°
+2025-09-06 19:08:06,858 - INFO - 🔄 Movement: L=-15 ticks (-0.5mm), R=-15 ticks (-0.5mm), Center=-0.5mm, Turn=-0.0°
+2025-09-06 19:08:06,873 - INFO - 🔄 Movement: L=-53 ticks (-1.7mm), R=-51 ticks (-1.6mm), Center=-1.6mm, Turn=0.0°
+2025-09-06 19:08:06,879 - INFO - 🔄 Movement: L=-11 ticks (-0.3mm), R=-11 ticks (-0.3mm), Center=-0.3mm, Turn=-0.0°
+2025-09-06 19:08:06,894 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=-33 ticks (-1.0mm), Center=-1.1mm, Turn=0.0°
+2025-09-06 19:08:06,915 - INFO - 🔄 Movement: L=-25 ticks (-0.8mm), R=-25 ticks (-0.8mm), Center=-0.8mm, Turn=-0.0°
+2025-09-06 19:08:06,936 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=-18 ticks (-0.6mm), Center=-0.6mm, Turn=-0.0°
+2025-09-06 19:08:06,957 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=-12 ticks (-0.4mm), Center=-0.4mm, Turn=0.0°
+2025-09-06 19:08:08,892 - INFO - 🔄 Movement: L=-15 ticks (-0.5mm), R=11 ticks (0.3mm), Center=-0.1mm, Turn=0.3°
+2025-09-06 19:08:08,912 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=16 ticks (0.5mm), Center=-0.1mm, Turn=0.5°
+2025-09-06 19:08:08,933 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=19 ticks (0.6mm), Center=-0.1mm, Turn=0.6°
+2025-09-06 19:08:08,954 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=23 ticks (0.7mm), Center=-0.1mm, Turn=0.6°
+2025-09-06 19:08:08,954 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=23 (diff=-52)
+2025-09-06 19:08:08,960 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=10 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:08,975 - INFO - 🔄 Movement: L=-32 ticks (-1.0mm), R=25 ticks (0.8mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:08,976 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=25 (diff=-57)
+2025-09-06 19:08:08,981 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:08,997 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=28 ticks (0.9mm), Center=-0.1mm, Turn=0.8°
+2025-09-06 19:08:08,997 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=28 (diff=-63)
+2025-09-06 19:08:09,002 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=13 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:09,013 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=28 ticks (0.9mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:09,013 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=28 (diff=-61)
+2025-09-06 19:08:09,024 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=16 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,034 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=29 ticks (0.9mm), Center=-0.1mm, Turn=0.8°
+2025-09-06 19:08:09,034 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=29 (diff=-64)
+2025-09-06 19:08:09,040 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=17 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,055 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=29 ticks (0.9mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:09,056 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=29 (diff=-62)
+2025-09-06 19:08:09,061 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=19 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,076 - INFO - 🔄 Movement: L=-35 ticks (-1.1mm), R=30 ticks (0.9mm), Center=-0.1mm, Turn=0.8°
+2025-09-06 19:08:09,077 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=30 (diff=-65)
+2025-09-06 19:08:09,082 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=21 ticks (0.7mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,092 - INFO - 🔄 Movement: L=-32 ticks (-1.0mm), R=28 ticks (0.9mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:09,093 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=28 (diff=-60)
+2025-09-06 19:08:09,103 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,103 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:09,114 - INFO - 🔄 Movement: L=-32 ticks (-1.0mm), R=27 ticks (0.9mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:09,114 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=27 (diff=-59)
+2025-09-06 19:08:09,124 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,125 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:09,135 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=26 ticks (0.8mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,135 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=26 (diff=-55)
+2025-09-06 19:08:09,146 - INFO - 🔄 Movement: L=-31 ticks (-1.0mm), R=28 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,146 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=28 (diff=-59)
+2025-09-06 19:08:09,156 - INFO - 🔄 Movement: L=-28 ticks (-0.9mm), R=27 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,157 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-28, R=27 (diff=-55)
+2025-09-06 19:08:09,167 - INFO - 🔄 Movement: L=-31 ticks (-1.0mm), R=27 ticks (0.9mm), Center=-0.1mm, Turn=0.7°
+2025-09-06 19:08:09,167 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=27 (diff=-58)
+2025-09-06 19:08:09,173 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,173 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:09,188 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=31 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:09,189 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=31 (diff=-65)
+2025-09-06 19:08:09,194 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=24 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,194 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-27, R=24 (diff=-51)
+2025-09-06 19:08:09,205 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=31 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:09,205 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=31 (diff=-65)
+2025-09-06 19:08:09,215 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=22 ticks (0.7mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:09,226 - INFO - 🔄 Movement: L=-39 ticks (-1.2mm), R=36 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,226 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=36 (diff=-75)
+2025-09-06 19:08:09,237 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=21 ticks (0.7mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,247 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,247 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=35 (diff=-72)
+2025-09-06 19:08:09,253 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=18 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,269 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=39 ticks (1.2mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,269 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=39 (diff=-80)
+2025-09-06 19:08:09,274 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=19 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,290 - INFO - 🔄 Movement: L=-42 ticks (-1.3mm), R=39 ticks (1.2mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,291 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=39 (diff=-81)
+2025-09-06 19:08:09,296 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=15 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,312 - INFO - 🔄 Movement: L=-44 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,312 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=42 (diff=-86)
+2025-09-06 19:08:09,317 - INFO - 🔄 Movement: L=-17 ticks (-0.5mm), R=17 ticks (0.5mm), Center=0.0mm, Turn=0.4°
+2025-09-06 19:08:09,333 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=40 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,333 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=40 (diff=-83)
+2025-09-06 19:08:09,339 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=17 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,349 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=39 ticks (1.2mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,349 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=39 (diff=-80)
+2025-09-06 19:08:09,355 - INFO - 🔄 Movement: L=-17 ticks (-0.5mm), R=16 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,370 - INFO - 🔄 Movement: L=-45 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,370 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=42 (diff=-87)
+2025-09-06 19:08:09,376 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=15 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,391 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=43 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:09,392 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=43 (diff=-89)
+2025-09-06 19:08:09,397 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=12 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:09,413 - INFO - 🔄 Movement: L=-49 ticks (-1.5mm), R=46 ticks (1.5mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:09,413 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-49, R=46 (diff=-95)
+2025-09-06 19:08:09,418 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=12 ticks (0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-06 19:08:09,434 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=47 ticks (1.5mm), Center=-0.1mm, Turn=1.2°
+2025-09-06 19:08:09,434 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-51, R=47 (diff=-98)
+2025-09-06 19:08:09,455 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=51 ticks (1.6mm), Center=-0.1mm, Turn=1.3°
+2025-09-06 19:08:09,456 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-55, R=51 (diff=-106)
+2025-09-06 19:08:09,476 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=52 ticks (1.6mm), Center=-0.0mm, Turn=1.3°
+2025-09-06 19:08:09,477 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-55, R=52 (diff=-107)
+2025-09-06 19:08:09,497 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=56 ticks (1.8mm), Center=-0.1mm, Turn=1.4°
+2025-09-06 19:08:09,498 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-60, R=56 (diff=-116)
+2025-09-06 19:08:09,518 - INFO - 🔄 Movement: L=-59 ticks (-1.9mm), R=56 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,519 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-59, R=56 (diff=-115)
+2025-09-06 19:08:09,539 - INFO - 🔄 Movement: L=-59 ticks (-1.9mm), R=57 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,540 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-59, R=57 (diff=-116)
+2025-09-06 19:08:09,560 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=55 ticks (1.7mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,561 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-58, R=55 (diff=-113)
+2025-09-06 19:08:09,576 - INFO - 🔄 Movement: L=-59 ticks (-1.9mm), R=56 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,577 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-59, R=56 (diff=-115)
+2025-09-06 19:08:09,597 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=55 ticks (1.7mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,597 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-58, R=55 (diff=-113)
+2025-09-06 19:08:09,618 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=58 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,618 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-60, R=58 (diff=-118)
+2025-09-06 19:08:09,639 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=58 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:09,640 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-60, R=58 (diff=-118)
+2025-09-06 19:08:09,660 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=51 ticks (1.6mm), Center=-0.1mm, Turn=1.3°
+2025-09-06 19:08:09,661 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-55, R=51 (diff=-106)
+2025-09-06 19:08:09,681 - INFO - 🔄 Movement: L=-54 ticks (-1.7mm), R=51 ticks (1.6mm), Center=-0.0mm, Turn=1.3°
+2025-09-06 19:08:09,682 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-54, R=51 (diff=-105)
+2025-09-06 19:08:09,697 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=48 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:09,697 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-51, R=48 (diff=-99)
+2025-09-06 19:08:09,703 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:09,718 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=47 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:09,719 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-50, R=47 (diff=-97)
+2025-09-06 19:08:09,724 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:09,740 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=45 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:09,740 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=45 (diff=-93)
+2025-09-06 19:08:09,745 - INFO - 🔄 Movement: L=-14 ticks (-0.4mm), R=14 ticks (0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-06 19:08:09,761 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=45 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:09,761 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=45 (diff=-93)
+2025-09-06 19:08:09,767 - INFO - 🔄 Movement: L=-15 ticks (-0.5mm), R=13 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:09,777 - INFO - 🔄 Movement: L=-44 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,778 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=42 (diff=-86)
+2025-09-06 19:08:09,788 - INFO - 🔄 Movement: L=-18 ticks (-0.6mm), R=17 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,799 - INFO - 🔄 Movement: L=-45 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:09,799 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=42 (diff=-87)
+2025-09-06 19:08:09,804 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=18 ticks (0.6mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:09,820 - INFO - 🔄 Movement: L=-40 ticks (-1.3mm), R=38 ticks (1.2mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,820 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=38 (diff=-78)
+2025-09-06 19:08:09,826 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=22 ticks (0.7mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:09,841 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=37 ticks (1.2mm), Center=-0.1mm, Turn=0.9°
+2025-09-06 19:08:09,842 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=37 (diff=-78)
+2025-09-06 19:08:09,847 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=21 ticks (0.7mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:09,858 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=36 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,858 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=36 (diff=-74)
+2025-09-06 19:08:09,868 - INFO - 🔄 Movement: L=-25 ticks (-0.8mm), R=22 ticks (0.7mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,879 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=37 ticks (1.2mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,879 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=37 (diff=-75)
+2025-09-06 19:08:09,890 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=21 ticks (0.7mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:09,900 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,900 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=35 (diff=-72)
+2025-09-06 19:08:09,911 - INFO - 🔄 Movement: L=-24 ticks (-0.8mm), R=24 ticks (0.8mm), Center=0.0mm, Turn=0.6°
+2025-09-06 19:08:09,921 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:09,921 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=35 (diff=-73)
+2025-09-06 19:08:09,927 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=24 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:09,943 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:09,943 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=32 (diff=-65)
+2025-09-06 19:08:09,948 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=27 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,948 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=27 (diff=-57)
+2025-09-06 19:08:09,959 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:09,959 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=32 (diff=-65)
+2025-09-06 19:08:09,970 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=26 ticks (0.8mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,970 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=26 (diff=-55)
+2025-09-06 19:08:09,980 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:09,981 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=32 (diff=-66)
+2025-09-06 19:08:09,991 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=27 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:09,991 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=27 (diff=-56)
+2025-09-06 19:08:10,002 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=28 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,002 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=28 (diff=-58)
+2025-09-06 19:08:10,012 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,013 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=32 (diff=-65)
+2025-09-06 19:08:10,023 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=28 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,023 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=28 (diff=-58)
+2025-09-06 19:08:10,034 - INFO - 🔄 Movement: L=-33 ticks (-1.0mm), R=31 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,034 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=31 (diff=-64)
+2025-09-06 19:08:10,039 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,039 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-27, R=25 (diff=-52)
+2025-09-06 19:08:10,055 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=34 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,055 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=34 (diff=-71)
+2025-09-06 19:08:10,060 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=26 ticks (0.8mm), Center=0.0mm, Turn=0.6°
+2025-09-06 19:08:10,060 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=26 (diff=-52)
+2025-09-06 19:08:10,075 - INFO - 🔄 Movement: L=-36 ticks (-1.1mm), R=33 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,075 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=33 (diff=-69)
+2025-09-06 19:08:10,081 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=23 ticks (0.7mm), Center=0.0mm, Turn=0.6°
+2025-09-06 19:08:10,096 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=39 ticks (1.2mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,097 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=39 (diff=-80)
+2025-09-06 19:08:10,102 - INFO - 🔄 Movement: L=-22 ticks (-0.7mm), R=20 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,117 - INFO - 🔄 Movement: L=-40 ticks (-1.3mm), R=38 ticks (1.2mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,118 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=38 (diff=-78)
+2025-09-06 19:08:10,123 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=19 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,138 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=41 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,138 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=41 (diff=-84)
+2025-09-06 19:08:10,144 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=19 ticks (0.6mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:10,159 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=40 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,159 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=40 (diff=-83)
+2025-09-06 19:08:10,165 - INFO - 🔄 Movement: L=-17 ticks (-0.5mm), R=16 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:10,180 - INFO - 🔄 Movement: L=-47 ticks (-1.5mm), R=44 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:10,181 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=44 (diff=-91)
+2025-09-06 19:08:10,186 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=15 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:10,196 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=45 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:10,196 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=45 (diff=-93)
+2025-09-06 19:08:10,202 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,217 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=48 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:10,218 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-51, R=48 (diff=-99)
+2025-09-06 19:08:10,223 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,239 - INFO - 🔄 Movement: L=-50 ticks (-1.6mm), R=48 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:10,239 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-50, R=48 (diff=-98)
+2025-09-06 19:08:10,260 - INFO - 🔄 Movement: L=-54 ticks (-1.7mm), R=51 ticks (1.6mm), Center=-0.0mm, Turn=1.3°
+2025-09-06 19:08:10,260 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-54, R=51 (diff=-105)
+2025-09-06 19:08:10,280 - INFO - 🔄 Movement: L=-56 ticks (-1.8mm), R=52 ticks (1.6mm), Center=-0.1mm, Turn=1.3°
+2025-09-06 19:08:10,281 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-56, R=52 (diff=-108)
+2025-09-06 19:08:10,301 - INFO - 🔄 Movement: L=-57 ticks (-1.8mm), R=53 ticks (1.7mm), Center=-0.1mm, Turn=1.3°
+2025-09-06 19:08:10,302 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-57, R=53 (diff=-110)
+2025-09-06 19:08:10,323 - INFO - 🔄 Movement: L=-61 ticks (-1.9mm), R=58 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:10,323 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-61, R=58 (diff=-119)
+2025-09-06 19:08:10,343 - INFO - 🔄 Movement: L=-60 ticks (-1.9mm), R=58 ticks (1.8mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:10,344 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-60, R=58 (diff=-118)
+2025-09-06 19:08:10,364 - INFO - 🔄 Movement: L=-58 ticks (-1.8mm), R=55 ticks (1.7mm), Center=-0.0mm, Turn=1.4°
+2025-09-06 19:08:10,365 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-58, R=55 (diff=-113)
+2025-09-06 19:08:10,385 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=52 ticks (1.6mm), Center=-0.0mm, Turn=1.3°
+2025-09-06 19:08:10,386 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-55, R=52 (diff=-107)
+2025-09-06 19:08:10,406 - INFO - 🔄 Movement: L=-55 ticks (-1.7mm), R=52 ticks (1.6mm), Center=-0.0mm, Turn=1.3°
+2025-09-06 19:08:10,407 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-55, R=52 (diff=-107)
+2025-09-06 19:08:10,422 - INFO - 🔄 Movement: L=-52 ticks (-1.6mm), R=49 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:10,422 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-52, R=49 (diff=-101)
+2025-09-06 19:08:10,428 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=11 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,443 - INFO - 🔄 Movement: L=-51 ticks (-1.6mm), R=49 ticks (1.5mm), Center=-0.0mm, Turn=1.2°
+2025-09-06 19:08:10,444 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-51, R=49 (diff=-100)
+2025-09-06 19:08:10,449 - INFO - 🔄 Movement: L=-12 ticks (-0.4mm), R=10 ticks (0.3mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,465 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=46 ticks (1.5mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:10,465 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=46 (diff=-94)
+2025-09-06 19:08:10,470 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=13 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,486 - INFO - 🔄 Movement: L=-48 ticks (-1.5mm), R=46 ticks (1.5mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:10,486 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=46 (diff=-94)
+2025-09-06 19:08:10,491 - INFO - 🔄 Movement: L=-14 ticks (-0.4mm), R=14 ticks (0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-06 19:08:10,507 - INFO - 🔄 Movement: L=-46 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.1mm, Turn=1.1°
+2025-09-06 19:08:10,507 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=42 (diff=-88)
+2025-09-06 19:08:10,512 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=19 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,523 - INFO - 🔄 Movement: L=-43 ticks (-1.4mm), R=41 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,523 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=41 (diff=-84)
+2025-09-06 19:08:10,534 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=17 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:10,544 - INFO - 🔄 Movement: L=-42 ticks (-1.3mm), R=39 ticks (1.2mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,545 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=39 (diff=-81)
+2025-09-06 19:08:10,550 - INFO - 🔄 Movement: L=-21 ticks (-0.7mm), R=20 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,566 - INFO - 🔄 Movement: L=-41 ticks (-1.3mm), R=40 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,566 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=40 (diff=-81)
+2025-09-06 19:08:10,571 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=20 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,587 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=36 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,587 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=36 (diff=-73)
+2025-09-06 19:08:10,592 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,593 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:10,608 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,609 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=35 (diff=-73)
+2025-09-06 19:08:10,614 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,614 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:10,625 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=36 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,625 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=36 (diff=-73)
+2025-09-06 19:08:10,636 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=24 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,646 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=33 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,647 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=33 (diff=-67)
+2025-09-06 19:08:10,657 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=27 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,657 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=27 (diff=-57)
+2025-09-06 19:08:10,668 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,668 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=32 (diff=-66)
+2025-09-06 19:08:10,679 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=29 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,679 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=29 (diff=-59)
+2025-09-06 19:08:10,684 - INFO - 🔄 Movement: L=-30 ticks (-0.9mm), R=28 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,685 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=28 (diff=-58)
+2025-09-06 19:08:10,695 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=32 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,695 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=32 (diff=-66)
+2025-09-06 19:08:10,706 - INFO - 🔄 Movement: L=-29 ticks (-0.9mm), R=28 ticks (0.9mm), Center=-0.0mm, Turn=0.7°
+2025-09-06 19:08:10,706 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=28 (diff=-57)
+2025-09-06 19:08:10,717 - INFO - 🔄 Movement: L=-34 ticks (-1.1mm), R=31 ticks (1.0mm), Center=-0.0mm, Turn=0.8°
+2025-09-06 19:08:10,717 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=31 (diff=-65)
+2025-09-06 19:08:10,727 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=26 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,728 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-27, R=26 (diff=-53)
+2025-09-06 19:08:10,738 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=34 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,739 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=34 (diff=-71)
+2025-09-06 19:08:10,749 - INFO - 🔄 Movement: L=-26 ticks (-0.8mm), R=25 ticks (0.8mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,749 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-26, R=25 (diff=-51)
+2025-09-06 19:08:10,760 - INFO - 🔄 Movement: L=-38 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,760 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=35 (diff=-73)
+2025-09-06 19:08:10,766 - INFO - 🔄 Movement: L=-23 ticks (-0.7mm), R=21 ticks (0.7mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,782 - INFO - 🔄 Movement: L=-39 ticks (-1.2mm), R=38 ticks (1.2mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,782 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=38 (diff=-77)
+2025-09-06 19:08:10,787 - INFO - 🔄 Movement: L=-24 ticks (-0.8mm), R=22 ticks (0.7mm), Center=-0.0mm, Turn=0.6°
+2025-09-06 19:08:10,798 - INFO - 🔄 Movement: L=-40 ticks (-1.3mm), R=37 ticks (1.2mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,798 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=37 (diff=-77)
+2025-09-06 19:08:10,809 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=20 ticks (0.6mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:10,819 - INFO - 🔄 Movement: L=-45 ticks (-1.4mm), R=41 ticks (1.3mm), Center=-0.1mm, Turn=1.0°
+2025-09-06 19:08:10,819 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=41 (diff=-86)
+2025-09-06 19:08:10,830 - INFO - 🔄 Movement: L=-19 ticks (-0.6mm), R=19 ticks (0.6mm), Center=0.0mm, Turn=0.5°
+2025-09-06 19:08:10,841 - INFO - 🔄 Movement: L=-44 ticks (-1.4mm), R=42 ticks (1.3mm), Center=-0.0mm, Turn=1.0°
+2025-09-06 19:08:10,841 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=42 (diff=-86)
+2025-09-06 19:08:10,846 - INFO - 🔄 Movement: L=-16 ticks (-0.5mm), R=15 ticks (0.5mm), Center=-0.0mm, Turn=0.4°
+2025-09-06 19:08:10,862 - INFO - 🔄 Movement: L=-47 ticks (-1.5mm), R=44 ticks (1.4mm), Center=-0.0mm, Turn=1.1°
+2025-09-06 19:08:10,862 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=44 (diff=-91)
+2025-09-06 19:08:10,868 - INFO - 🔄 Movement: L=-15 ticks (-0.5mm), R=14 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:10,883 - INFO - 🔄 Movement: L=-37 ticks (-1.2mm), R=35 ticks (1.1mm), Center=-0.0mm, Turn=0.9°
+2025-09-06 19:08:10,884 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=35 (diff=-72)
+2025-09-06 19:08:10,905 - INFO - 🔄 Movement: L=-27 ticks (-0.8mm), R=28 ticks (0.9mm), Center=0.0mm, Turn=0.7°
+2025-09-06 19:08:10,905 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-27, R=28 (diff=-55)
+2025-09-06 19:08:10,926 - INFO - 🔄 Movement: L=-20 ticks (-0.6mm), R=18 ticks (0.6mm), Center=-0.0mm, Turn=0.5°
+2025-09-06 19:08:10,947 - INFO - 🔄 Movement: L=-13 ticks (-0.4mm), R=12 ticks (0.4mm), Center=-0.0mm, Turn=0.3°
+2025-09-06 19:08:12,903 - INFO - 🔄 Movement: L=19 ticks (0.6mm), R=-14 ticks (-0.4mm), Center=0.1mm, Turn=-0.4°
+2025-09-06 19:08:12,924 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=-19 ticks (-0.6mm), Center=0.1mm, Turn=-0.5°
+2025-09-06 19:08:12,945 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=-27 ticks (-0.9mm), Center=0.1mm, Turn=-0.7°
+2025-09-06 19:08:12,945 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=35, R=-27 (diff=62)
+2025-09-06 19:08:12,966 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=-30 ticks (-0.9mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:12,966 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=39, R=-30 (diff=69)
+2025-09-06 19:08:12,981 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=-34 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:12,982 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=42, R=-34 (diff=76)
+2025-09-06 19:08:13,002 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=-36 ticks (-1.1mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,002 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=43, R=-36 (diff=79)
+2025-09-06 19:08:13,023 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,023 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=44, R=-38 (diff=82)
+2025-09-06 19:08:13,044 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,045 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=44, R=-38 (diff=82)
+2025-09-06 19:08:13,065 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,066 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=45, R=-38 (diff=83)
+2025-09-06 19:08:13,071 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=-10 ticks (-0.3mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,081 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=-37 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,082 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=43, R=-37 (diff=80)
+2025-09-06 19:08:13,087 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=-11 ticks (-0.3mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,102 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=-39 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,103 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=45, R=-39 (diff=84)
+2025-09-06 19:08:13,108 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-12 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,124 - INFO - 🔄 Movement: L=41 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,124 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=41, R=-37 (diff=78)
+2025-09-06 19:08:13,129 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-14 ticks (-0.4mm), Center=0.1mm, Turn=-0.4°
+2025-09-06 19:08:13,145 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,145 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=42, R=-38 (diff=80)
+2025-09-06 19:08:13,150 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=-14 ticks (-0.4mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,166 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-36 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,166 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-36 (diff=76)
+2025-09-06 19:08:13,171 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-16 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,187 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,188 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=42, R=-37 (diff=79)
+2025-09-06 19:08:13,193 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-16 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,204 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,204 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=43, R=-38 (diff=81)
+2025-09-06 19:08:13,214 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-17 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,225 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-35 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,225 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-35 (diff=75)
+2025-09-06 19:08:13,231 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=-21 ticks (-0.7mm), Center=-0.0mm, Turn=-0.5°
+2025-09-06 19:08:13,246 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-35 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,247 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-35 (diff=75)
+2025-09-06 19:08:13,252 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=-20 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:13,268 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-32 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,268 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-32 (diff=69)
+2025-09-06 19:08:13,273 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-23 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,284 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-33 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,284 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-33 (diff=70)
+2025-09-06 19:08:13,295 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=-21 ticks (-0.7mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:13,305 - INFO - 🔄 Movement: L=36 ticks (1.1mm), R=-33 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:13,306 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=36, R=-33 (diff=69)
+2025-09-06 19:08:13,316 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=-22 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,327 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-33 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,327 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-33 (diff=70)
+2025-09-06 19:08:13,332 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-22 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,348 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,348 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=35, R=-31 (diff=66)
+2025-09-06 19:08:13,354 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=-26 ticks (-0.8mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:13,354 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=28, R=-26 (diff=54)
+2025-09-06 19:08:13,365 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-30 ticks (-0.9mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,365 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-30 (diff=64)
+2025-09-06 19:08:13,375 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=-26 ticks (-0.8mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:13,376 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=28, R=-26 (diff=54)
+2025-09-06 19:08:13,386 - INFO - 🔄 Movement: L=31 ticks (1.0mm), R=-27 ticks (-0.9mm), Center=0.1mm, Turn=-0.7°
+2025-09-06 19:08:13,386 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=31, R=-27 (diff=58)
+2025-09-06 19:08:13,397 - INFO - 🔄 Movement: L=32 ticks (1.0mm), R=-30 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:13,397 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=32, R=-30 (diff=62)
+2025-09-06 19:08:13,408 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=-27 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:13,408 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=30, R=-27 (diff=57)
+2025-09-06 19:08:13,419 - INFO - 🔄 Movement: L=32 ticks (1.0mm), R=-28 ticks (-0.9mm), Center=0.1mm, Turn=-0.7°
+2025-09-06 19:08:13,419 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=32, R=-28 (diff=60)
+2025-09-06 19:08:13,424 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=-25 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,425 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=27, R=-25 (diff=52)
+2025-09-06 19:08:13,435 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-30 ticks (-0.9mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,435 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-30 (diff=64)
+2025-09-06 19:08:13,446 - INFO - 🔄 Movement: L=29 ticks (0.9mm), R=-27 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:13,446 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=29, R=-27 (diff=56)
+2025-09-06 19:08:13,456 - INFO - 🔄 Movement: L=33 ticks (1.0mm), R=-29 ticks (-0.9mm), Center=0.1mm, Turn=-0.7°
+2025-09-06 19:08:13,456 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=33, R=-29 (diff=62)
+2025-09-06 19:08:13,467 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=-25 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,467 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=27, R=-25 (diff=52)
+2025-09-06 19:08:13,477 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:13,478 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-31 (diff=65)
+2025-09-06 19:08:13,488 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=-25 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,488 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=28, R=-25 (diff=53)
+2025-09-06 19:08:13,499 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=-32 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:13,499 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=35, R=-32 (diff=67)
+2025-09-06 19:08:13,510 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=-25 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,510 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=27, R=-25 (diff=52)
+2025-09-06 19:08:13,520 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:13,521 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-31 (diff=65)
+2025-09-06 19:08:13,526 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=-24 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,542 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-33 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:13,542 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-33 (diff=70)
+2025-09-06 19:08:13,547 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=-24 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,558 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=-32 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:13,558 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=35, R=-32 (diff=67)
+2025-09-06 19:08:13,569 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-22 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,579 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=-34 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,580 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=39, R=-34 (diff=73)
+2025-09-06 19:08:13,590 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-23 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:13,601 - INFO - 🔄 Movement: L=38 ticks (1.2mm), R=-34 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:13,601 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=38, R=-34 (diff=72)
+2025-09-06 19:08:13,606 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=-20 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:13,622 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,622 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=42, R=-38 (diff=80)
+2025-09-06 19:08:13,628 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=-18 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:13,643 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:13,644 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-37 (diff=77)
+2025-09-06 19:08:13,649 - INFO - 🔄 Movement: L=19 ticks (0.6mm), R=-17 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,664 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=-40 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,665 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=44, R=-40 (diff=84)
+2025-09-06 19:08:13,670 - INFO - 🔄 Movement: L=20 ticks (0.6mm), R=-17 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,680 - INFO - 🔄 Movement: L=43 ticks (1.4mm), R=-39 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,681 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=43, R=-39 (diff=82)
+2025-09-06 19:08:13,686 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=-16 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,702 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=-41 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:13,702 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=46, R=-41 (diff=87)
+2025-09-06 19:08:13,707 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=-16 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,723 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=-42 ticks (-1.3mm), Center=0.0mm, Turn=-1.0°
+2025-09-06 19:08:13,724 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=45, R=-42 (diff=87)
+2025-09-06 19:08:13,729 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-13 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,745 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-42 ticks (-1.3mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,745 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-42 (diff=89)
+2025-09-06 19:08:13,750 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=-15 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,766 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=-43 ticks (-1.4mm), Center=0.0mm, Turn=-1.1°
+2025-09-06 19:08:13,766 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=46, R=-43 (diff=89)
+2025-09-06 19:08:13,771 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-12 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,782 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,782 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-43 (diff=90)
+2025-09-06 19:08:13,788 - INFO - 🔄 Movement: L=15 ticks (0.5mm), R=-14 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,803 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,803 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-43 (diff=90)
+2025-09-06 19:08:13,809 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-13 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,824 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,825 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-43 (diff=90)
+2025-09-06 19:08:13,830 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=-15 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:13,846 - INFO - 🔄 Movement: L=49 ticks (1.5mm), R=-44 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,846 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=49, R=-44 (diff=93)
+2025-09-06 19:08:13,851 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-13 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,867 - INFO - 🔄 Movement: L=48 ticks (1.5mm), R=-44 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,867 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=48, R=-44 (diff=92)
+2025-09-06 19:08:13,873 - INFO - 🔄 Movement: L=12 ticks (0.4mm), R=-10 ticks (-0.3mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,888 - INFO - 🔄 Movement: L=50 ticks (1.6mm), R=-45 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,889 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=50, R=-45 (diff=95)
+2025-09-06 19:08:13,889 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-12 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:13,904 - INFO - 🔄 Movement: L=50 ticks (1.6mm), R=-45 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:13,905 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=50, R=-45 (diff=95)
+2025-09-06 19:08:13,925 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=-49 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:13,926 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=53, R=-49 (diff=102)
+2025-09-06 19:08:13,946 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=-48 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:13,947 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=53, R=-48 (diff=101)
+2025-09-06 19:08:13,967 - INFO - 🔄 Movement: L=55 ticks (1.7mm), R=-50 ticks (-1.6mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:13,968 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=55, R=-50 (diff=105)
+2025-09-06 19:08:13,988 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=-49 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:13,989 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=53, R=-49 (diff=102)
+2025-09-06 19:08:14,009 - INFO - 🔄 Movement: L=57 ticks (1.8mm), R=-53 ticks (-1.7mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,009 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=57, R=-53 (diff=110)
+2025-09-06 19:08:14,030 - INFO - 🔄 Movement: L=58 ticks (1.8mm), R=-53 ticks (-1.7mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,030 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=58, R=-53 (diff=111)
+2025-09-06 19:08:14,051 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=-54 ticks (-1.7mm), Center=0.1mm, Turn=-1.4°
+2025-09-06 19:08:14,051 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=59, R=-54 (diff=113)
+2025-09-06 19:08:14,072 - INFO - 🔄 Movement: L=58 ticks (1.8mm), R=-53 ticks (-1.7mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,072 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=58, R=-53 (diff=111)
+2025-09-06 19:08:14,092 - INFO - 🔄 Movement: L=63 ticks (2.0mm), R=-57 ticks (-1.8mm), Center=0.1mm, Turn=-1.4°
+2025-09-06 19:08:14,093 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=63, R=-57 (diff=120)
+2025-09-06 19:08:14,113 - INFO - 🔄 Movement: L=60 ticks (1.9mm), R=-54 ticks (-1.7mm), Center=0.1mm, Turn=-1.4°
+2025-09-06 19:08:14,114 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=60, R=-54 (diff=114)
+2025-09-06 19:08:14,134 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=-53 ticks (-1.7mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,135 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=59, R=-53 (diff=112)
+2025-09-06 19:08:14,150 - INFO - 🔄 Movement: L=59 ticks (1.9mm), R=-53 ticks (-1.7mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,150 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=59, R=-53 (diff=112)
+2025-09-06 19:08:14,171 - INFO - 🔄 Movement: L=56 ticks (1.8mm), R=-50 ticks (-1.6mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,172 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=56, R=-50 (diff=106)
+2025-09-06 19:08:14,192 - INFO - 🔄 Movement: L=55 ticks (1.7mm), R=-50 ticks (-1.6mm), Center=0.1mm, Turn=-1.3°
+2025-09-06 19:08:14,193 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=55, R=-50 (diff=105)
+2025-09-06 19:08:14,213 - INFO - 🔄 Movement: L=53 ticks (1.7mm), R=-47 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:14,214 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=53, R=-47 (diff=100)
+2025-09-06 19:08:14,219 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=-11 ticks (-0.3mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:14,234 - INFO - 🔄 Movement: L=51 ticks (1.6mm), R=-47 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:14,235 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=51, R=-47 (diff=98)
+2025-09-06 19:08:14,235 - INFO - 🔄 Movement: L=12 ticks (0.4mm), R=-12 ticks (-0.4mm), Center=-0.0mm, Turn=-0.3°
+2025-09-06 19:08:14,250 - INFO - 🔄 Movement: L=48 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,250 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=48, R=-43 (diff=91)
+2025-09-06 19:08:14,256 - INFO - 🔄 Movement: L=15 ticks (0.5mm), R=-15 ticks (-0.5mm), Center=-0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,271 - INFO - 🔄 Movement: L=49 ticks (1.5mm), R=-44 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,272 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=49, R=-44 (diff=93)
+2025-09-06 19:08:14,277 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=-14 ticks (-0.4mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,293 - INFO - 🔄 Movement: L=45 ticks (1.4mm), R=-41 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:14,293 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=45, R=-41 (diff=86)
+2025-09-06 19:08:14,298 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-17 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,314 - INFO - 🔄 Movement: L=46 ticks (1.4mm), R=-41 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:14,314 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=46, R=-41 (diff=87)
+2025-09-06 19:08:14,319 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-17 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,335 - INFO - 🔄 Movement: L=42 ticks (1.3mm), R=-38 ticks (-1.2mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:14,335 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=42, R=-38 (diff=80)
+2025-09-06 19:08:14,340 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=-21 ticks (-0.7mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,356 - INFO - 🔄 Movement: L=41 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:14,356 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=41, R=-37 (diff=78)
+2025-09-06 19:08:14,362 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=-21 ticks (-0.7mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,372 - INFO - 🔄 Movement: L=38 ticks (1.2mm), R=-35 ticks (-1.1mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:14,372 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=38, R=-35 (diff=73)
+2025-09-06 19:08:14,383 - INFO - 🔄 Movement: L=25 ticks (0.8mm), R=-23 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,393 - INFO - 🔄 Movement: L=39 ticks (1.2mm), R=-35 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:14,393 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=39, R=-35 (diff=74)
+2025-09-06 19:08:14,404 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=-23 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,414 - INFO - 🔄 Movement: L=35 ticks (1.1mm), R=-32 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,415 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=35, R=-32 (diff=67)
+2025-09-06 19:08:14,420 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=-24 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,420 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=27, R=-24 (diff=51)
+2025-09-06 19:08:14,436 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-33 ticks (-1.0mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:14,436 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-33 (diff=70)
+2025-09-06 19:08:14,441 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=-25 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,442 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=26, R=-25 (diff=51)
+2025-09-06 19:08:14,452 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-30 ticks (-0.9mm), Center=0.1mm, Turn=-0.8°
+2025-09-06 19:08:14,452 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-30 (diff=64)
+2025-09-06 19:08:14,463 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=-27 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:14,463 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=30, R=-27 (diff=57)
+2025-09-06 19:08:14,473 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,473 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-31 (diff=65)
+2025-09-06 19:08:14,484 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=-26 ticks (-0.8mm), Center=0.1mm, Turn=-0.7°
+2025-09-06 19:08:14,484 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=30, R=-26 (diff=56)
+2025-09-06 19:08:14,494 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-32 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,495 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-32 (diff=66)
+2025-09-06 19:08:14,505 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=-27 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:14,506 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=30, R=-27 (diff=57)
+2025-09-06 19:08:14,516 - INFO - 🔄 Movement: L=31 ticks (1.0mm), R=-28 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:14,516 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=31, R=-28 (diff=59)
+2025-09-06 19:08:14,527 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,527 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-31 (diff=65)
+2025-09-06 19:08:14,537 - INFO - 🔄 Movement: L=30 ticks (0.9mm), R=-27 ticks (-0.9mm), Center=0.0mm, Turn=-0.7°
+2025-09-06 19:08:14,538 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=30, R=-27 (diff=57)
+2025-09-06 19:08:14,548 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-31 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,549 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-31 (diff=65)
+2025-09-06 19:08:14,554 - INFO - 🔄 Movement: L=27 ticks (0.8mm), R=-24 ticks (-0.8mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,554 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=27, R=-24 (diff=51)
+2025-09-06 19:08:14,565 - INFO - 🔄 Movement: L=36 ticks (1.1mm), R=-35 ticks (-1.1mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:14,565 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=36, R=-35 (diff=71)
+2025-09-06 19:08:14,575 - INFO - 🔄 Movement: L=28 ticks (0.9mm), R=-24 ticks (-0.8mm), Center=0.1mm, Turn=-0.6°
+2025-09-06 19:08:14,576 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=28, R=-24 (diff=52)
+2025-09-06 19:08:14,586 - INFO - 🔄 Movement: L=37 ticks (1.2mm), R=-34 ticks (-1.1mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:14,586 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=37, R=-34 (diff=71)
+2025-09-06 19:08:14,597 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-22 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,607 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-36 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:14,608 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-36 (diff=76)
+2025-09-06 19:08:14,618 - INFO - 🔄 Movement: L=23 ticks (0.7mm), R=-23 ticks (-0.7mm), Center=-0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,629 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-34 ticks (-1.1mm), Center=0.1mm, Turn=-0.9°
+2025-09-06 19:08:14,629 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-34 (diff=74)
+2025-09-06 19:08:14,634 - INFO - 🔄 Movement: L=22 ticks (0.7mm), R=-20 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,650 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:14,650 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-37 (diff=77)
+2025-09-06 19:08:14,655 - INFO - 🔄 Movement: L=24 ticks (0.8mm), R=-21 ticks (-0.7mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,671 - INFO - 🔄 Movement: L=40 ticks (1.3mm), R=-37 ticks (-1.2mm), Center=0.0mm, Turn=-0.9°
+2025-09-06 19:08:14,671 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=40, R=-37 (diff=77)
+2025-09-06 19:08:14,676 - INFO - 🔄 Movement: L=21 ticks (0.7mm), R=-18 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,692 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=-40 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:14,692 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=44, R=-40 (diff=84)
+2025-09-06 19:08:14,698 - INFO - 🔄 Movement: L=20 ticks (0.6mm), R=-18 ticks (-0.6mm), Center=0.0mm, Turn=-0.5°
+2025-09-06 19:08:14,708 - INFO - 🔄 Movement: L=44 ticks (1.4mm), R=-40 ticks (-1.3mm), Center=0.1mm, Turn=-1.0°
+2025-09-06 19:08:14,708 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=44, R=-40 (diff=84)
+2025-09-06 19:08:14,713 - INFO - 🔄 Movement: L=17 ticks (0.5mm), R=-16 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,729 - INFO - 🔄 Movement: L=48 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,729 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=48, R=-43 (diff=91)
+2025-09-06 19:08:14,735 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=-15 ticks (-0.5mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,750 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-42 ticks (-1.3mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,750 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-42 (diff=89)
+2025-09-06 19:08:14,756 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-13 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:14,771 - INFO - 🔄 Movement: L=49 ticks (1.5mm), R=-44 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,772 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=49, R=-44 (diff=93)
+2025-09-06 19:08:14,777 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=-14 ticks (-0.4mm), Center=0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,793 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-43 ticks (-1.4mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,793 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-43 (diff=90)
+2025-09-06 19:08:14,798 - INFO - 🔄 Movement: L=16 ticks (0.5mm), R=-16 ticks (-0.5mm), Center=-0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,814 - INFO - 🔄 Movement: L=47 ticks (1.5mm), R=-42 ticks (-1.3mm), Center=0.1mm, Turn=-1.1°
+2025-09-06 19:08:14,814 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=47, R=-42 (diff=89)
+2025-09-06 19:08:14,819 - INFO - 🔄 Movement: L=14 ticks (0.4mm), R=-14 ticks (-0.4mm), Center=-0.0mm, Turn=-0.3°
+2025-09-06 19:08:14,835 - INFO - 🔄 Movement: L=52 ticks (1.6mm), R=-47 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:14,835 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=52, R=-47 (diff=99)
+2025-09-06 19:08:14,835 - INFO - 🔄 Movement: L=13 ticks (0.4mm), R=-12 ticks (-0.4mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:14,851 - INFO - 🔄 Movement: L=50 ticks (1.6mm), R=-46 ticks (-1.5mm), Center=0.1mm, Turn=-1.2°
+2025-09-06 19:08:14,852 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=50, R=-46 (diff=96)
+2025-09-06 19:08:14,857 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=-9 ticks (-0.3mm), Center=0.0mm, Turn=-0.2°
+2025-09-06 19:08:14,873 - INFO - 🔄 Movement: L=48 ticks (1.5mm), R=-45 ticks (-1.4mm), Center=0.0mm, Turn=-1.1°
+2025-09-06 19:08:14,873 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=48, R=-45 (diff=93)
+2025-09-06 19:08:14,894 - INFO - 🔄 Movement: L=34 ticks (1.1mm), R=-33 ticks (-1.0mm), Center=0.0mm, Turn=-0.8°
+2025-09-06 19:08:14,894 - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=34, R=-33 (diff=67)
+2025-09-06 19:08:14,915 - INFO - 🔄 Movement: L=26 ticks (0.8mm), R=-23 ticks (-0.7mm), Center=0.0mm, Turn=-0.6°
+2025-09-06 19:08:14,936 - INFO - 🔄 Movement: L=18 ticks (0.6mm), R=-18 ticks (-0.6mm), Center=-0.0mm, Turn=-0.4°
+2025-09-06 19:08:14,957 - INFO - 🔄 Movement: L=11 ticks (0.3mm), R=-10 ticks (-0.3mm), Center=0.0mm, Turn=-0.3°
+2025-09-06 19:08:16,857 - INFO - 🛑 Cleaning up...
