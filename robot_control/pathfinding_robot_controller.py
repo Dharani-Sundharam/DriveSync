@@ -237,18 +237,28 @@ class PathfindingRobotController:
         
         if keys[pygame.K_w]:  # Forward
             left_speed = right_speed = 150
+            print("🎮 Manual: FORWARD")
         elif keys[pygame.K_s]:  # Backward
             left_speed = right_speed = -150
-        elif keys[pygame.K_a]:  # Turn left
-            left_speed, right_speed = -120, 120  # Match test script: m -120 120
-        elif keys[pygame.K_d]:  # Turn right
-            left_speed, right_speed = 120, -120  # Match test script: m 120 -120
+            print("🎮 Manual: BACKWARD")
+        elif keys[pygame.K_a]:  # Turn left (SWAPPED - now turns right)
+            left_speed, right_speed = 120, -120  # Swapped: was turn right command
+            print("🎮 Manual: TURN RIGHT (A key)")
+        elif keys[pygame.K_d]:  # Turn right (SWAPPED - now turns left) 
+            left_speed, right_speed = -120, 120  # Swapped: was turn left command
+            print("🎮 Manual: TURN LEFT (D key)")
         
-        # Always send command (even if 0,0 to stop)
-        try:
-            self.robot.send_motor_command(left_speed, right_speed)
-        except Exception as e:
-            print(f"❌ Motor command failed: {e}")
+        # Only send command if it changed (like smooth controller)
+        current_command = (left_speed, right_speed)
+        if not hasattr(self, 'last_manual_command') or current_command != self.last_manual_command:
+            self.last_manual_command = current_command
+            try:
+                self.robot.send_motor_command(left_speed, right_speed)
+                if left_speed != 0 or right_speed != 0:
+                    print(f"🎮 Sent motor command: L={left_speed}, R={right_speed}")
+            except Exception as e:
+                print(f"❌ Motor command failed: {e}")
+                # Don't spam errors - just skip this command
     
     def update(self):
         """Update all systems"""

@@ -127,11 +127,71 @@ class OptimizedRobotController:
                         self.logger.info("✅ Arduino ready and optimized")
                         print("✅ Arduino ready and optimized")
                         return
+                    elif response and ' ' in response:
+                        # Got encoder data - Arduino is responding
+                        self.logger.info(f"✅ Arduino responding on {self.port}")
+                        print(f"✅ Arduino responding on {self.port}")
+                        return
                         
             self.logger.warning("Arduino didn't send READY signal")
             
         except Exception as e:
             self.logger.error(f"❌ Failed to connect: {e}")
+            self.serial_port = None
+    
+    def _manual_connect(self):
+        """Fallback manual connection method"""
+        # Try common ports if none specified
+        if self.port is None:
+            test_ports = ['/dev/ttyUSB0', '/dev/ttyUSB1', '/dev/ttyACM0', '/dev/ttyACM1']
+            print(f"🔍 Testing ports: {test_ports}")
+            
+            for test_port in test_ports:
+                try:
+                    print(f"   Trying {test_port}...")
+                    self.port = test_port
+                    self._establish_optimized_connection()
+                    if self.serial_port:
+                        print(f"✅ Connected to Arduino on {test_port}")
+                        return
+                except:
+                    continue
+            
+            print("❌ Could not connect to any port")
+            self.serial_port = None
+        else:
+            self._establish_optimized_connection()
+    
+    def _establish_optimized_connection(self):
+        """Establish connection with optimized settings"""
+        try:
+            self.serial_port = serial.Serial(
+                self.port, 
+                self.baudrate, 
+                timeout=0.01,  # Very short timeout for responsiveness
+                write_timeout=0.01
+            )
+            time.sleep(2)  # Wait for Arduino reset
+            
+            # Wait for READY signal
+            start_time = time.time()
+            while time.time() - start_time < 5:  # 5 second timeout
+                if self.serial_port.in_waiting:
+                    response = self.serial_port.readline().decode().strip()
+                    if response == "READY":
+                        self.logger.info(f"✅ Arduino ready on {self.port}")
+                        print(f"✅ Arduino ready on {self.port}")
+                        return
+                    elif response and ' ' in response:
+                        # Got encoder data - Arduino is responding
+                        self.logger.info(f"✅ Arduino responding on {self.port}")
+                        print(f"✅ Arduino responding on {self.port}")
+                        return
+                        
+            self.logger.warning(f"Arduino on {self.port} didn't send expected signals")
+            
+        except Exception as e:
+            self.logger.error(f"❌ Failed to connect to {self.port}: {e}")
             self.serial_port = None
             
     def send_motor_command(self, left_speed, right_speed):
@@ -522,14 +582,14 @@ class SmoothVisualizer:
             left_speed = -150  # Left motor backward
             right_speed = -150 # Right motor backward
             command = "BACKWARD"
-        elif keys[pygame.K_a]:  # Turn left (counterclockwise)
-            left_speed = -120  # Fixed motor mapping
-            right_speed = 120  # Fixed motor mapping
-            command = "TURN_LEFT"
-        elif keys[pygame.K_d]:  # Turn right (clockwise)  
-            left_speed = 120   # Fixed motor mapping
-            right_speed = -120 # Fixed motor mapping
+        elif keys[pygame.K_a]:  # Turn left (SWAPPED - now turns right)
+            left_speed = 120   # Swapped: was turn right command
+            right_speed = -120 # Swapped: was turn right command
             command = "TURN_RIGHT"
+        elif keys[pygame.K_d]:  # Turn right (SWAPPED - now turns left)  
+            left_speed = -120  # Swapped: was turn left command
+            right_speed = 120  # Swapped: was turn left command
+            command = "TURN_LEFT"
             
         # Only send command if it changed
         if command != self.current_command:

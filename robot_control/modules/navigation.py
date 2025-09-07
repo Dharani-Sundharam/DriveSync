@@ -26,14 +26,19 @@ class NavigationController:
         # Navigation parameters
         self.waypoint_tolerance = 0.05  # 5cm tolerance to reach waypoint
         self.goal_tolerance = 0.08      # 8cm tolerance to reach final goal
-        self.max_speed = 150            # Maximum motor speed
-        self.turn_speed = 100           # Speed for turning
-        self.approach_speed = 80        # Speed when approaching waypoint
+        self.max_speed = 120            # Maximum motor speed
+        self.turn_speed = 80            # Speed for turning
+        self.approach_speed = 60        # Speed when approaching waypoint
         
-        # PID controller parameters for path following
-        self.kp_linear = 200.0    # Proportional gain for linear velocity
-        self.kp_angular = 300.0   # Proportional gain for angular velocity
-        self.max_angular_error = math.pi / 4  # 45 degrees max correction
+        # PID controller parameters for stable path following
+        self.kp_angular = 150.0   # Proportional gain for angular control
+        self.ki_angular = 0.0     # Integral gain (start with 0)
+        self.kd_angular = 20.0    # Derivative gain for stability
+        
+        # PID state variables
+        self.previous_angular_error = 0.0
+        self.angular_error_integral = 0.0
+        self.last_time = time.time()
         
         # Navigation state
         self.state = NavigationState.IDLE
@@ -64,6 +69,12 @@ class NavigationController:
             self.current_path = path
             self.current_waypoint_index = 0
             self.state = NavigationState.NAVIGATING
+            
+            # Reset PID controller for fresh start
+            self.previous_angular_error = 0.0
+            self.angular_error_integral = 0.0
+            self.last_time = time.time()
+            
             self.logger.info(f"✅ Path planned with {len(path)} waypoints")
             
             # Log the path
@@ -135,65 +146,99 @@ class NavigationController:
         left_speed, right_speed = self._calculate_motor_speeds(current_pos, waypoint)
         
         # Send motor commands
-        self.robot.send_motor_command(left_speed, right_speed)
+        try:
+            self.robot.send_motor_command(left_speed, right_speed)
+        except Exception as e:
+            self.logger.warning(f"⚠️  Motor command failed: {e}")
+            # Continue navigation despite communication error
     
     def _calculate_motor_speeds(self, current_pos: Tuple[float, float], 
                                target_pos: Tuple[float, float]) -> Tuple[int, int]:
-        """Calculate motor speeds for differential drive navigation"""
+        """HUMAN-LIKE DRIVING: Look where you want to go, turn towards it, drive straight"""
         
-        # Calculate target angle
-        dx = target_pos[0] - current_pos[0]
+        # Where do I want to go?
+        dx = target_pos[0] - current_pos[0] 
         dy = target_pos[1] - current_pos[1]
-        target_angle = math.atan2(dy, dx)
-        
-        # Calculate angular error
-        angular_error = target_angle - self.robot.theta
-        
-        # Normalize angular error to [-π, π]
-        while angular_error > math.pi:
-            angular_error -= 2 * math.pi
-        while angular_error < -math.pi:
-            angular_error += 2 * math.pi
-        
-        # Calculate distance to target
         distance = math.sqrt(dx**2 + dy**2)
         
-        # If we need to turn significantly, prioritize turning
-        if abs(angular_error) > math.pi / 6:  # More than 30 degrees
-            # Pure rotation
-            angular_velocity = self.kp_angular * angular_error
-            angular_velocity = max(min(angular_velocity, self.turn_speed), -self.turn_speed)
-            
-            left_speed = int(angular_velocity)   # Fixed to match corrected motor mapping
-            right_speed = -int(angular_velocity) # Fixed to match corrected motor mapping
-            
-            self.logger.debug(f"🔄 Turning: error={math.degrees(angular_error):.1f}°, "
-                            f"L={left_speed}, R={right_speed}")
-        else:
-            # Forward motion with steering
-            base_speed = self.max_speed
-            
-            # Reduce speed when approaching waypoint
-            if distance < 0.3:  # Within 30cm
-                base_speed = self.approach_speed
-            
-            # Calculate steering correction
-            steering = self.kp_angular * angular_error
-            steering = max(min(steering, base_speed), -base_speed)
-            
-            # Apply differential steering
-            left_speed = int(base_speed - steering)
-            right_speed = int(base_speed + steering)
-            
-            # Ensure speeds are within limits
-            left_speed = max(min(left_speed, self.max_speed), -self.max_speed)
-            right_speed = max(min(right_speed, self.max_speed), -self.max_speed)
-            
-            self.logger.debug(f"➡️  Forward: dist={distance:.3f}m, "
-                            f"angle_err={math.degrees(angular_error):.1f}°, "
-                            f"L={left_speed}, R={right_speed}")
+        if distance < 0.05:  # Very close - stop
+            self.logger.info("✅ ARRIVED: At waypoint")
+            return 0, 0
         
+        # Which way am I facing?
+        robot_facing_x = math.cos(self.robot.theta)
+        robot_facing_y = math.sin(self.robot.theta)
+        
+        # Which way should I be facing to reach the target?
+        target_direction_x = dx / distance
+        target_direction_y = dy / distance
+        
+        # Am I facing the right way?
+        # Cross product tells me if I need to turn left or right
+        cross_product = target_direction_x * robot_facing_y - target_direction_y * robot_facing_x
+        
+        # Dot product tells me if I'm facing roughly the right direction
+        dot_product = target_direction_x * robot_facing_x + target_direction_y * robot_facing_y
+        
+        self.logger.info(f"🎯 Target: ({target_pos[0]:.2f}, {target_pos[1]:.2f}), "
+                         f"Dist: {distance:.2f}m, Need turn: {abs(cross_product):.2f}")
+        
+        # HUMAN LOGIC: If I'm not facing the right way, turn first
+        if abs(cross_product) > 0.2:  # Need to turn (about 11 degrees)
+            # Turn towards target
+            if cross_product > 0:
+                left_speed = -80   # Turn left
+                right_speed = 80
+                self.logger.info("🔄 TURN LEFT: Face target")
+            else:
+                left_speed = 80    # Turn right
+                right_speed = -80
+                self.logger.info("🔄 TURN RIGHT: Face target")
+        
+        else:
+            # I'm facing the right way - drive straight!
+            
+            # Choose speed based on distance
+            if distance < 0.1:
+                speed = 50  # Slow when close
+                self.logger.info("🐌 SLOW: Close to target")
+            else:
+                speed = 100  # Normal speed
+                self.logger.info("🚗 DRIVE: Straight to target")
+            
+            # Go straight (equal motor speeds)
+            left_speed = right_speed = speed
+        
+        self.logger.info(f"🎮 Motors: L={left_speed}, R={right_speed}")
         return left_speed, right_speed
+    
+    def _get_path_direction(self, current_pos: Tuple[float, float], 
+                           target_pos: Tuple[float, float]) -> Tuple[float, float]:
+        """Calculate the direction of the yellow line (path segment)"""
+        
+        # If we have multiple waypoints, use the direction between consecutive waypoints
+        if (len(self.current_path) > 1 and 
+            self.current_waypoint_index < len(self.current_path) - 1):
+            
+            # Get current and next waypoint to determine path direction
+            current_waypoint = self.current_path[self.current_waypoint_index]
+            next_waypoint = self.current_path[self.current_waypoint_index + 1]
+            
+            # Direction vector from current to next waypoint (yellow line direction)
+            dx = next_waypoint[0] - current_waypoint[0]
+            dy = next_waypoint[1] - current_waypoint[1]
+            
+        else:
+            # Only one waypoint or last waypoint - use direction to target
+            dx = target_pos[0] - current_pos[0]
+            dy = target_pos[1] - current_pos[1]
+        
+        # Normalize to unit vector
+        length = math.sqrt(dx**2 + dy**2)
+        if length > 0.001:  # Avoid division by zero
+            return dx / length, dy / length
+        else:
+            return 1.0, 0.0  # Default to pointing right
     
     def _handle_turning(self):
         """Handle pure turning state"""

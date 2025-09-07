@@ -18,7 +18,7 @@ def test_encoders():
     
     try:
         # Connect to Arduino
-        ser = serial.Serial('/dev/ttyUSB1', 115200, timeout=2)
+        ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=2)
         time.sleep(3)  # Wait for Arduino reset and setup
         
         print("✅ Connected to Arduino")

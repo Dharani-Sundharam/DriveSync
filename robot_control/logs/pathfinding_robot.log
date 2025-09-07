@@ -1,0 +1,1091 @@
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO - ✅ Arduino ready and optimized
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO - 📐 Differential Drive Specifications:
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO -    Wheel diameter: 5.0 cm
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO -    Wheel base: 15.0 cm
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO -    Left motor: 4993 ticks/rev
+2025-09-07 18:44:44,308 - OptimizedRobot - INFO -    Right motor: 4966 ticks/rev
+2025-09-07 18:44:44,309 - OptimizedRobot - INFO -    Left resolution: 0.031 mm/tick
+2025-09-07 18:44:44,309 - OptimizedRobot - INFO -    Right resolution: 0.032 mm/tick
+2025-09-07 18:44:44,309 - OptimizedRobot - INFO -    360° turn needs: L=14979 ticks, R=14898 ticks
+2025-09-07 18:44:44,309 - OptimizedRobot - INFO - 🔄 High-performance threads started
+2025-09-07 18:44:45,309 - PathfindingRobot - INFO - ✅ Robot controller threads started
+2025-09-07 18:44:45,986 - PathfindingRobot - INFO - 🚀 Pathfinding Robot Controller initialized
+2025-09-07 18:44:45,986 - PathfindingRobot - INFO - 🚀 Starting pathfinding robot controller...
+2025-09-07 18:44:46,027 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,058 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,149 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,176 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,280 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,305 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,330 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,355 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,410 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,434 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,459 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,516 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,595 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,627 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,701 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,729 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,754 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,806 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,835 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,860 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,885 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,911 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:46,966 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,017 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,043 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,068 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,093 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,119 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,146 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,172 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,252 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,369 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,484 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,509 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,561 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,637 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,662 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,721 - PathfindingRobot - INFO - 🎯 Target set: (3.000, 1.953)
+2025-09-07 18:44:47,722 - Navigation - INFO - 🎯 Planning path from (0.0, 0.0) to (3.0, 1.9533333333333334)
+2025-09-07 18:44:47,729 - Navigation - INFO - ✅ Path planned with 4 waypoints
+2025-09-07 18:44:47,729 - Navigation - INFO - 📍 Reached waypoint 1/4
+2025-09-07 18:44:47,747 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,773 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:47,813 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:47,814 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:47,815 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=23 (diff=-54)
+2025-09-07 18:44:47,858 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=25 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:47,858 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=25 (diff=-59)
+2025-09-07 18:44:47,858 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=30 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:47,858 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=30 (diff=-69)
+2025-09-07 18:44:47,891 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:47,896 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:47,897 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=27 (diff=-64)
+2025-09-07 18:44:47,897 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=32 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:47,898 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=32 (diff=-74)
+2025-09-07 18:44:47,932 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=30 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:47,933 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=30 (diff=-68)
+2025-09-07 18:44:47,939 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=33 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:47,939 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=33 (diff=-76)
+2025-09-07 18:44:47,971 - OptimizedRobot - INFO - 🔄 Movement: L=-41 ticks (1.3mm), R=32 ticks (-1.0mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:47,974 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=32 (diff=-73)
+2025-09-07 18:44:47,975 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:47,975 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=26 (diff=-58)
+2025-09-07 18:44:47,980 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:47,994 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=25 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:47,994 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=25 (diff=-56)
+2025-09-07 18:44:47,995 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,019 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,020 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=36 (diff=-81)
+2025-09-07 18:44:48,059 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=30 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,060 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=30 (diff=-67)
+2025-09-07 18:44:48,061 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=37 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,061 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=37 (diff=-83)
+2025-09-07 18:44:48,100 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=28 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,101 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=28 (diff=-63)
+2025-09-07 18:44:48,101 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=38 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,102 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=38 (diff=-84)
+2025-09-07 18:44:48,136 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=28 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,137 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=28 (diff=-64)
+2025-09-07 18:44:48,144 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=39 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,144 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=39 (diff=-85)
+2025-09-07 18:44:48,179 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=30 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,180 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=30 (diff=-66)
+2025-09-07 18:44:48,181 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=39 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,181 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=39 (diff=-85)
+2025-09-07 18:44:48,211 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:48,222 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=28 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,223 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=28 (diff=-63)
+2025-09-07 18:44:48,223 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=38 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,223 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=38 (diff=-85)
+2025-09-07 18:44:48,224 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,262 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=27 ticks (-0.9mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:48,263 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=27 (diff=-60)
+2025-09-07 18:44:48,264 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=38 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,264 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=38 (diff=-85)
+2025-09-07 18:44:48,264 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,291 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:48,302 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:48,303 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=26 (diff=-59)
+2025-09-07 18:44:48,304 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=38 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,305 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=38 (diff=-85)
+2025-09-07 18:44:48,305 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,346 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=25 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:48,347 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=25 (diff=-56)
+2025-09-07 18:44:48,347 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,347 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=36 (diff=-80)
+2025-09-07 18:44:48,347 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:48,383 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,384 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-28, R=24 (diff=-52)
+2025-09-07 18:44:48,385 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,386 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=36 (diff=-80)
+2025-09-07 18:44:48,386 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=16 ticks (-0.5mm), Center=0.0mm, Turn=0.4°
+2025-09-07 18:44:48,424 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,426 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-28, R=23 (diff=-51)
+2025-09-07 18:44:48,426 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=38 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,427 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=38 (diff=-83)
+2025-09-07 18:44:48,427 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:48,466 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=22 ticks (-0.7mm), Center=0.0mm, Turn=0.6°
+2025-09-07 18:44:48,467 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=37 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,467 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=37 (diff=-82)
+2025-09-07 18:44:48,468 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:48,506 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,507 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=37 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,508 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=37 (diff=-82)
+2025-09-07 18:44:48,508 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=19 ticks (-0.6mm), Center=0.0mm, Turn=0.5°
+2025-09-07 18:44:48,548 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:48,549 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=37 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,550 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=37 (diff=-82)
+2025-09-07 18:44:48,550 - OptimizedRobot - INFO - 🔄 Movement: L=-26 ticks (0.8mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,565 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:48,587 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:48,588 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:48,594 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,594 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=24 (diff=-53)
+2025-09-07 18:44:48,607 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:48,633 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=40 ticks (-1.3mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,634 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=40 (diff=-87)
+2025-09-07 18:44:48,635 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:48,635 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=24 (diff=-53)
+2025-09-07 18:44:48,640 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,672 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=40 ticks (-1.3mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,673 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=40 (diff=-87)
+2025-09-07 18:44:48,674 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=9 ticks (-0.3mm), Center=0.0mm, Turn=0.2°
+2025-09-07 18:44:48,679 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=28 ticks (-0.9mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:48,680 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=28 (diff=-62)
+2025-09-07 18:44:48,714 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:48,715 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=29 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:48,715 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=29 (diff=-65)
+2025-09-07 18:44:48,716 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=26 ticks (-0.8mm), Center=0.0mm, Turn=0.7°
+2025-09-07 18:44:48,716 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=26 (diff=-55)
+2025-09-07 18:44:48,721 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:48,753 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=39 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,755 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=39 (diff=-85)
+2025-09-07 18:44:48,760 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=37 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,761 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=37 (diff=-82)
+2025-09-07 18:44:48,794 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:48,795 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=36 (diff=-81)
+2025-09-07 18:44:48,796 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=3 ticks (-0.1mm), Center=0.4mm, Turn=0.4°
+2025-09-07 18:44:48,834 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=-23 ticks (0.7mm), Center=0.8mm, Turn=0.0°
+2025-09-07 18:44:48,835 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-26 ticks (0.8mm), Center=0.6mm, Turn=-0.1°
+2025-09-07 18:44:48,877 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-45 ticks (1.4mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:48,878 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-39 ticks (1.2mm), Center=0.7mm, Turn=-0.4°
+2025-09-07 18:44:48,879 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-11 ticks (0.3mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:48,916 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-56 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:48,917 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-56 (diff=55)
+2025-09-07 18:44:48,918 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-39 ticks (1.2mm), Center=0.6mm, Turn=-0.5°
+2025-09-07 18:44:48,924 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:48,954 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:48,957 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:48,958 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:48,959 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:48,959 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-54 (diff=54)
+2025-09-07 18:44:48,997 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-61 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:48,999 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-61 (diff=61)
+2025-09-07 18:44:48,999 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-27 ticks (0.9mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:49,005 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-38 ticks (1.2mm), Center=0.6mm, Turn=-0.5°
+2025-09-07 18:44:49,028 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,039 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-26 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:49,045 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-36 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:49,046 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-32 ticks (1.0mm), Center=0.6mm, Turn=-0.3°
+2025-09-07 18:44:49,080 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-4 ticks (0.1mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:49,081 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=7 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:49,110 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,120 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=14 ticks (-0.4mm), Center=0.2mm, Turn=0.5°
+2025-09-07 18:44:49,122 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=19 ticks (-0.6mm), Center=0.3mm, Turn=0.7°
+2025-09-07 18:44:49,123 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=19 (diff=-54)
+2025-09-07 18:44:49,161 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=24 ticks (-0.8mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:49,163 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=24 (diff=-63)
+2025-09-07 18:44:49,164 - OptimizedRobot - INFO - 🔄 Movement: L=-41 ticks (1.3mm), R=29 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:49,164 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=29 (diff=-70)
+2025-09-07 18:44:49,191 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,202 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=31 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:49,203 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=31 (diff=-73)
+2025-09-07 18:44:49,204 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=34 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:49,205 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=34 (diff=-79)
+2025-09-07 18:44:49,245 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=33 ticks (-1.0mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:49,246 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=33 (diff=-75)
+2025-09-07 18:44:49,246 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=36 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:49,247 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=36 (diff=-83)
+2025-09-07 18:44:49,286 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:49,287 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=36 (diff=-82)
+2025-09-07 18:44:49,287 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=25 ticks (-0.8mm), Center=0.3mm, Turn=0.8°
+2025-09-07 18:44:49,288 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=25 (diff=-67)
+2025-09-07 18:44:49,327 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=-11 ticks (0.3mm), Center=0.7mm, Turn=0.3°
+2025-09-07 18:44:49,328 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=-27 ticks (0.9mm), Center=0.8mm, Turn=-0.0°
+2025-09-07 18:44:49,354 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,365 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=-37 ticks (1.2mm), Center=0.9mm, Turn=-0.2°
+2025-09-07 18:44:49,372 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-46 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:49,407 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-48 ticks (1.5mm), Center=0.8mm, Turn=-0.5°
+2025-09-07 18:44:49,408 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.6°
+2025-09-07 18:44:49,409 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-2, R=-54 (diff=52)
+2025-09-07 18:44:49,410 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-12 ticks (0.4mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:49,442 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,447 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-49 ticks (1.5mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:49,453 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-60 ticks (1.9mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:49,454 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-60 (diff=60)
+2025-09-07 18:44:49,455 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-13 ticks (0.4mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:49,489 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-50 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:49,490 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:49,491 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:49,491 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-11 ticks (0.3mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:49,523 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,528 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:49,530 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-54 (diff=54)
+2025-09-07 18:44:49,531 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-63 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:49,532 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-63 (diff=63)
+2025-09-07 18:44:49,533 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:49,577 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-49 ticks (1.5mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:49,578 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-63 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:49,579 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-63 (diff=63)
+2025-09-07 18:44:49,580 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-32 ticks (1.0mm), Center=0.5mm, Turn=-0.4°
+2025-09-07 18:44:49,594 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-34 ticks (1.1mm), Center=0.5mm, Turn=-0.4°
+2025-09-07 18:44:49,623 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:49,624 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-64 (diff=63)
+2025-09-07 18:44:49,624 - OptimizedRobot - INFO - 🔄 Movement: L=-6 ticks (0.2mm), R=-23 ticks (0.7mm), Center=0.5mm, Turn=-0.2°
+2025-09-07 18:44:49,665 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=-1 ticks (0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-07 18:44:49,667 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=9 ticks (-0.3mm), Center=0.3mm, Turn=0.4°
+2025-09-07 18:44:49,714 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:49,715 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=18 (diff=-51)
+2025-09-07 18:44:49,716 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=22 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:49,716 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=22 (diff=-59)
+2025-09-07 18:44:49,716 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=8 ticks (-0.3mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:44:49,755 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:49,756 - OptimizedRobot - INFO - 🔄 Movement: L=-40 ticks (1.3mm), R=29 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:49,756 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=29 (diff=-69)
+2025-09-07 18:44:49,757 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:49,795 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:49,796 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=33 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:49,797 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=33 (diff=-77)
+2025-09-07 18:44:49,797 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=14 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:49,827 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:49,839 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=29 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:49,840 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=29 (diff=-66)
+2025-09-07 18:44:49,845 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=31 ticks (-1.0mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:49,862 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=31 (diff=-69)
+2025-09-07 18:44:49,880 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:49,881 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=36 (diff=-82)
+2025-09-07 18:44:49,881 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:49,887 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=14 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:49,921 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=-3 ticks (0.1mm), Center=0.6mm, Turn=0.4°
+2025-09-07 18:44:49,937 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=-19 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-07 18:44:49,953 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:49,964 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=-38 ticks (1.2mm), Center=0.9mm, Turn=-0.2°
+2025-09-07 18:44:49,965 - OptimizedRobot - INFO - 🔄 Movement: L=-10 ticks (0.3mm), R=-29 ticks (0.9mm), Center=0.6mm, Turn=-0.2°
+2025-09-07 18:44:49,970 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-16 ticks (0.5mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:50,004 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-52 ticks (1.6mm), Center=1.0mm, Turn=-0.5°
+2025-09-07 18:44:50,005 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-38 ticks (1.2mm), Center=0.7mm, Turn=-0.4°
+2025-09-07 18:44:50,011 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-16 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:50,045 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-60 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:50,046 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-5, R=-60 (diff=55)
+2025-09-07 18:44:50,047 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-42 ticks (1.3mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:50,047 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-18 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:50,082 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:50,083 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:50,085 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-16 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:50,090 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-45 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:50,125 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-20 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:50,126 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-46 ticks (1.5mm), Center=0.7mm, Turn=-0.6°
+2025-09-07 18:44:50,127 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-46 ticks (1.5mm), Center=0.7mm, Turn=-0.6°
+2025-09-07 18:44:50,132 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:50,167 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-66 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:50,168 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-66 (diff=66)
+2025-09-07 18:44:50,170 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-56 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:50,170 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-56 (diff=56)
+2025-09-07 18:44:50,196 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,207 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:50,208 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:50,213 - OptimizedRobot - INFO - 🔄 Movement: L=-6 ticks (0.2mm), R=-29 ticks (0.9mm), Center=0.6mm, Turn=-0.3°
+2025-09-07 18:44:50,247 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=-2 ticks (0.1mm), Center=0.3mm, Turn=0.2°
+2025-09-07 18:44:50,253 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=7 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:50,278 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,289 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=17 ticks (-0.5mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:50,290 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:50,329 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:50,330 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=27 (diff=-66)
+2025-09-07 18:44:50,330 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=25 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:50,331 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=25 (diff=-62)
+2025-09-07 18:44:50,359 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,371 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=30 ticks (-0.9mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:50,372 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=30 (diff=-73)
+2025-09-07 18:44:50,372 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=2 ticks (-0.1mm), Center=0.5mm, Turn=0.4°
+2025-09-07 18:44:50,409 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=-22 ticks (0.7mm), Center=0.7mm, Turn=0.0°
+2025-09-07 18:44:50,410 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=-30 ticks (0.9mm), Center=0.7mm, Turn=-0.2°
+2025-09-07 18:44:50,451 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-45 ticks (1.4mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:50,452 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-46 ticks (1.5mm), Center=0.8mm, Turn=-0.5°
+2025-09-07 18:44:50,491 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:50,492 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-54 (diff=54)
+2025-09-07 18:44:50,493 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-53 ticks (1.7mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:50,493 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-53 (diff=53)
+2025-09-07 18:44:50,522 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,533 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-60 ticks (1.9mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:50,534 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-60 (diff=60)
+2025-09-07 18:44:50,534 - OptimizedRobot - INFO - 🔄 Movement: L=-6 ticks (0.2mm), R=-34 ticks (1.1mm), Center=0.6mm, Turn=-0.3°
+2025-09-07 18:44:50,572 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=-3 ticks (0.1mm), Center=0.3mm, Turn=0.2°
+2025-09-07 18:44:50,578 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=5 ticks (-0.2mm), Center=0.2mm, Turn=0.2°
+2025-09-07 18:44:50,612 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=16 ticks (-0.5mm), Center=0.3mm, Turn=0.6°
+2025-09-07 18:44:50,613 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:50,653 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:50,654 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=27 (diff=-69)
+2025-09-07 18:44:50,654 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:50,654 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=21 (diff=-51)
+2025-09-07 18:44:50,682 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,692 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=32 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:50,693 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=32 (diff=-78)
+2025-09-07 18:44:50,694 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=4 ticks (-0.1mm), Center=0.5mm, Turn=0.5°
+2025-09-07 18:44:50,733 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=-22 ticks (0.7mm), Center=0.8mm, Turn=0.1°
+2025-09-07 18:44:50,734 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=-27 ticks (0.9mm), Center=0.7mm, Turn=-0.1°
+2025-09-07 18:44:50,767 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,777 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-46 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:50,778 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-50 ticks (1.6mm), Center=0.9mm, Turn=-0.5°
+2025-09-07 18:44:50,813 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.6°
+2025-09-07 18:44:50,814 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-54 (diff=53)
+2025-09-07 18:44:50,820 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-11 ticks (0.3mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:50,821 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-46 ticks (1.5mm), Center=0.7mm, Turn=-0.6°
+2025-09-07 18:44:50,855 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-60 ticks (1.9mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:50,855 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-60 (diff=60)
+2025-09-07 18:44:50,856 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-57 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:50,856 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-57 (diff=57)
+2025-09-07 18:44:50,895 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:50,897 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:50,898 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-39 ticks (1.2mm), Center=0.6mm, Turn=-0.5°
+2025-09-07 18:44:50,898 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-29 ticks (0.9mm), Center=0.5mm, Turn=-0.4°
+2025-09-07 18:44:50,924 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:50,937 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:50,938 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:50,939 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-39 ticks (1.2mm), Center=0.7mm, Turn=-0.4°
+2025-09-07 18:44:50,976 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-4 ticks (0.1mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:50,977 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=8 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:51,006 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,020 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=17 ticks (-0.5mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:51,021 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=23 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:51,022 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=23 (diff=-59)
+2025-09-07 18:44:51,058 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=25 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:51,059 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=25 (diff=-60)
+2025-09-07 18:44:51,059 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:51,059 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:51,060 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=21 (diff=-51)
+2025-09-07 18:44:51,073 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:51,087 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,100 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:51,100 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=23 (diff=-53)
+2025-09-07 18:44:51,101 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=36 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:51,101 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=36 (diff=-82)
+2025-09-07 18:44:51,140 - OptimizedRobot - INFO - 🔄 Movement: L=-41 ticks (1.3mm), R=32 ticks (-1.0mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:51,141 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=32 (diff=-73)
+2025-09-07 18:44:51,141 - OptimizedRobot - INFO - 🔄 Movement: L=-48 ticks (1.5mm), R=39 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:51,141 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=39 (diff=-87)
+2025-09-07 18:44:51,174 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,180 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=34 ticks (-1.1mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:51,181 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=34 (diff=-76)
+2025-09-07 18:44:51,186 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=30 ticks (-0.9mm), Center=0.3mm, Turn=0.9°
+2025-09-07 18:44:51,187 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=30 (diff=-77)
+2025-09-07 18:44:51,221 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=-6 ticks (0.2mm), Center=0.6mm, Turn=0.3°
+2025-09-07 18:44:51,222 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=-25 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-07 18:44:51,260 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=-36 ticks (1.1mm), Center=0.9mm, Turn=-0.2°
+2025-09-07 18:44:51,261 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-46 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:51,301 - OptimizedRobot - INFO - 🔄 Movement: L=-10 ticks (0.3mm), R=-52 ticks (1.6mm), Center=1.0mm, Turn=-0.5°
+2025-09-07 18:44:51,301 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-55 ticks (1.7mm), Center=0.9mm, Turn=-0.6°
+2025-09-07 18:44:51,302 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-4, R=-55 (diff=51)
+2025-09-07 18:44:51,335 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,340 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-59 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:51,341 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-2, R=-59 (diff=57)
+2025-09-07 18:44:51,346 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-61 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:51,347 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-61 (diff=60)
+2025-09-07 18:44:51,381 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:51,382 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:51,388 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:51,388 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:51,416 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,421 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-66 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:51,423 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-66 (diff=66)
+2025-09-07 18:44:51,429 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:51,429 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:51,429 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-15 ticks (0.5mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:51,466 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-53 ticks (1.7mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:51,467 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-53 (diff=53)
+2025-09-07 18:44:51,467 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-48 ticks (1.5mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:51,468 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:51,490 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,501 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-69 ticks (2.2mm), Center=1.1mm, Turn=-0.8°
+2025-09-07 18:44:51,503 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-69 (diff=69)
+2025-09-07 18:44:51,504 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-45 ticks (1.4mm), Center=0.8mm, Turn=-0.5°
+2025-09-07 18:44:51,534 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-6 ticks (0.2mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:51,546 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=6 ticks (-0.2mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:44:51,552 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=8 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:51,584 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=8 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:51,586 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=24 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:51,586 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=24 (diff=-60)
+2025-09-07 18:44:51,610 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:51,627 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:51,628 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=22 (diff=-53)
+2025-09-07 18:44:51,629 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:51,634 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:51,635 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=22 (diff=-52)
+2025-09-07 18:44:51,668 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:51,669 - OptimizedRobot - INFO - 🔄 Movement: L=-46 ticks (1.4mm), R=32 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:51,670 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-46, R=32 (diff=-78)
+2025-09-07 18:44:51,670 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=3 ticks (-0.1mm), Center=0.2mm, Turn=0.2°
+2025-09-07 18:44:51,710 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=-3 ticks (0.1mm), Center=0.4mm, Turn=0.2°
+2025-09-07 18:44:51,711 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=-23 ticks (0.7mm), Center=0.8mm, Turn=0.0°
+2025-09-07 18:44:51,711 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-12 ticks (0.4mm), Center=0.3mm, Turn=-0.0°
+2025-09-07 18:44:51,751 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-24 ticks (0.8mm), Center=0.6mm, Turn=-0.2°
+2025-09-07 18:44:51,752 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-46 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:51,752 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-18 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:51,774 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-33 ticks (1.0mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:51,794 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-22 ticks (0.7mm), Center=0.3mm, Turn=-0.3°
+2025-09-07 18:44:51,799 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-36 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:51,800 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-37 ticks (1.2mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:51,801 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-22 ticks (0.7mm), Center=0.3mm, Turn=-0.3°
+2025-09-07 18:44:51,824 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,845 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-63 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:51,845 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-63 (diff=63)
+2025-09-07 18:44:51,846 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-13 ticks (0.4mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:51,846 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:51,890 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=1 ticks (-0.0mm), Center=0.2mm, Turn=0.2°
+2025-09-07 18:44:51,892 - OptimizedRobot - INFO - 🔄 Movement: L=-26 ticks (0.8mm), R=11 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:51,918 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:51,935 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=13 ticks (-0.4mm), Center=0.2mm, Turn=0.5°
+2025-09-07 18:44:51,936 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=24 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:51,938 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=24 (diff=-62)
+2025-09-07 18:44:51,938 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:51,944 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:51,980 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=32 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:51,980 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=32 (diff=-76)
+2025-09-07 18:44:51,985 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=31 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:51,992 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=31 (diff=-73)
+2025-09-07 18:44:52,018 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=29 ticks (-0.9mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:52,019 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=29 (diff=-72)
+2025-09-07 18:44:52,019 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=3 ticks (-0.1mm), Center=0.3mm, Turn=0.3°
+2025-09-07 18:44:52,025 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-4 ticks (0.1mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:52,058 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=-24 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-07 18:44:52,059 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-20 ticks (0.6mm), Center=0.5mm, Turn=-0.1°
+2025-09-07 18:44:52,064 - OptimizedRobot - INFO - 🔄 Movement: L=-7 ticks (0.2mm), R=-16 ticks (0.5mm), Center=0.4mm, Turn=-0.1°
+2025-09-07 18:44:52,100 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-47 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:52,101 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-36 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:52,106 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-15 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:52,141 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-58 ticks (1.8mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:52,142 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-3, R=-58 (diff=55)
+2025-09-07 18:44:52,142 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-25 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:52,143 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-35 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:52,181 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,182 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:52,183 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:52,183 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-54 (diff=54)
+2025-09-07 18:44:52,189 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-11 ticks (0.3mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:52,224 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,224 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:52,224 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-12 ticks (0.4mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:52,225 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-49 ticks (1.5mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:52,263 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,264 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:52,264 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-61 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:52,265 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-61 (diff=61)
+2025-09-07 18:44:52,303 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-31 ticks (1.0mm), Center=0.6mm, Turn=-0.3°
+2025-09-07 18:44:52,304 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-3 ticks (0.1mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:52,333 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,344 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=11 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:52,345 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=15 ticks (-0.5mm), Center=0.2mm, Turn=0.5°
+2025-09-07 18:44:52,384 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=24 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:52,386 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=24 (diff=-61)
+2025-09-07 18:44:52,386 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:52,387 - OptimizedRobot - INFO - 🔄 Movement: L=-26 ticks (0.8mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:52,400 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:52,415 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,427 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:52,427 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=33 ticks (-1.0mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:52,428 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=33 (diff=-75)
+2025-09-07 18:44:52,465 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=35 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:52,467 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=35 (diff=-79)
+2025-09-07 18:44:52,467 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=33 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:52,468 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=33 (diff=-76)
+2025-09-07 18:44:52,508 - OptimizedRobot - INFO - 🔄 Movement: L=-48 ticks (1.5mm), R=39 ticks (-1.2mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:52,509 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=39 (diff=-87)
+2025-09-07 18:44:52,509 - OptimizedRobot - INFO - 🔄 Movement: L=-40 ticks (1.3mm), R=24 ticks (-0.8mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:52,509 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=24 (diff=-64)
+2025-09-07 18:44:52,547 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=-11 ticks (0.3mm), Center=0.7mm, Turn=0.3°
+2025-09-07 18:44:52,548 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=-25 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-07 18:44:52,577 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,588 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=-42 ticks (1.3mm), Center=0.9mm, Turn=-0.3°
+2025-09-07 18:44:52,589 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-46 ticks (1.5mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:52,627 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-56 ticks (1.8mm), Center=1.0mm, Turn=-0.6°
+2025-09-07 18:44:52,629 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-14 ticks (0.4mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:52,630 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:52,635 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:52,657 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,668 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-46 ticks (1.5mm), Center=0.7mm, Turn=-0.6°
+2025-09-07 18:44:52,670 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-59 ticks (1.9mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:52,671 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-59 (diff=59)
+2025-09-07 18:44:52,708 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-66 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,709 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-66 (diff=66)
+2025-09-07 18:44:52,710 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-63 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,711 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-63 (diff=63)
+2025-09-07 18:44:52,737 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,748 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-67 ticks (2.1mm), Center=1.1mm, Turn=-0.8°
+2025-09-07 18:44:52,749 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-67 (diff=67)
+2025-09-07 18:44:52,751 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:52,752 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:52,791 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-67 ticks (2.1mm), Center=1.1mm, Turn=-0.8°
+2025-09-07 18:44:52,793 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-67 (diff=67)
+2025-09-07 18:44:52,795 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-45 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:52,795 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-20 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:52,827 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,831 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-70 ticks (2.2mm), Center=1.1mm, Turn=-0.8°
+2025-09-07 18:44:52,832 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-70 (diff=70)
+2025-09-07 18:44:52,833 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-45 ticks (1.4mm), Center=0.8mm, Turn=-0.5°
+2025-09-07 18:44:52,869 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-6 ticks (0.2mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:52,871 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=9 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:52,906 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:52,911 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=16 ticks (-0.5mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:52,912 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=23 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:52,914 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=23 (diff=-60)
+2025-09-07 18:44:52,952 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=25 ticks (-0.8mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:52,954 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=25 (diff=-63)
+2025-09-07 18:44:52,955 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:52,955 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=22 (diff=-52)
+2025-09-07 18:44:52,956 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:52,994 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=33 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:52,996 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=33 (diff=-76)
+2025-09-07 18:44:52,997 - OptimizedRobot - INFO - 🔄 Movement: L=-47 ticks (1.5mm), R=36 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:52,998 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-47, R=36 (diff=-83)
+2025-09-07 18:44:53,034 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=34 ticks (-1.1mm), Center=0.1mm, Turn=0.9°
+2025-09-07 18:44:53,035 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=34 (diff=-77)
+2025-09-07 18:44:53,036 - OptimizedRobot - INFO - 🔄 Movement: L=-48 ticks (1.5mm), R=38 ticks (-1.2mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:53,037 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-48, R=38 (diff=-86)
+2025-09-07 18:44:53,077 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=32 ticks (-1.0mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:44:53,077 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=32 (diff=-70)
+2025-09-07 18:44:53,078 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=20 ticks (-0.6mm), Center=0.4mm, Turn=0.8°
+2025-09-07 18:44:53,079 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=20 (diff=-64)
+2025-09-07 18:44:53,099 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=-15 ticks (0.5mm), Center=0.6mm, Turn=0.1°
+2025-09-07 18:44:53,116 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=-18 ticks (0.6mm), Center=0.5mm, Turn=-0.0°
+2025-09-07 18:44:53,117 - OptimizedRobot - INFO - 🔄 Movement: L=-9 ticks (0.3mm), R=-15 ticks (0.5mm), Center=0.4mm, Turn=-0.1°
+2025-09-07 18:44:53,123 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-24 ticks (0.8mm), Center=0.6mm, Turn=-0.2°
+2025-09-07 18:44:53,157 - OptimizedRobot - INFO - 🔄 Movement: L=-7 ticks (0.2mm), R=-20 ticks (0.6mm), Center=0.4mm, Turn=-0.2°
+2025-09-07 18:44:53,159 - OptimizedRobot - INFO - 🔄 Movement: L=-10 ticks (0.3mm), R=-50 ticks (1.6mm), Center=0.9mm, Turn=-0.5°
+2025-09-07 18:44:53,160 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-14 ticks (0.4mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:53,197 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:53,199 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-58 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:53,199 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-58 (diff=58)
+2025-09-07 18:44:53,200 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-14 ticks (0.4mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:53,237 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-50 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:53,238 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:53,239 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:53,240 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-16 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:53,278 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-51 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:53,279 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-51 (diff=51)
+2025-09-07 18:44:53,280 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:53,280 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:53,280 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:53,318 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-52 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:53,319 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-52 (diff=52)
+2025-09-07 18:44:53,321 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:53,322 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:53,322 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:53,359 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-23 ticks (0.7mm), Center=0.4mm, Turn=-0.2°
+2025-09-07 18:44:53,360 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=-5 ticks (0.2mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:53,399 - OptimizedRobot - INFO - 🔄 Movement: L=-20 ticks (0.6mm), R=8 ticks (-0.3mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:53,400 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=17 ticks (-0.5mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:53,430 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:53,443 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:53,443 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:53,449 - OptimizedRobot - INFO - 🔄 Movement: L=-26 ticks (0.8mm), R=19 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:53,467 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:53,484 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:53,484 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=23 ticks (-0.7mm), Center=0.3mm, Turn=0.8°
+2025-09-07 18:44:53,485 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=23 (diff=-65)
+2025-09-07 18:44:53,485 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-2 ticks (0.1mm), Center=0.2mm, Turn=0.1°
+2025-09-07 18:44:53,522 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=-10 ticks (0.3mm), Center=0.4mm, Turn=0.1°
+2025-09-07 18:44:53,523 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=-31 ticks (1.0mm), Center=0.8mm, Turn=-0.1°
+2025-09-07 18:44:53,524 - OptimizedRobot - INFO - 🔄 Movement: L=-6 ticks (0.2mm), R=-14 ticks (0.4mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:53,564 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-27 ticks (0.9mm), Center=0.6mm, Turn=-0.2°
+2025-09-07 18:44:53,565 - OptimizedRobot - INFO - 🔄 Movement: L=-9 ticks (0.3mm), R=-51 ticks (1.6mm), Center=0.9mm, Turn=-0.5°
+2025-09-07 18:44:53,566 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-23 ticks (0.7mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:53,602 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-30 ticks (0.9mm), Center=0.5mm, Turn=-0.4°
+2025-09-07 18:44:53,603 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-61 ticks (1.9mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:53,605 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-61 (diff=61)
+2025-09-07 18:44:53,606 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-26 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:53,640 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:53,646 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-35 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:53,647 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:53,648 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-64 (diff=63)
+2025-09-07 18:44:53,648 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-21 ticks (0.7mm), Center=0.4mm, Turn=-0.2°
+2025-09-07 18:44:53,661 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-11 ticks (0.3mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:53,686 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=-3 ticks (0.1mm), Center=0.3mm, Turn=0.2°
+2025-09-07 18:44:53,702 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=8 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:53,715 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:53,726 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:53,728 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=18 (diff=-51)
+2025-09-07 18:44:53,729 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=12 ticks (-0.4mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:53,735 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:53,767 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=29 ticks (-0.9mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:53,768 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=29 (diff=-71)
+2025-09-07 18:44:53,784 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:53,800 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=27 (diff=-66)
+2025-09-07 18:44:53,812 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=21 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:53,814 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=21 (diff=-56)
+2025-09-07 18:44:53,814 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.4mm, Turn=0.3°
+2025-09-07 18:44:53,825 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=-5 ticks (0.2mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:53,853 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=-26 ticks (0.8mm), Center=0.8mm, Turn=-0.0°
+2025-09-07 18:44:53,859 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-30 ticks (0.9mm), Center=0.7mm, Turn=-0.2°
+2025-09-07 18:44:53,892 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-11 ticks (0.3mm), Center=0.2mm, Turn=-0.1°
+2025-09-07 18:44:53,893 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-35 ticks (1.1mm), Center=0.7mm, Turn=-0.3°
+2025-09-07 18:44:53,894 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-39 ticks (1.2mm), Center=0.7mm, Turn=-0.4°
+2025-09-07 18:44:53,900 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:53,932 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-57 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:53,933 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-57 (diff=57)
+2025-09-07 18:44:53,934 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-45 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:53,940 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-17 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:53,968 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:53,973 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:53,975 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:53,976 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-42 ticks (1.3mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:54,015 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-10 ticks (0.3mm), Center=0.4mm, Turn=0.0°
+2025-09-07 18:44:54,016 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=5 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:54,063 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=13 ticks (-0.4mm), Center=0.3mm, Turn=0.5°
+2025-09-07 18:44:54,064 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=22 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:54,064 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=22 (diff=-59)
+2025-09-07 18:44:54,105 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=23 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:54,106 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=23 (diff=-59)
+2025-09-07 18:44:54,106 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=8 ticks (-0.3mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:44:54,112 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:54,113 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=23 (diff=-55)
+2025-09-07 18:44:54,113 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:54,119 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:54,140 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,153 - OptimizedRobot - INFO - 🔄 Movement: L=-43 ticks (1.4mm), R=31 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:54,154 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-43, R=31 (diff=-74)
+2025-09-07 18:44:54,155 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=1 ticks (-0.0mm), Center=0.4mm, Turn=0.3°
+2025-09-07 18:44:54,182 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=-24 ticks (0.8mm), Center=0.8mm, Turn=0.0°
+2025-09-07 18:44:54,211 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,216 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=-36 ticks (1.1mm), Center=0.9mm, Turn=-0.2°
+2025-09-07 18:44:54,226 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-38 ticks (1.2mm), Center=0.8mm, Turn=-0.3°
+2025-09-07 18:44:54,243 - OptimizedRobot - INFO - 🔄 Movement: L=-7 ticks (0.2mm), R=-53 ticks (1.7mm), Center=0.9mm, Turn=-0.6°
+2025-09-07 18:44:54,266 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,282 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-52 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:54,294 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-52 (diff=51)
+2025-09-07 18:44:54,301 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-36 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:54,302 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-26 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:54,303 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-60 ticks (1.9mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:54,304 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-60 (diff=60)
+2025-09-07 18:44:54,324 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,329 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-57 ticks (1.8mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:54,330 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-57 (diff=57)
+2025-09-07 18:44:54,330 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-28 ticks (0.9mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:54,356 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-36 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:54,361 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-48 ticks (1.5mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:54,376 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-20 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:54,387 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:54,388 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:54,388 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-15 ticks (0.5mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:54,413 - OptimizedRobot - INFO - 🔄 Movement: L=-6 ticks (0.2mm), R=-26 ticks (0.8mm), Center=0.5mm, Turn=-0.2°
+2025-09-07 18:44:54,450 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=7 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:54,467 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=15 ticks (-0.5mm), Center=0.2mm, Turn=0.5°
+2025-09-07 18:44:54,488 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,495 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=22 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:54,496 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=22 (diff=-58)
+2025-09-07 18:44:54,497 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:44:54,518 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:54,519 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:54,519 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=24 (diff=-56)
+2025-09-07 18:44:54,550 - OptimizedRobot - INFO - 🔄 Movement: L=-45 ticks (1.4mm), R=34 ticks (-1.1mm), Center=0.2mm, Turn=1.0°
+2025-09-07 18:44:54,551 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-45, R=34 (diff=-79)
+2025-09-07 18:44:54,552 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:54,577 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:54,578 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=24 (diff=-56)
+2025-09-07 18:44:54,579 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=25 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:54,579 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=25 (diff=-56)
+2025-09-07 18:44:54,597 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,603 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:54,603 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:54,603 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=27 (diff=-69)
+2025-09-07 18:44:54,630 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=-5 ticks (0.2mm), Center=0.6mm, Turn=0.4°
+2025-09-07 18:44:54,652 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,658 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=-19 ticks (0.6mm), Center=0.6mm, Turn=-0.0°
+2025-09-07 18:44:54,659 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=-26 ticks (0.8mm), Center=0.6mm, Turn=-0.1°
+2025-09-07 18:44:54,684 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-13 ticks (0.4mm), Center=0.3mm, Turn=-0.1°
+2025-09-07 18:44:54,685 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-44 ticks (1.4mm), Center=0.9mm, Turn=-0.4°
+2025-09-07 18:44:54,704 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,710 - OptimizedRobot - INFO - 🔄 Movement: L=-8 ticks (0.3mm), R=-55 ticks (1.7mm), Center=1.0mm, Turn=-0.6°
+2025-09-07 18:44:54,711 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-13 ticks (0.4mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:54,737 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:54,740 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-18 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:54,764 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-45 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:54,775 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-64 ticks (2.0mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:54,787 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-64 (diff=64)
+2025-09-07 18:44:54,791 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:54,792 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:54,803 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-25 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:54,824 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:54,834 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:54,851 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=-12 ticks (0.4mm), Center=0.4mm, Turn=0.0°
+2025-09-07 18:44:54,870 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:54,878 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=6 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:54,905 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=10 ticks (-0.3mm), Center=0.2mm, Turn=0.4°
+2025-09-07 18:44:54,905 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=6 ticks (-0.2mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:44:54,915 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=21 ticks (-0.7mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:44:54,916 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=21 (diff=-57)
+2025-09-07 18:44:54,935 - OptimizedRobot - INFO - 🔄 Movement: L=-40 ticks (1.3mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:54,954 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=27 (diff=-67)
+2025-09-07 18:44:54,962 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:44:54,986 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:54,989 - OptimizedRobot - INFO - 🔄 Movement: L=-42 ticks (1.3mm), R=32 ticks (-1.0mm), Center=0.2mm, Turn=0.9°
+2025-09-07 18:44:54,998 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-42, R=32 (diff=-74)
+2025-09-07 18:44:55,015 - OptimizedRobot - INFO - 🔄 Movement: L=-44 ticks (1.4mm), R=35 ticks (-1.1mm), Center=0.1mm, Turn=1.0°
+2025-09-07 18:44:55,016 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-44, R=35 (diff=-79)
+2025-09-07 18:44:55,037 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,048 - OptimizedRobot - INFO - 🔄 Movement: L=-40 ticks (1.3mm), R=18 ticks (-0.6mm), Center=0.3mm, Turn=0.7°
+2025-09-07 18:44:55,048 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-40, R=18 (diff=-58)
+2025-09-07 18:44:55,056 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-3 ticks (0.1mm), Center=0.3mm, Turn=0.1°
+2025-09-07 18:44:55,062 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=-12 ticks (0.4mm), Center=0.5mm, Turn=0.1°
+2025-09-07 18:44:55,073 - OptimizedRobot - INFO - 🔄 Movement: L=-20 ticks (0.6mm), R=-30 ticks (0.9mm), Center=0.8mm, Turn=-0.1°
+2025-09-07 18:44:55,073 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=-41 ticks (1.3mm), Center=0.9mm, Turn=-0.3°
+2025-09-07 18:44:55,093 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,098 - OptimizedRobot - INFO - 🔄 Movement: L=-10 ticks (0.3mm), R=-50 ticks (1.6mm), Center=0.9mm, Turn=-0.5°
+2025-09-07 18:44:55,099 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-33 ticks (1.0mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:55,126 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-24 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:55,126 - OptimizedRobot - INFO - 🔄 Movement: L=-1 ticks (0.0mm), R=-52 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:55,127 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-1, R=-52 (diff=51)
+2025-09-07 18:44:55,146 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,151 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:55,151 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:55,171 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-54 ticks (1.7mm), Center=0.9mm, Turn=-0.7°
+2025-09-07 18:44:55,173 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-54 (diff=54)
+2025-09-07 18:44:55,174 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-24 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:55,197 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-43 ticks (1.4mm), Center=0.7mm, Turn=-0.5°
+2025-09-07 18:44:55,199 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-41 ticks (1.3mm), Center=0.6mm, Turn=-0.5°
+2025-09-07 18:44:55,228 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-24 ticks (0.8mm), Center=0.4mm, Turn=-0.3°
+2025-09-07 18:44:55,229 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-65 ticks (2.1mm), Center=1.0mm, Turn=-0.8°
+2025-09-07 18:44:55,229 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-65 (diff=65)
+2025-09-07 18:44:55,250 - OptimizedRobot - INFO - 🔄 Movement: L=-3 ticks (0.1mm), R=-45 ticks (1.4mm), Center=0.8mm, Turn=-0.5°
+2025-09-07 18:44:55,273 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=-9 ticks (0.3mm), Center=0.3mm, Turn=0.0°
+2025-09-07 18:44:55,302 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=5 ticks (-0.2mm), Center=0.2mm, Turn=0.3°
+2025-09-07 18:44:55,302 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:44:55,328 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=7 ticks (-0.2mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:44:55,329 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=20 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:55,329 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=20 (diff=-52)
+2025-09-07 18:44:55,347 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,354 - OptimizedRobot - INFO - 🔄 Movement: L=-41 ticks (1.3mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:44:55,355 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-41, R=27 (diff=-68)
+2025-09-07 18:44:55,374 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:44:55,376 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=24 (diff=-57)
+2025-09-07 18:44:55,377 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:44:55,400 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:44:55,407 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=18 ticks (-0.6mm), Center=0.2mm, Turn=0.6°
+2025-09-07 18:44:55,408 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-07 18:44:55,430 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=-13 ticks (0.4mm), Center=0.6mm, Turn=0.2°
+2025-09-07 18:44:55,453 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=-32 ticks (1.0mm), Center=0.9mm, Turn=-0.1°
+2025-09-07 18:44:55,472 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,478 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-38 ticks (1.2mm), Center=0.8mm, Turn=-0.3°
+2025-09-07 18:44:55,479 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-21 ticks (0.7mm), Center=0.4mm, Turn=-0.2°
+2025-09-07 18:44:55,506 - OptimizedRobot - INFO - 🔄 Movement: L=-5 ticks (0.2mm), R=-31 ticks (1.0mm), Center=0.6mm, Turn=-0.3°
+2025-09-07 18:44:55,507 - OptimizedRobot - INFO - 🔄 Movement: L=-4 ticks (0.1mm), R=-41 ticks (1.3mm), Center=0.7mm, Turn=-0.4°
+2025-09-07 18:44:55,515 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-13 ticks (0.4mm), Center=0.2mm, Turn=-0.2°
+2025-09-07 18:44:55,531 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-62 ticks (2.0mm), Center=1.0mm, Turn=-0.7°
+2025-09-07 18:44:55,532 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-62 (diff=62)
+2025-09-07 18:44:55,555 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-51 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:55,556 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=0, R=-51 (diff=51)
+2025-09-07 18:44:55,556 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-20 ticks (0.6mm), Center=0.3mm, Turn=-0.2°
+2025-09-07 18:44:55,576 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-46 ticks (1.5mm), Center=0.7mm, Turn=-0.6°
+2025-09-07 18:44:55,579 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-29 ticks (0.9mm), Center=0.5mm, Turn=-0.4°
+2025-09-07 18:44:55,603 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:44:55,609 - OptimizedRobot - INFO - 🔄 Movement: L=0 ticks (-0.0mm), R=-35 ticks (1.1mm), Center=0.6mm, Turn=-0.4°
+2025-09-07 18:44:55,610 - OptimizedRobot - INFO - 🔄 Movement: L=-2 ticks (0.1mm), R=-51 ticks (1.6mm), Center=0.8mm, Turn=-0.6°
+2025-09-07 18:44:55,633 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=-16 ticks (0.5mm), Center=0.5mm, Turn=-0.0°
+2025-09-07 18:44:55,657 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=5 ticks (-0.2mm), Center=0.3mm, Turn=0.3°
+2025-09-07 18:44:55,660 - PathfindingRobot - INFO - 🧹 Cleaning up...
+2025-09-07 18:44:55,661 - Navigation - INFO - ⏹️  Navigation stopped
+2025-09-07 18:44:55,661 - OptimizedRobot - INFO - 🛑 Cleaning up...
+2025-09-07 18:44:55,829 - PathfindingRobot - INFO - 👋 Pathfinding robot controller stopped
+2025-09-07 18:45:36,789 - OptimizedRobot - INFO - ✅ Arduino ready and optimized
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO - 📐 Differential Drive Specifications:
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Wheel diameter: 5.0 cm
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Wheel base: 15.0 cm
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Left motor: 4993 ticks/rev
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Right motor: 4966 ticks/rev
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Left resolution: 0.031 mm/tick
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    Right resolution: 0.032 mm/tick
+2025-09-07 18:45:36,790 - OptimizedRobot - INFO -    360° turn needs: L=14979 ticks, R=14898 ticks
+2025-09-07 18:45:36,791 - OptimizedRobot - INFO - 🔄 High-performance threads started
+2025-09-07 18:45:37,791 - PathfindingRobot - INFO - ✅ Robot controller threads started
+2025-09-07 18:45:38,520 - PathfindingRobot - INFO - 🚀 Pathfinding Robot Controller initialized
+2025-09-07 18:45:38,520 - PathfindingRobot - INFO - 🚀 Starting pathfinding robot controller...
+2025-09-07 18:45:40,042 - PathfindingRobot - INFO - 🎯 Target set: (3.060, 1.960)
+2025-09-07 18:45:40,043 - Navigation - INFO - 🎯 Planning path from (0.0, 0.0) to (3.06, 1.96)
+2025-09-07 18:45:40,044 - Navigation - INFO - ✅ Path planned with 14 waypoints
+2025-09-07 18:45:40,045 - Navigation - INFO - 📍 Reached waypoint 1/14
+2025-09-07 18:45:40,045 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 1.00
+2025-09-07 18:45:40,045 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,045 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,111 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,118 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 1.00
+2025-09-07 18:45:40,118 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,118 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,141 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,164 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,166 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,171 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 1.00
+2025-09-07 18:45:40,172 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,172 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,195 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:45:40,196 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,196 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=21 (diff=-51)
+2025-09-07 18:45:40,219 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,220 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=26 (diff=-61)
+2025-09-07 18:45:40,243 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,244 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=24 (diff=-57)
+2025-09-07 18:45:40,249 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 1.00
+2025-09-07 18:45:40,249 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,249 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,268 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:45:40,270 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=26 (diff=-62)
+2025-09-07 18:45:40,271 - OptimizedRobot - INFO - 🔄 Movement: L=-26 ticks (0.8mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,293 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,299 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.99
+2025-09-07 18:45:40,300 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,300 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,323 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=25 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:45:40,324 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=25 (diff=-60)
+2025-09-07 18:45:40,324 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=7 ticks (-0.2mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:45:40,343 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,344 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,351 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.99
+2025-09-07 18:45:40,352 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,352 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,370 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,376 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,377 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=23 (diff=-55)
+2025-09-07 18:45:40,396 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=27 ticks (-0.9mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,397 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=27 (diff=-61)
+2025-09-07 18:45:40,402 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.98
+2025-09-07 18:45:40,403 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,403 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,427 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,427 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=26 (diff=-61)
+2025-09-07 18:45:40,427 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,451 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,453 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=19 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,456 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.98
+2025-09-07 18:45:40,456 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,456 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,463 - OptimizedRobot - INFO - 🔄 Movement: L=-12 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:45:40,482 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:40,482 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=27 (diff=-64)
+2025-09-07 18:45:40,502 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,503 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=23 (diff=-55)
+2025-09-07 18:45:40,507 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.97
+2025-09-07 18:45:40,508 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,508 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,531 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,532 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,550 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,557 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,558 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=7 ticks (-0.2mm), Center=0.1mm, Turn=0.2°
+2025-09-07 18:45:40,560 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.96
+2025-09-07 18:45:40,560 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,560 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,585 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:45:40,586 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=26 (diff=-62)
+2025-09-07 18:45:40,605 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,611 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.95
+2025-09-07 18:45:40,611 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,611 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,619 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,634 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,646 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,661 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,662 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=23 (diff=-53)
+2025-09-07 18:45:40,665 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.94
+2025-09-07 18:45:40,666 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,666 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,690 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:40,691 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=28 (diff=-66)
+2025-09-07 18:45:40,691 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=14 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,712 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,715 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=19 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,719 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.93
+2025-09-07 18:45:40,720 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,720 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,737 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,752 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=27 ticks (-0.9mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,759 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=27 (diff=-62)
+2025-09-07 18:45:40,764 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=8 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,769 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=20 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,770 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=14 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,772 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.91
+2025-09-07 18:45:40,772 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,772 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,796 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,807 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,814 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=22 (diff=-53)
+2025-09-07 18:45:40,826 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.90
+2025-09-07 18:45:40,827 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,827 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,833 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:40,844 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=27 (diff=-66)
+2025-09-07 18:45:40,858 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,866 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=23 (diff=-54)
+2025-09-07 18:45:40,874 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:40,878 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:40,880 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:40,881 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.88
+2025-09-07 18:45:40,881 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,881 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,905 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=29 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:45:40,913 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=29 (diff=-67)
+2025-09-07 18:45:40,931 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.87
+2025-09-07 18:45:40,931 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,931 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,938 - OptimizedRobot - INFO - 🔄 Movement: L=-33 ticks (1.0mm), R=25 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:40,944 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-33, R=25 (diff=-58)
+2025-09-07 18:45:40,952 - OptimizedRobot - INFO - 🔄 Movement: L=-18 ticks (0.6mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,958 - OptimizedRobot - INFO - 🔄 Movement: L=-20 ticks (0.6mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:40,982 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=26 ticks (-0.8mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:40,984 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=26 (diff=-63)
+2025-09-07 18:45:40,987 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.85
+2025-09-07 18:45:40,987 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:40,987 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:40,994 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,004 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=26 (diff=-60)
+2025-09-07 18:45:41,019 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:45:41,025 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=26 (diff=-62)
+2025-09-07 18:45:41,038 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,041 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.84
+2025-09-07 18:45:41,041 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,042 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,056 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,066 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,068 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=26 (diff=-60)
+2025-09-07 18:45:41,091 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,092 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=27 (diff=-66)
+2025-09-07 18:45:41,094 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=8 ticks (-0.3mm), Center=0.0mm, Turn=0.2°
+2025-09-07 18:45:41,095 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.81
+2025-09-07 18:45:41,095 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,095 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,102 - OptimizedRobot - INFO - 🔄 Movement: L=-27 ticks (0.8mm), R=19 ticks (-0.6mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,122 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,137 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,146 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,150 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.80
+2025-09-07 18:45:41,150 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,150 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,164 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,167 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=28 (diff=-66)
+2025-09-07 18:45:41,170 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,170 - OptimizedRobot - INFO - 🔄 Movement: L=-15 ticks (0.5mm), R=11 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,171 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,181 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,193 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=18 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,201 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.77
+2025-09-07 18:45:41,201 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,201 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,210 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=10 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:45:41,225 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,226 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=28 (diff=-66)
+2025-09-07 18:45:41,245 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=27 ticks (-0.9mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,247 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=27 (diff=-62)
+2025-09-07 18:45:41,248 - OptimizedRobot - INFO - 🔄 Movement: L=-32 ticks (1.0mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,249 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-32, R=24 (diff=-56)
+2025-09-07 18:45:41,252 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.74
+2025-09-07 18:45:41,253 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,253 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,273 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,275 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=22 (diff=-51)
+2025-09-07 18:45:41,296 - OptimizedRobot - INFO - 🔄 Movement: L=-24 ticks (0.8mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,298 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,305 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.72
+2025-09-07 18:45:41,305 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,305 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,312 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,323 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=22 (diff=-51)
+2025-09-07 18:45:41,324 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,331 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,331 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=28 (diff=-67)
+2025-09-07 18:45:41,331 - OptimizedRobot - INFO - 🔄 Movement: L=-13 ticks (0.4mm), R=9 ticks (-0.3mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,350 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,356 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.69
+2025-09-07 18:45:41,357 - OptimizedRobot - INFO - 🔄 Movement: L=-16 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:45:41,357 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,357 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,378 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,384 - OptimizedRobot - INFO - 🔄 Movement: L=-23 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,407 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,408 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=27 (diff=-64)
+2025-09-07 18:45:41,408 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,408 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=27 (diff=-64)
+2025-09-07 18:45:41,410 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.66
+2025-09-07 18:45:41,410 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,411 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,434 - OptimizedRobot - INFO - 🔄 Movement: L=-35 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,434 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-35, R=26 (diff=-61)
+2025-09-07 18:45:41,434 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,452 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=17 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,454 - OptimizedRobot - INFO - 🔄 Movement: L=-20 ticks (0.6mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,463 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.64
+2025-09-07 18:45:41,464 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,464 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,482 - OptimizedRobot - INFO - 🔄 Movement: L=-19 ticks (0.6mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,489 - OptimizedRobot - INFO - 🔄 Movement: L=-36 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.2mm, Turn=0.7°
+2025-09-07 18:45:41,489 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-36, R=26 (diff=-62)
+2025-09-07 18:45:41,509 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=29 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:45:41,511 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=29 (diff=-67)
+2025-09-07 18:45:41,515 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.61
+2025-09-07 18:45:41,515 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,515 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,533 - OptimizedRobot - INFO - 🔄 Movement: L=-34 ticks (1.1mm), R=26 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,535 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-34, R=26 (diff=-60)
+2025-09-07 18:45:41,546 - OptimizedRobot - INFO - 🔄 Movement: L=-22 ticks (0.7mm), R=16 ticks (-0.5mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,563 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=13 ticks (-0.4mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,564 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,565 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=22 (diff=-53)
+2025-09-07 18:45:41,568 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.40m, Need turn: 0.58
+2025-09-07 18:45:41,568 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,568 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,592 - OptimizedRobot - INFO - 🔄 Movement: L=-39 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,593 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-39, R=28 (diff=-67)
+2025-09-07 18:45:41,617 - OptimizedRobot - INFO - 🔄 Movement: L=-29 ticks (0.9mm), R=22 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,618 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-29, R=22 (diff=-51)
+2025-09-07 18:45:41,621 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.39m, Need turn: 0.55
+2025-09-07 18:45:41,622 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,622 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,647 - OptimizedRobot - INFO - 🔄 Movement: L=-31 ticks (1.0mm), R=23 ticks (-0.7mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,648 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-31, R=23 (diff=-54)
+2025-09-07 18:45:41,656 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,669 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=27 (diff=-65)
+2025-09-07 18:45:41,673 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=29 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:45:41,675 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=29 (diff=-67)
+2025-09-07 18:45:41,676 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.39m, Need turn: 0.52
+2025-09-07 18:45:41,676 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,676 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,685 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,697 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,704 - OptimizedRobot - INFO - 🔄 Movement: L=-21 ticks (0.7mm), R=15 ticks (-0.5mm), Center=0.1mm, Turn=0.4°
+2025-09-07 18:45:41,707 - OptimizedRobot - INFO - 🔄 Movement: L=-30 ticks (0.9mm), R=24 ticks (-0.8mm), Center=0.1mm, Turn=0.7°
+2025-09-07 18:45:41,724 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-30, R=24 (diff=-54)
+2025-09-07 18:45:41,733 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.1mm, Turn=0.8°
+2025-09-07 18:45:41,736 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=28 (diff=-65)
+2025-09-07 18:45:41,737 - OptimizedRobot - INFO - 🔄 Movement: L=-14 ticks (0.4mm), R=11 ticks (-0.3mm), Center=0.0mm, Turn=0.3°
+2025-09-07 18:45:41,738 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.39m, Need turn: 0.48
+2025-09-07 18:45:41,738 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,738 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,757 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,761 - OptimizedRobot - INFO - 🔄 Movement: L=-25 ticks (0.8mm), R=19 ticks (-0.6mm), Center=0.1mm, Turn=0.5°
+2025-09-07 18:45:41,773 - OptimizedRobot - INFO - 🔄 Movement: L=-28 ticks (0.9mm), R=21 ticks (-0.7mm), Center=0.1mm, Turn=0.6°
+2025-09-07 18:45:41,780 - OptimizedRobot - INFO - 🔄 Movement: L=-11 ticks (0.3mm), R=9 ticks (-0.3mm), Center=0.0mm, Turn=0.2°
+2025-09-07 18:45:41,788 - OptimizedRobot - INFO - 🔄 Movement: L=-37 ticks (1.2mm), R=27 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,790 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-37, R=27 (diff=-64)
+2025-09-07 18:45:41,792 - Navigation - INFO - 🎯 Target: (0.00, 0.40), Dist: 0.39m, Need turn: 0.45
+2025-09-07 18:45:41,792 - Navigation - INFO - 🔄 TURN RIGHT: Face target
+2025-09-07 18:45:41,792 - Navigation - INFO - 🎮 Motors: L=80, R=-80
+2025-09-07 18:45:41,810 - OptimizedRobot - WARNING - Command send error: Write timeout
+2025-09-07 18:45:41,818 - OptimizedRobot - INFO - 🔄 Movement: L=-38 ticks (1.2mm), R=28 ticks (-0.9mm), Center=0.2mm, Turn=0.8°
+2025-09-07 18:45:41,820 - PathfindingRobot - INFO - 🧹 Cleaning up...
+2025-09-07 18:45:41,820 - OptimizedRobot - WARNING - ⚠️  CIRCULAR MOTION DETECTED! Large wheel difference: L=-38, R=28 (diff=-66)
+2025-09-07 18:45:41,820 - OptimizedRobot - INFO - 🔄 Movement: L=-17 ticks (0.5mm), R=12 ticks (-0.4mm), Center=0.1mm, Turn=0.3°
+2025-09-07 18:45:41,820 - Navigation - INFO - ⏹️  Navigation stopped
+2025-09-07 18:45:41,820 - OptimizedRobot - INFO - 🛑 Cleaning up...
+2025-09-07 18:45:41,987 - PathfindingRobot - INFO - 👋 Pathfinding robot controller stopped
