@@ -164,8 +164,8 @@ class NavigationController:
             angular_velocity = self.kp_angular * angular_error
             angular_velocity = max(min(angular_velocity, self.turn_speed), -self.turn_speed)
             
-            left_speed = -int(angular_velocity)
-            right_speed = int(angular_velocity)
+            left_speed = int(angular_velocity)   # Fixed to match corrected motor mapping
+            right_speed = -int(angular_velocity) # Fixed to match corrected motor mapping
             
             self.logger.debug(f"🔄 Turning: error={math.degrees(angular_error):.1f}°, "
                             f"L={left_speed}, R={right_speed}")

@@ -30,7 +30,7 @@ except ImportError:
 class PathfindingRobotController:
     """Main controller for pathfinding robot system"""
     
-    def __init__(self, port='/dev/ttyUSB1', baudrate=115200):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200):
         # Setup logging
         self.setup_logging()
         self.logger = logging.getLogger('PathfindingRobot')
@@ -240,9 +240,9 @@ class PathfindingRobotController:
         elif keys[pygame.K_s]:  # Backward
             left_speed = right_speed = -150
         elif keys[pygame.K_a]:  # Turn left
-            left_speed, right_speed = -120, 120
+            left_speed, right_speed = -120, 120  # Match test script: m -120 120
         elif keys[pygame.K_d]:  # Turn right
-            left_speed, right_speed = 120, -120
+            left_speed, right_speed = 120, -120  # Match test script: m 120 -120
         
         # Always send command (even if 0,0 to stop)
         try:
@@ -540,5 +540,18 @@ class PathfindingRobotController:
         self.logger.info("👋 Pathfinding robot controller stopped")
 
 if __name__ == "__main__":
-    controller = PathfindingRobotController(port='/dev/ttyUSB1')  # Use correct port
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Pathfinding Robot Controller')
+    parser.add_argument('--port', '-p', default='/dev/ttyUSB0', 
+                       help='Arduino serial port (default: /dev/ttyUSB0)')
+    parser.add_argument('--baudrate', '-b', type=int, default=115200,
+                       help='Serial baudrate (default: 115200)')
+    
+    args = parser.parse_args()
+    
+    print(f"🔌 Using Arduino port: {args.port}")
+    print(f"📡 Using baudrate: {args.baudrate}")
+    
+    controller = PathfindingRobotController(port=args.port, baudrate=args.baudrate)
     controller.run()

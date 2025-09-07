@@ -19,7 +19,7 @@ from datetime import datetime
 import queue
 
 class OptimizedRobotController:
-    def __init__(self, port='/dev/ttyUSB1', baudrate=115200):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200):
         # Setup logging (less verbose for performance)
         self.setup_logging(logging.INFO)
         self.logger = logging.getLogger('OptimizedRobot')
@@ -198,8 +198,10 @@ class OptimizedRobotController:
     def update_odometry(self, new_encoder_a, new_encoder_b):
         """Accurate differential drive odometry with your exact specifications"""
         # Calculate encoder deltas
-        delta_left = new_encoder_a - self.last_encoder_a   # Left wheel (Motor A)
-        delta_right = new_encoder_b - self.last_encoder_b  # Right wheel (Motor B)
+        # CORRECTED MAPPING based on actual test results:
+        # Encoder A = RIGHT wheel (NEGATED), Encoder B = LEFT wheel
+        delta_left = new_encoder_b - self.last_encoder_b   # Left wheel (Encoder B)
+        delta_right = -(new_encoder_a - self.last_encoder_a)  # Right wheel (Encoder A NEGATED)
         
         # Only update if there's movement
         if abs(delta_left) < 1 and abs(delta_right) < 1:
@@ -209,12 +211,16 @@ class OptimizedRobotController:
         distance_left = delta_left * self.LEFT_METERS_PER_TICK
         distance_right = delta_right * self.RIGHT_METERS_PER_TICK
         
+        # NEGATE ENTIRE DISTANCE to reverse forward/backward direction
+        distance_left = -distance_left
+        distance_right = -distance_right
+        
         # Differential drive kinematics
         # Linear velocity (forward/backward motion)
         distance_center = (distance_left + distance_right) / 2.0
         
-        # Angular velocity (rotation)
-        delta_theta = (distance_right - distance_left) / self.WHEEL_BASE
+        # Angular velocity (rotation) - Fixed for corrected motor mapping
+        delta_theta = (distance_left - distance_right) / self.WHEEL_BASE
         
         # Calculate new position using differential drive equations
         if abs(delta_theta) < 1e-6:
@@ -517,12 +523,12 @@ class SmoothVisualizer:
             right_speed = -150 # Right motor backward
             command = "BACKWARD"
         elif keys[pygame.K_a]:  # Turn left (counterclockwise)
-            left_speed = -120  # Left motor backward
-            right_speed = 120  # Right motor forward
+            left_speed = -120  # Fixed motor mapping
+            right_speed = 120  # Fixed motor mapping
             command = "TURN_LEFT"
         elif keys[pygame.K_d]:  # Turn right (clockwise)  
-            left_speed = 120   # Left motor forward
-            right_speed = -120 # Right motor backward
+            left_speed = 120   # Fixed motor mapping
+            right_speed = -120 # Fixed motor mapping
             command = "TURN_RIGHT"
             
         # Only send command if it changed
