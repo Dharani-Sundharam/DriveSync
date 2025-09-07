@@ -12,6 +12,7 @@ from enum import Enum
 class NavigationState(Enum):
     IDLE = "idle"
     NAVIGATING = "navigating"
+    PAUSED = "paused"           # Added for collision avoidance
     REACHED_GOAL = "reached_goal"
     PATH_BLOCKED = "path_blocked"
     TURNING = "turning"
@@ -107,6 +108,10 @@ class NavigationController:
             self._navigate_to_current_waypoint()
         elif self.state == NavigationState.TURNING:
             self._handle_turning()
+        elif self.state == NavigationState.PAUSED:
+            # Stay paused - don't move, just maintain position
+            self.robot.send_motor_command(0, 0)
+            # Navigation will resume when resume_navigation() is called
     
     def _navigate_to_current_waypoint(self):
         """Navigate towards the current waypoint"""
@@ -254,9 +259,34 @@ class NavigationController:
         self.robot.send_motor_command(0, 0)
         self.logger.info("⏹️  Navigation stopped")
     
+    def pause_navigation(self):
+        """Pause current navigation (for collision avoidance)"""
+        if self.state == NavigationState.NAVIGATING:
+            self.state = NavigationState.PAUSED
+            self.robot.send_motor_command(0, 0)  # Stop motors immediately
+            self.logger.info("⏸️  Navigation PAUSED for safety")
+        elif self.state == NavigationState.TURNING:
+            self.state = NavigationState.PAUSED
+            self.robot.send_motor_command(0, 0)  # Stop motors immediately
+            self.logger.info("⏸️  Turning PAUSED for safety")
+    
+    def resume_navigation(self):
+        """Resume paused navigation"""
+        if self.state == NavigationState.PAUSED:
+            if self.current_path and self.current_waypoint_index < len(self.current_path):
+                self.state = NavigationState.NAVIGATING
+                self.logger.info("▶️  Navigation RESUMED")
+            else:
+                self.logger.warning("⚠️  Cannot resume - no valid path")
+                self.state = NavigationState.IDLE
+    
     def is_navigating(self) -> bool:
         """Check if robot is currently navigating"""
         return self.state in [NavigationState.NAVIGATING, NavigationState.TURNING]
+    
+    def is_paused(self) -> bool:
+        """Check if navigation is paused"""
+        return self.state == NavigationState.PAUSED
     
     def get_current_waypoint(self) -> Optional[Tuple[float, float]]:
         """Get the current target waypoint"""

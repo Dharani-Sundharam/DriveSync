@@ -15,6 +15,7 @@ from typing import Optional, Tuple
 from modules.map_environment import MapEnvironment
 from modules.pathfinding import AStarPathfinder, RRTPathfinder
 from modules.navigation import NavigationController, NavigationState
+from collision_avoidance_system import CollisionAvoidanceSystem, SafetyState
 
 # Import the robot controller from smooth_robot_controller
 try:
@@ -30,7 +31,7 @@ except ImportError:
 class PathfindingRobotController:
     """Main controller for pathfinding robot system"""
     
-    def __init__(self, port='/dev/ttyUSB0', baudrate=115200):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=True):
         # Setup logging
         self.setup_logging()
         self.logger = logging.getLogger('PathfindingRobot')
@@ -45,6 +46,28 @@ class PathfindingRobotController:
             self.logger.info("✅ Robot controller threads started")
         else:
             self.logger.error("❌ Failed to connect to Arduino")
+        
+        # Initialize collision avoidance system
+        self.enable_collision_avoidance = enable_collision_avoidance
+        self.collision_avoidance = None
+        if enable_collision_avoidance:
+            try:
+                self.collision_avoidance = CollisionAvoidanceSystem(
+                    camera_id=0,
+                    confidence_threshold=0.4,
+                    model_name='yolov8n.pt'
+                )
+                self.collision_avoidance.start()
+                self.logger.info("✅ Collision avoidance system started")
+            except Exception as e:
+                self.logger.error(f"❌ Failed to start collision avoidance: {e}")
+                self.collision_avoidance = None
+        
+        # Safety state tracking
+        self.last_safety_check = time.time()
+        self.safety_check_interval = 0.005  # Check every 50ms
+        self.is_safety_stopped = False
+        self.safety_stop_time = 0
         
         # Set robot to start at center of map (on road intersection)
         self.robot.x = 0.0  # Center X
@@ -62,7 +85,7 @@ class PathfindingRobotController:
         
         # Create fullscreen display
         self.screen = pygame.display.set_mode((self.width, self.height), pygame.FULLSCREEN)
-        pygame.display.set_caption("🤖 Pathfinding Robot Controller - Press ESC to exit")
+        pygame.display.set_caption("🤖 Pathfinding Robot Controller with Collision Avoidance - Press ESC to exit")
         
         # Colors
         self.BLACK = (0, 0, 0)
@@ -79,6 +102,12 @@ class PathfindingRobotController:
         self.font = pygame.font.Font(None, 24)
         self.small_font = pygame.font.Font(None, 18)
         self.large_font = pygame.font.Font(None, 32)
+        
+        # Safety colors
+        self.SAFETY_GREEN = (0, 255, 0)      # Safe to move
+        self.SAFETY_RED = (255, 0, 0)        # Danger - stopped
+        self.SAFETY_YELLOW = (255, 255, 0)   # Checking path
+        self.SAFETY_ORANGE = (255, 165, 0)   # Emergency
         
         # Initialize map environment with larger scale for better visibility
         self.map_env = MapEnvironment(self.width, self.height, scale=150.0)
@@ -118,6 +147,63 @@ class PathfindingRobotController:
                 logging.StreamHandler()
             ]
         )
+    
+    def check_collision_avoidance(self):
+        """Check collision avoidance system and manage robot safety"""
+        if not self.collision_avoidance:
+            return True  # No collision avoidance - always safe
+        
+        try:
+            current_time = time.time()
+            
+            # Check safety at regular intervals
+            if current_time - self.last_safety_check < self.safety_check_interval:
+                return not self.is_safety_stopped
+            
+            self.last_safety_check = current_time
+            
+            # Get latest safety status
+            is_safe = self.collision_avoidance.is_safe_to_move()
+            latest_detection = self.collision_avoidance.get_latest_detection()
+            
+            if not is_safe and not self.is_safety_stopped:
+                # PAUSE for safety
+                try:
+                    self.robot.send_motor_command(0, 0)  # Stop motors
+                except Exception as e:
+                    self.logger.warning(f"⚠️  Motor stop failed: {e}")
+                
+                self.is_safety_stopped = True
+                self.safety_stop_time = current_time
+                
+                # Pause navigation if active (don't stop completely)
+                if self.navigator.is_navigating():
+                    self.navigator.pause_navigation()
+                
+                # Log the safety pause
+                if latest_detection and latest_detection.get('objects'):
+                    objects = latest_detection['objects']
+                    object_names = [obj['name'] for obj in objects]
+                    self.logger.warning(f"🚨 SAFETY PAUSE: {', '.join(object_names)} detected!")
+                else:
+                    self.logger.warning(f"🚨 SAFETY PAUSE: Objects detected in path!")
+                    
+            elif is_safe and self.is_safety_stopped:
+                # Path is clear - can resume
+                self.is_safety_stopped = False
+                stop_duration = current_time - self.safety_stop_time
+                self.logger.info(f"✅ Path clear - resuming movement (paused for {stop_duration:.1f}s)")
+                
+                # Resume navigation if it was paused
+                if self.navigator.is_paused():
+                    self.navigator.resume_navigation()
+            
+            return not self.is_safety_stopped
+            
+        except Exception as e:
+            self.logger.error(f"❌ Collision avoidance error: {e}")
+            # On error, assume unsafe to be safe
+            return False
     
     def handle_events(self):
         """Handle pygame events"""
@@ -229,7 +315,12 @@ class PathfindingRobotController:
                 self.navigator.set_target(nearest[0], nearest[1], self.current_pathfinder)
     
     def handle_manual_control(self):
-        """Handle manual keyboard control when not navigating"""
+        """Handle manual keyboard control when not navigating - WITH COLLISION AVOIDANCE"""
+        # SAFETY FIRST: Check collision avoidance
+        if not self.check_collision_avoidance():
+            # Safety stop active - no manual control allowed
+            return
+        
         keys = pygame.key.get_pressed()
         
         left_speed = 0
@@ -261,11 +352,16 @@ class PathfindingRobotController:
                 # Don't spam errors - just skip this command
     
     def update(self):
-        """Update all systems"""
+        """Update all systems - WITH COLLISION AVOIDANCE"""
+        # SAFETY FIRST: Always check collision avoidance
+        is_safe_to_move = self.check_collision_avoidance()
+        
         # Robot controller runs in its own threads, no need to update manually
         
-        # Update navigation
-        self.navigator.update()
+        # Update navigation ONLY if safe to move
+        if is_safe_to_move:
+            self.navigator.update()
+        # If not safe, navigation is paused automatically in check_collision_avoidance()
         
         # Update performance tracking
         current_time = time.time()
@@ -432,9 +528,38 @@ class PathfindingRobotController:
             self.screen.blit(mouse_surface, (20, self.height - 40))
             self.screen.blit(road_surface, (20, self.height - 20))
         
+        # COLLISION AVOIDANCE STATUS
+        if self.collision_avoidance:
+            status = self.collision_avoidance.get_safety_status()
+            state = status['state']
+            
+            # Safety status color
+            if state == 'safe':
+                safety_color = self.SAFETY_GREEN
+                safety_text = "🟢 SAFE"
+            elif state == 'danger':
+                safety_color = self.SAFETY_RED
+                safety_text = "🔴 DANGER - STOPPED"
+            elif state == 'checking':
+                safety_color = self.SAFETY_YELLOW
+                safety_text = f"🟡 CHECKING ({status['clear_check_count']}/{status['required_checks']})"
+            else:
+                safety_color = self.SAFETY_ORANGE
+                safety_text = "🟠 EMERGENCY"
+            
+            # Draw safety status
+            safety_surface = self.font.render(safety_text, True, safety_color)
+            self.screen.blit(safety_surface, (self.width - 300, 20))
+            
+            # Additional safety info
+            if status['total_detections'] > 0:
+                detection_text = f"Total Objects Detected: {status['total_detections']}"
+                detection_surface = self.small_font.render(detection_text, True, self.WHITE)
+                self.screen.blit(detection_surface, (self.width - 300, 45))
+        
         # Performance info
         fps_text = self.small_font.render(f"FPS: {self.fps:.1f}", True, self.WHITE)
-        self.screen.blit(fps_text, (self.width - 100, 20))
+        self.screen.blit(fps_text, (self.width - 100, 70))
         
         # Instructions
         help_text = self.small_font.render("Press 'H' for help", True, self.LIGHT_GRAY)
@@ -537,6 +662,11 @@ class PathfindingRobotController:
     def cleanup(self):
         """Cleanup resources"""
         self.logger.info("🧹 Cleaning up...")
+        
+        # Stop collision avoidance system
+        if self.collision_avoidance:
+            self.collision_avoidance.stop()
+            self.logger.info("✅ Collision avoidance system stopped")
         
         # Stop navigation
         self.navigator.stop_navigation()
