@@ -1,2 +1,0 @@
-2025-09-06 16:56:04,912 - ERROR - ❌ Failed to connect: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
-2025-09-06 16:56:04,912 - INFO - 🚀 Optimized Robot Controller Initialized
