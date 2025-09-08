@@ -346,11 +346,11 @@ class MapEnvironment:
         for road in self.roads:
             self._draw_road(screen, road)
         
-        # Draw boundaries
+        # Draw boundaries (thinner for small display)
         for boundary in self.boundaries:
             start_screen = self.world_to_screen(*boundary['start'])
             end_screen = self.world_to_screen(*boundary['end'])
-            pygame.draw.line(screen, self.BOUNDARY_COLOR, start_screen, end_screen, 5)
+            pygame.draw.line(screen, self.BOUNDARY_COLOR, start_screen, end_screen, 3)
         
         # Draw obstacles
         for obstacle in self.obstacles:
@@ -359,14 +359,14 @@ class MapEnvironment:
             pygame.draw.circle(screen, self.OBSTACLE_COLOR, center_screen, radius_pixels)
     
     def _draw_road(self, screen, road):
-        """Draw a single road with enhanced visibility"""
+        """Draw a single road with enhanced visibility (scaled for small display)"""
         if road['type'] == 'horizontal':
             start_screen = self.world_to_screen(road['x_start'], road['y'])
             end_screen = self.world_to_screen(road['x_end'], road['y'])
             width_pixels = int(road['width'] * self.scale)
             
-            # Draw road as thick line with border
-            pygame.draw.line(screen, (80, 80, 80), start_screen, end_screen, width_pixels + 4)  # Dark border
+            # Draw road as thick line with border (smaller border for small display)
+            pygame.draw.line(screen, (80, 80, 80), start_screen, end_screen, width_pixels + 2)  # Dark border
             pygame.draw.line(screen, self.ROAD_COLOR, start_screen, end_screen, width_pixels)  # Main road
             
         elif road['type'] == 'vertical':
@@ -374,8 +374,8 @@ class MapEnvironment:
             end_screen = self.world_to_screen(road['x'], road['y_end'])
             width_pixels = int(road['width'] * self.scale)
             
-            # Draw road as thick line with border
-            pygame.draw.line(screen, (80, 80, 80), start_screen, end_screen, width_pixels + 4)  # Dark border
+            # Draw road as thick line with border (smaller border for small display)
+            pygame.draw.line(screen, (80, 80, 80), start_screen, end_screen, width_pixels + 2)  # Dark border
             pygame.draw.line(screen, self.ROAD_COLOR, start_screen, end_screen, width_pixels)  # Main road
     
     def draw_path(self, screen, path: List[Tuple[float, float]]):
@@ -392,12 +392,16 @@ class MapEnvironment:
         if len(screen_points) > 1:
             pygame.draw.lines(screen, self.PATH_COLOR, False, screen_points, 4)
         
-        # Draw waypoints
+        # Draw waypoints (adaptive to screen size)
+        waypoint_size = max(3, int(min(self.width, self.height) / 80))  # Adaptive waypoint size
         for point in screen_points:
-            pygame.draw.circle(screen, self.WAYPOINT_COLOR, point, 6)
+            pygame.draw.circle(screen, self.WAYPOINT_COLOR, point, waypoint_size)
     
     def draw_target(self, screen, target_x: float, target_y: float):
-        """Draw the target location"""
+        """Draw the target location (adaptive to screen size)"""
         target_screen = self.world_to_screen(target_x, target_y)
-        pygame.draw.circle(screen, (255, 0, 255), target_screen, 12)  # Magenta target
-        pygame.draw.circle(screen, (255, 255, 255), target_screen, 8)  # White center
+        # Adaptive target size based on screen resolution
+        target_size = max(6, int(min(self.width, self.height) / 50))
+        inner_size = max(3, target_size // 2)
+        pygame.draw.circle(screen, (255, 0, 255), target_screen, target_size)  # Magenta target
+        pygame.draw.circle(screen, (255, 255, 255), target_screen, inner_size)  # White center

@@ -31,7 +31,7 @@ except ImportError:
 class PathfindingRobotController:
     """Main controller for pathfinding robot system"""
     
-    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=True):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=False):
         # Setup logging
         self.setup_logging()
         self.logger = logging.getLogger('PathfindingRobot')
@@ -75,17 +75,19 @@ class PathfindingRobotController:
         self.robot.theta = 0.0  # Facing right
         self.robot.path = [(0.0, 0.0)]  # Reset path
         
-        # Initialize Pygame with fullscreen
+        # Initialize Pygame with Pi's current resolution
         pygame.init()
         
-        # Get display info for fullscreen
+        # Auto-detect Pi's current display resolution
         display_info = pygame.display.Info()
         self.width = display_info.current_w
         self.height = display_info.current_h
         
-        # Create fullscreen display
-        self.screen = pygame.display.set_mode((self.width, self.height), pygame.FULLSCREEN)
-        pygame.display.set_caption("🤖 Pathfinding Robot Controller with Collision Avoidance - Press ESC to exit")
+        # Create display matching Pi's resolution
+        self.screen = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption(f"🤖 Robot Controller ({self.width}x{self.height}) - Press ESC to exit")
+        
+        self.logger.info(f"🖥️  Using display resolution: {self.width}x{self.height}")
         
         # Colors
         self.BLACK = (0, 0, 0)
@@ -98,10 +100,14 @@ class PathfindingRobotController:
         self.MAGENTA = (255, 0, 255)
         self.LIGHT_GRAY = (200, 200, 200)
         
-        # Initialize fonts
-        self.font = pygame.font.Font(None, 24)
-        self.small_font = pygame.font.Font(None, 18)
-        self.large_font = pygame.font.Font(None, 32)
+        # Initialize fonts (adaptive to screen resolution)
+        # Base font sizes on screen height for better scaling
+        base_font_size = max(10, int(self.height / 30))  # Minimum 10px, scale with height
+        self.font = pygame.font.Font(None, base_font_size)
+        self.small_font = pygame.font.Font(None, max(8, int(base_font_size * 0.7)))
+        self.large_font = pygame.font.Font(None, int(base_font_size * 1.3))
+        
+        self.logger.info(f"🔤 Font sizes: large={int(base_font_size * 1.3)}, normal={base_font_size}, small={max(8, int(base_font_size * 0.7))}")
         
         # Safety colors
         self.SAFETY_GREEN = (0, 255, 0)      # Safe to move
@@ -109,8 +115,14 @@ class PathfindingRobotController:
         self.SAFETY_YELLOW = (255, 255, 0)   # Checking path
         self.SAFETY_ORANGE = (255, 165, 0)   # Emergency
         
-        # Initialize map environment with larger scale for better visibility
-        self.map_env = MapEnvironment(self.width, self.height, scale=150.0)
+        # Calculate optimal scale based on display resolution
+        # Use smaller dimension to ensure map fits completely
+        min_dimension = min(self.width, self.height)
+        optimal_scale = min_dimension / 8.0  # 8 meters world size fits in smaller dimension
+        self.logger.info(f"📏 Using map scale: {optimal_scale:.1f} pixels/meter")
+        
+        # Initialize map environment with auto-calculated scale
+        self.map_env = MapEnvironment(self.width, self.height, scale=optimal_scale)
         
         # Initialize pathfinding algorithms
         self.astar = AStarPathfinder(self.map_env)
@@ -391,12 +403,13 @@ class PathfindingRobotController:
         if self.selected_target:
             self.map_env.draw_target(self.screen, *self.selected_target)
         
-        # Draw current waypoint
+        # Draw current waypoint (adaptive to screen resolution)
         current_waypoint = self.navigator.get_current_waypoint()
         if current_waypoint:
             waypoint_screen = self.map_env.world_to_screen(*current_waypoint)
-            pygame.draw.circle(self.screen, self.CYAN, waypoint_screen, 10)
-            pygame.draw.circle(self.screen, self.WHITE, waypoint_screen, 6)
+            waypoint_size = max(4, int(min(self.width, self.height) / 60))  # Adaptive waypoint size
+            pygame.draw.circle(self.screen, self.CYAN, waypoint_screen, waypoint_size)
+            pygame.draw.circle(self.screen, self.WHITE, waypoint_screen, max(2, waypoint_size // 2))
         
         # Draw UI
         self.draw_ui()
@@ -421,11 +434,11 @@ class PathfindingRobotController:
                 pygame.draw.lines(self.screen, self.GREEN, False, screen_points, 2)
     
     def draw_robot(self):
-        """Draw the robot with enhanced visualization"""
+        """Draw the robot with enhanced visualization (adaptive to screen resolution)"""
         robot_x, robot_y = self.map_env.world_to_screen(self.robot.x, self.robot.y)
         
-        # Robot body
-        robot_size = 28
+        # Robot body (adaptive sizing based on screen resolution)
+        robot_size = max(10, int(min(self.width, self.height) / 25))  # Scale with screen size, min 10px
         cos_theta = math.cos(self.robot.theta)
         sin_theta = math.sin(self.robot.theta)
         
@@ -459,111 +472,80 @@ class PathfindingRobotController:
         pygame.draw.circle(self.screen, self.WHITE, (robot_x, robot_y), 3)
     
     def draw_ui(self):
-        """Draw user interface elements"""
-        # Background for UI
-        ui_rect = pygame.Rect(10, 10, 350, 250)
-        pygame.draw.rect(self.screen, (0, 0, 0, 128), ui_rect)
-        pygame.draw.rect(self.screen, self.WHITE, ui_rect, 2)
+        """Draw user interface elements (minimal to avoid road interference)"""
+        # Much smaller UI panel - only essential info
+        ui_width = min(80, int(self.width * 0.25))   # Much smaller: max 80px or 25% width
+        ui_height = min(60, int(self.height * 0.15)) # Much smaller: max 60px or 15% height
+        ui_rect = pygame.Rect(3, 3, ui_width, ui_height)
+        pygame.draw.rect(self.screen, (0, 0, 0, 180), ui_rect)  # More transparent
+        pygame.draw.rect(self.screen, self.WHITE, ui_rect, 1)
         
-        y_offset = 20
+        y_offset = 5
         
-        # Title
-        title = self.large_font.render("🤖 Pathfinding Robot", True, self.CYAN)
-        self.screen.blit(title, (20, y_offset))
-        y_offset += 35
-        
-        # Robot status
+        # Minimal robot status (very compact)
         status_lines = [
-            f"Position: ({self.robot.x:.3f}, {self.robot.y:.3f}) m",
-            f"Heading: {math.degrees(self.robot.theta):.1f}°",
-            f"Motors: L={self.robot.left_speed}, R={self.robot.right_speed}",
-            f"Encoders: L={self.robot.encoder_a}, R={self.robot.encoder_b}",
+            f"({self.robot.x:.1f},{self.robot.y:.1f})",
+            f"{math.degrees(self.robot.theta):.0f}°",
         ]
         
         for line in status_lines:
             text = self.small_font.render(line, True, self.WHITE)
-            self.screen.blit(text, (20, y_offset))
-            y_offset += 20
+            self.screen.blit(text, (5, y_offset))
+            y_offset += 10
         
-        # Robot placement mode indicator
-        if self.robot_placement_mode:
-            placement_text = self.font.render("🎯 ROBOT PLACEMENT MODE", True, self.MAGENTA)
-            self.screen.blit(placement_text, (20, y_offset))
-            y_offset += 25
-            
-            instruction_text = self.small_font.render("Click anywhere to place robot", True, self.CYAN)
-            self.screen.blit(instruction_text, (20, y_offset))
-            y_offset += 20
-        
-        # Navigation status
+        # Navigation status (ultra compact)
         nav_info = self.navigator.get_navigation_info()
-        y_offset += 10
+        if nav_info['state'] == 'navigating':
+            nav_text = f"→{self.pathfinder_name}"
+            color = self.GREEN
+        else:
+            nav_text = nav_info['state'][:4].upper()
+            color = self.WHITE
+            
+        text = self.small_font.render(nav_text, True, color)
+        self.screen.blit(text, (5, y_offset))
         
-        nav_title = self.font.render("Navigation Status:", True, self.YELLOW)
-        self.screen.blit(nav_title, (20, y_offset))
-        y_offset += 25
+        # Robot placement mode indicator (if active)
+        if self.robot_placement_mode:
+            placement_text = self.small_font.render("🎯", True, self.MAGENTA)
+            self.screen.blit(placement_text, (ui_width - 15, 5))
         
-        nav_lines = [
-            f"State: {nav_info['state'].upper()}",
-            f"Algorithm: {self.pathfinder_name}",
-            f"Waypoint: {nav_info['waypoint_index']}/{nav_info['total_waypoints']}",
-            f"Progress: {nav_info['progress_percent']:.1f}%"
-        ]
-        
-        for line in nav_lines:
-            color = self.GREEN if nav_info['state'] == 'navigating' else self.WHITE
-            text = self.small_font.render(line, True, color)
-            self.screen.blit(text, (20, y_offset))
-            y_offset += 18
-        
-        # Mouse position
+        # Mouse position - bottom left (very compact)
         if self.mouse_world_pos:
-            mouse_text = f"Mouse: ({self.mouse_world_pos[0]:.3f}, {self.mouse_world_pos[1]:.3f})"
-            on_road = "ON ROAD" if self.map_env.is_point_on_road(*self.mouse_world_pos) else "OFF ROAD"
-            mouse_color = self.GREEN if "ON" in on_road else self.RED
+            mouse_text = f"({self.mouse_world_pos[0]:.1f},{self.mouse_world_pos[1]:.1f})"
+            on_road = "✓" if self.map_env.is_point_on_road(*self.mouse_world_pos) else "✗"
+            mouse_color = self.GREEN if "✓" in on_road else self.RED
             
-            mouse_surface = self.small_font.render(mouse_text, True, self.LIGHT_GRAY)
-            road_surface = self.small_font.render(on_road, True, mouse_color)
-            
-            self.screen.blit(mouse_surface, (20, self.height - 40))
-            self.screen.blit(road_surface, (20, self.height - 20))
+            # Single line at bottom
+            combined_text = f"{mouse_text} {on_road}"
+            mouse_surface = self.small_font.render(combined_text, True, mouse_color)
+            self.screen.blit(mouse_surface, (3, self.height - 12))
         
-        # COLLISION AVOIDANCE STATUS
+        # COLLISION AVOIDANCE STATUS - top right corner (minimal)
         if self.collision_avoidance:
             status = self.collision_avoidance.get_safety_status()
             state = status['state']
             
-            # Safety status color
             if state == 'safe':
+                safety_text = "●"
                 safety_color = self.SAFETY_GREEN
-                safety_text = "🟢 SAFE"
             elif state == 'danger':
+                safety_text = "●"
                 safety_color = self.SAFETY_RED
-                safety_text = "🔴 DANGER - STOPPED"
-            elif state == 'checking':
-                safety_color = self.SAFETY_YELLOW
-                safety_text = f"🟡 CHECKING ({status['clear_check_count']}/{status['required_checks']})"
             else:
-                safety_color = self.SAFETY_ORANGE
-                safety_text = "🟠 EMERGENCY"
+                safety_text = "●"
+                safety_color = self.SAFETY_YELLOW
             
-            # Draw safety status
-            safety_surface = self.font.render(safety_text, True, safety_color)
-            self.screen.blit(safety_surface, (self.width - 300, 20))
-            
-            # Additional safety info
-            if status['total_detections'] > 0:
-                detection_text = f"Total Objects Detected: {status['total_detections']}"
-                detection_surface = self.small_font.render(detection_text, True, self.WHITE)
-                self.screen.blit(detection_surface, (self.width - 300, 45))
+            # Very small indicator in corner
+            safety_surface = self.small_font.render(safety_text, True, safety_color)
+            self.screen.blit(safety_surface, (self.width - 12, 3))
         
-        # Performance info
-        fps_text = self.small_font.render(f"FPS: {self.fps:.1f}", True, self.WHITE)
-        self.screen.blit(fps_text, (self.width - 100, 70))
+        # Performance and help info - bottom right (minimal)
+        fps_text = self.small_font.render(f"{self.fps:.0f}", True, self.WHITE)
+        self.screen.blit(fps_text, (self.width - 20, self.height - 12))
         
-        # Instructions
-        help_text = self.small_font.render("Press 'H' for help", True, self.LIGHT_GRAY)
-        self.screen.blit(help_text, (self.width - 150, self.height - 20))
+        help_text = self.small_font.render("H", True, self.LIGHT_GRAY)
+        self.screen.blit(help_text, (self.width - 30, self.height - 12))
     
     def draw_help(self):
         """Draw help overlay"""
