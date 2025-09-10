@@ -205,10 +205,13 @@ class LidarEnhancedPathfindingController:
                     # Check for obstacles and update avoidance
                     clearance = self.check_robot_clearance()
                     
-                    # Apply obstacle avoidance if needed
-                    if not clearance['safe'] and hasattr(self.base_controller, 'apply_obstacle_avoidance'):
+                    # Apply obstacle avoidance if needed (DISABLED FOR OVERLAY ONLY MODE)
+                    # Motor control disabled - only update display state
+                    if not clearance['safe']:
                         avoidance_command = self.get_obstacle_avoidance_command()
-                        self.base_controller.apply_obstacle_avoidance(avoidance_command)
+                        # Only call for display/logging purposes - no motor control
+                        if hasattr(self.base_controller, 'apply_obstacle_avoidance'):
+                            self.base_controller.apply_obstacle_avoidance(avoidance_command)
                     
                     # Update performance tracking
                     current_time = time.time()
