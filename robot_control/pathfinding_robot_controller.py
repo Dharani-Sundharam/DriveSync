@@ -17,6 +17,14 @@ from modules.pathfinding import AStarPathfinder, RRTPathfinder
 from modules.navigation import NavigationController, NavigationState
 from collision_avoidance_system import CollisionAvoidanceSystem, SafetyState
 
+# Import LIDAR integration
+try:
+    from lidar_mapping.pathfinding_integration import LidarEnhancedPathfindingController, integrate_lidar_with_pathfinding
+    LIDAR_AVAILABLE = True
+except ImportError:
+    print("⚠️  LIDAR integration not available - running without LIDAR obstacle avoidance")
+    LIDAR_AVAILABLE = False
+
 # Import the robot controller from smooth_robot_controller
 try:
     from smooth_robot_controller import OptimizedRobotController
@@ -31,7 +39,7 @@ except ImportError:
 class PathfindingRobotController:
     """Main controller for pathfinding robot system"""
     
-    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=False):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=False, enable_lidar=True, lidar_port='/dev/ttyUSB1'):
         # Setup logging
         self.setup_logging()
         self.logger = logging.getLogger('PathfindingRobot')
@@ -132,6 +140,31 @@ class PathfindingRobotController:
         # Initialize navigation controller
         self.navigator = NavigationController(self.robot, self.map_env)
         
+        # Initialize LIDAR-enhanced controller
+        self.lidar_enhanced = None
+        self.enable_lidar = enable_lidar
+        if enable_lidar and LIDAR_AVAILABLE:
+            try:
+                self.lidar_enhanced = integrate_lidar_with_pathfinding(
+                    pathfinding_controller=self,
+                    lidar_port=lidar_port,
+                    enable_mapping=True
+                )
+                self.logger.info("✅ LIDAR obstacle avoidance system initialized")
+            except Exception as e:
+                self.logger.error(f"❌ Failed to initialize LIDAR system: {e}")
+                self.lidar_enhanced = None
+                self.enable_lidar = False
+        elif enable_lidar and not LIDAR_AVAILABLE:
+            self.logger.warning("⚠️  LIDAR requested but not available")
+            self.enable_lidar = False
+        
+        # LIDAR obstacle avoidance state
+        self.lidar_override_active = False
+        self.original_navigation_active = False
+        self.last_lidar_check = time.time()
+        self.lidar_check_interval = 0.05  # 20 Hz LIDAR checking
+        
         # UI state
         self.selected_target: Optional[Tuple[float, float]] = None
         self.mouse_world_pos: Optional[Tuple[float, float]] = None
@@ -217,6 +250,89 @@ class PathfindingRobotController:
             # On error, assume unsafe to be safe
             return False
     
+    def apply_obstacle_avoidance(self, avoidance_command):
+        """Apply LIDAR obstacle avoidance command - called by LIDAR system"""
+        left_speed, right_speed = avoidance_command
+        
+        # Convert to motor speeds (scale appropriately)
+        left_motor = int(left_speed * 200)  # Scale to motor range
+        right_motor = int(right_speed * 200)
+        
+        # Clamp to safe limits
+        left_motor = max(-255, min(255, left_motor))
+        right_motor = max(-255, min(255, right_motor))
+        
+        # Apply motor commands directly
+        try:
+            self.robot.send_motor_command(left_motor, right_motor)
+            
+            # Log avoidance action
+            action_type = "BACKING" if (left_motor + right_motor) < 0 else ("TURNING" if abs(left_motor - right_motor) > 50 else "ADJUSTING")
+            self.logger.info(f"🚨 LIDAR {action_type}: L={left_motor}, R={right_motor}")
+            
+        except Exception as e:
+            self.logger.error(f"❌ LIDAR avoidance command failed: {e}")
+    
+    def check_lidar_obstacle_avoidance(self):
+        """Check LIDAR for obstacles and manage navigation override"""
+        if not self.enable_lidar or not self.lidar_enhanced:
+            return True  # No LIDAR - continue normal navigation
+        
+        try:
+            current_time = time.time()
+            
+            # Check LIDAR at regular intervals
+            if current_time - self.last_lidar_check < self.lidar_check_interval:
+                return not self.lidar_override_active
+            
+            self.last_lidar_check = current_time
+            
+            # Check robot clearance using LIDAR
+            clearance = self.lidar_enhanced.check_robot_clearance()
+            obstacle_detected = not clearance['safe']
+            
+            if obstacle_detected and not self.lidar_override_active:
+                # OBSTACLE DETECTED - Take control from navigation
+                self.lidar_override_active = True
+                self.original_navigation_active = self.navigator.is_navigating()
+                
+                # Pause navigation but don't stop it completely
+                if self.original_navigation_active:
+                    self.navigator.pause_navigation()
+                
+                # Log the obstacle detection
+                closest = clearance.get('closest_obstacle')
+                if closest:
+                    direction = closest['direction']
+                    distance = closest['distance']
+                    self.logger.warning(f"🚨 LIDAR OBSTACLE: {direction.upper()} at {distance:.2f}m - Taking control")
+                else:
+                    self.logger.warning(f"🚨 LIDAR OBSTACLE: Multiple obstacles detected - Taking control")
+                
+                return False  # Block normal navigation
+                
+            elif not obstacle_detected and self.lidar_override_active:
+                # PATH CLEAR - Return control to navigation
+                self.lidar_override_active = False
+                
+                # Resume navigation if it was active before
+                if self.original_navigation_active and self.navigator.is_paused():
+                    self.navigator.resume_navigation()
+                    self.logger.info("✅ LIDAR: Path clear - Resuming navigation")
+                elif not self.original_navigation_active:
+                    # Stop robot if no navigation was active
+                    self.robot.send_motor_command(0, 0)
+                    self.logger.info("✅ LIDAR: Path clear - Stopping robot")
+                
+                return True  # Allow normal navigation
+            
+            # Return current state
+            return not self.lidar_override_active
+            
+        except Exception as e:
+            self.logger.error(f"❌ LIDAR obstacle avoidance error: {e}")
+            return True  # On error, allow normal navigation
+    
     def handle_events(self):
         """Handle pygame events"""
         for event in pygame.event.get():
@@ -255,6 +371,18 @@ class PathfindingRobotController:
                         self.logger.info("🎯 Robot placement mode ON - Click to place robot")
                     else:
                         self.logger.info("🎯 Robot placement mode OFF")
+                elif event.key == pygame.K_l:
+                    # Toggle LIDAR overlay (if available)
+                    if self.lidar_enhanced:
+                        self.lidar_enhanced.handle_enhanced_events(event)
+                elif event.key == pygame.K_m:
+                    # Clear LIDAR map (if available)
+                    if self.lidar_enhanced:
+                        self.lidar_enhanced.handle_enhanced_events(event)
+                elif event.key == pygame.K_n:
+                    # Save LIDAR map (if available)
+                    if self.lidar_enhanced:
+                        self.lidar_enhanced.handle_enhanced_events(event)
                 elif event.key == pygame.K_x:
                     # Debug info
                     print(f"🐛 DEBUG INFO:")
@@ -266,6 +394,11 @@ class PathfindingRobotController:
                         print(f"   Mouse position: {self.mouse_world_pos}")
                         print(f"   Mouse on road: {self.map_env.is_point_on_road(*self.mouse_world_pos)}")
                     print(f"   Manual control active: {not self.navigator.is_navigating()}")
+                    if self.enable_lidar and self.lidar_enhanced:
+                        print(f"   LIDAR override active: {self.lidar_override_active}")
+                        print(f"   LIDAR obstacle detected: {self.lidar_enhanced.obstacle_detected}")
+                        if self.lidar_enhanced.obstacle_direction:
+                            print(f"   LIDAR obstacle direction: {self.lidar_enhanced.obstacle_direction}")
             
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:  # Left click
@@ -275,10 +408,10 @@ class PathfindingRobotController:
                 # Update mouse world position for display
                 self.mouse_world_pos = self.map_env.screen_to_world(*event.pos)
         
-        # Handle keyboard input for manual control (when not navigating)
-        if not self.navigator.is_navigating():
+        # Handle keyboard input for manual control (when not navigating and no LIDAR override)
+        if not self.navigator.is_navigating() and not self.lidar_override_active:
             self.handle_manual_control()
-        else:
+        elif not self.lidar_override_active:
             # If navigating, check for manual override
             keys = pygame.key.get_pressed()
             if any([keys[pygame.K_w], keys[pygame.K_a], keys[pygame.K_s], keys[pygame.K_d]]):
@@ -333,6 +466,11 @@ class PathfindingRobotController:
             # Safety stop active - no manual control allowed
             return
         
+        # LIDAR SAFETY: Check LIDAR obstacle avoidance
+        if not self.check_lidar_obstacle_avoidance():
+            # LIDAR override active - no manual control allowed
+            return
+        
         keys = pygame.key.get_pressed()
         
         left_speed = 0
@@ -364,16 +502,19 @@ class PathfindingRobotController:
                 # Don't spam errors - just skip this command
     
     def update(self):
-        """Update all systems - WITH COLLISION AVOIDANCE"""
+        """Update all systems - WITH COLLISION AND LIDAR AVOIDANCE"""
         # SAFETY FIRST: Always check collision avoidance
         is_safe_to_move = self.check_collision_avoidance()
         
+        # LIDAR SAFETY: Check LIDAR obstacle avoidance
+        lidar_allows_movement = self.check_lidar_obstacle_avoidance()
+        
         # Robot controller runs in its own threads, no need to update manually
         
-        # Update navigation ONLY if safe to move
-        if is_safe_to_move:
+        # Update navigation ONLY if both systems allow movement
+        if is_safe_to_move and lidar_allows_movement:
             self.navigator.update()
-        # If not safe, navigation is paused automatically in check_collision_avoidance()
+        # If not safe, navigation is paused automatically in the respective check functions
         
         # Update performance tracking
         current_time = time.time()
@@ -410,6 +551,11 @@ class PathfindingRobotController:
             waypoint_size = max(4, int(min(self.width, self.height) / 60))  # Adaptive waypoint size
             pygame.draw.circle(self.screen, self.CYAN, waypoint_screen, waypoint_size)
             pygame.draw.circle(self.screen, self.WHITE, waypoint_screen, max(2, waypoint_size // 2))
+        
+        # Draw LIDAR overlay (if available)
+        if self.enable_lidar and self.lidar_enhanced:
+            self.lidar_enhanced.draw_lidar_overlay(self.screen)
+            self.lidar_enhanced.draw_lidar_info(self.screen)
         
         # Draw UI
         self.draw_ui()
@@ -522,6 +668,7 @@ class PathfindingRobotController:
             self.screen.blit(mouse_surface, (3, self.height - 12))
         
         # COLLISION AVOIDANCE STATUS - top right corner (minimal)
+        status_x = self.width - 12
         if self.collision_avoidance:
             status = self.collision_avoidance.get_safety_status()
             state = status['state']
@@ -538,7 +685,26 @@ class PathfindingRobotController:
             
             # Very small indicator in corner
             safety_surface = self.small_font.render(safety_text, True, safety_color)
-            self.screen.blit(safety_surface, (self.width - 12, 3))
+            self.screen.blit(safety_surface, (status_x, 3))
+            status_x -= 15  # Move next indicator left
+        
+        # LIDAR STATUS - next to collision avoidance indicator
+        if self.enable_lidar and self.lidar_enhanced:
+            if self.lidar_override_active:
+                lidar_text = "◆"  # Diamond for active avoidance
+                lidar_color = (255, 165, 0)  # Orange
+            elif self.lidar_enhanced.obstacle_detected:
+                lidar_text = "◆"
+                lidar_color = (255, 255, 0)  # Yellow
+            elif self.lidar_enhanced.lidar_running:
+                lidar_text = "◆"
+                lidar_color = self.SAFETY_GREEN
+            else:
+                lidar_text = "◆"
+                lidar_color = self.SAFETY_RED
+            
+            lidar_surface = self.small_font.render(lidar_text, True, lidar_color)
+            self.screen.blit(lidar_surface, (status_x, 3))
         
         # Performance and help info - bottom right (minimal)
         fps_text = self.small_font.render(f"{self.fps:.0f}", True, self.WHITE)
@@ -571,6 +737,9 @@ class PathfindingRobotController:
             "  • 2: Switch to RRT pathfinding algorithm", 
             "  • R: Reset robot position to center (0,0)",
             "  • F: Toggle fullscreen mode",
+            "  • L: Toggle LIDAR overlay display",
+            "  • M: Clear LIDAR map",
+            "  • N: Save LIDAR map",
             "  • X: Show debug information",
             "  • H: Toggle this help screen",
             "  • ESC: Exit application",
@@ -587,6 +756,14 @@ class PathfindingRobotController:
             "  • Brown lines: Road boundaries",
             "  • Red circles: Obstacles",
             "  • Green areas: Grass (non-navigable)",
+            "",
+            "LIDAR SYSTEM:",
+            "  • ◆ Green: LIDAR connected and scanning",
+            "  • ◆ Yellow: Obstacle detected",
+            "  • ◆ Orange: LIDAR controlling robot (avoiding obstacle)",
+            "  • ◆ Red: LIDAR disconnected",
+            "  • Robot footprint shows actual dimensions (21cm x 15cm)",
+            "  • Clearance zones: 21cm front, 5cm sides/back",
             "",
             "Press 'H' again to close help"
         ]
@@ -645,6 +822,11 @@ class PathfindingRobotController:
         """Cleanup resources"""
         self.logger.info("🧹 Cleaning up...")
         
+        # Stop LIDAR system
+        if self.enable_lidar and self.lidar_enhanced:
+            self.lidar_enhanced.cleanup()
+            self.logger.info("✅ LIDAR system stopped")
+        
         # Stop collision avoidance system
         if self.collision_avoidance:
             self.collision_avoidance.stop()
@@ -669,11 +851,27 @@ if __name__ == "__main__":
                        help='Arduino serial port (default: /dev/ttyUSB0)')
     parser.add_argument('--baudrate', '-b', type=int, default=115200,
                        help='Serial baudrate (default: 115200)')
+    parser.add_argument('--lidar-port', default='/dev/ttyUSB1',
+                       help='LIDAR serial port (default: /dev/ttyUSB1)')
+    parser.add_argument('--no-lidar', action='store_true',
+                       help='Disable LIDAR obstacle avoidance')
+    parser.add_argument('--enable-collision-avoidance', action='store_true',
+                       help='Enable camera-based collision avoidance')
     
     args = parser.parse_args()
     
     print(f"🔌 Using Arduino port: {args.port}")
     print(f"📡 Using baudrate: {args.baudrate}")
+    if not args.no_lidar:
+        print(f"📡 Using LIDAR port: {args.lidar_port}")
+    else:
+        print("⚠️  LIDAR disabled")
     
-    controller = PathfindingRobotController(port=args.port, baudrate=args.baudrate)
+    controller = PathfindingRobotController(
+        port=args.port, 
+        baudrate=args.baudrate,
+        enable_collision_avoidance=args.enable_collision_avoidance,
+        enable_lidar=not args.no_lidar,
+        lidar_port=args.lidar_port
+    )
     controller.run()
