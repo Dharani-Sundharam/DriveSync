@@ -9,7 +9,7 @@
 #define LEFT_MOTOR_FORWARD   10   // IN1
 #define LEFT_MOTOR_BACKWARD   9   // IN2
 #define RIGHT_MOTOR_FORWARD   6   // IN3
-#define RIGHT_MOTOR_BACKWARD  5   // IN4
+#define RIGHT_MOTOR_BACKWARD  11   // IN4
 #define LEFT_MOTOR_ENABLE    13   // ENA
 #define RIGHT_MOTOR_ENABLE   12   // ENB
 

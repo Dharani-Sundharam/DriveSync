@@ -1,0 +1,42 @@
+# LIDAR Mapping System Requirements
+# ===================================
+
+# Core dependencies
+pygame>=2.1.0
+numpy>=1.21.0
+pyserial>=3.5
+
+# Optional dependencies for enhanced functionality
+matplotlib>=3.5.0  # For advanced plotting and visualization
+opencv-python>=4.5.0  # For image processing (if needed)
+scipy>=1.7.0  # For advanced mathematical operations
+
+# Development and testing
+pytest>=6.2.0
+pytest-cov>=2.12.0
+
+# YDLIDAR SDK Dependencies
+# Note: The actual YDLIDAR SDK should be installed separately
+# Following the official installation guide:
+# https://github.com/YDLIDAR/YDLidar-SDK
+
+# System requirements (install via apt on Ubuntu/Raspberry Pi):
+# sudo apt update
+# sudo apt install -y python3-dev python3-pip
+# sudo apt install -y cmake build-essential
+# sudo apt install -y libusb-1.0-0-dev
+
+# For YDLIDAR SDK installation:
+# git clone https://github.com/YDLIDAR/YDLidar-SDK.git
+# cd YDLidar-SDK
+# mkdir build
+# cd build
+# cmake ..
+# make
+# sudo make install
+
+# Python bindings for YDLIDAR (if available):
+# pip install ydlidar
+
+# Alternative: Use pylidar3 for YDLIDAR X2
+# pip install pylidar3
