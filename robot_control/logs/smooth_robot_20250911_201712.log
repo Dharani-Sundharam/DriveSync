@@ -1,0 +1,97 @@
+2025-09-11 20:17:15,043 - INFO - ✅ Arduino responding on /dev/ttyUSB0
+2025-09-11 20:17:15,043 - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-11 20:17:15,043 - INFO - 📐 Differential Drive Specifications:
+2025-09-11 20:17:15,043 - INFO -    Wheel diameter: 7.0 cm
+2025-09-11 20:17:15,043 - INFO -    Wheel base: 20.0 cm
+2025-09-11 20:17:15,044 - INFO -    Left motor: 4993 ticks/rev
+2025-09-11 20:17:15,044 - INFO -    Right motor: 4966 ticks/rev
+2025-09-11 20:17:15,044 - INFO -    Left resolution: 0.044 mm/tick
+2025-09-11 20:17:15,044 - INFO -    Right resolution: 0.044 mm/tick
+2025-09-11 20:17:15,044 - INFO -    360° turn needs: L=14266 ticks, R=14189 ticks
+2025-09-11 20:17:15,044 - INFO - 🔄 High-performance threads started
+2025-09-11 20:17:23,936 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:23,981 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:24,140 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:24,184 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:24,202 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:24,965 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:24,983 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:25,691 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:25,711 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:25,732 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:25,774 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:25,792 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:26,290 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:26,315 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:26,336 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:26,375 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,162 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,183 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,203 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,244 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,264 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,284 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,300 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,324 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,341 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,361 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,382 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,402 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:27,883 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,925 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,943 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:27,983 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,004 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,024 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,044 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,065 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,085 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,111 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,127 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,151 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,166 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,187 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,207 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,227 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,586 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,608 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,628 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:17:28,649 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,669 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,690 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,712 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,734 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,754 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,775 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,795 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,811 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,831 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,851 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,872 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,901 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:17:28,919 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,036 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,057 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,075 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,096 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,119 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,139 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,159 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,180 - INFO - 🔄 Movement: L=-15 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,200 - INFO - 🔄 Movement: L=-15 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,221 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,241 - INFO - 🔄 Movement: L=-16 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.4mm, Turn=0.2°
+2025-09-11 20:18:05,261 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,289 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,497 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,518 - INFO - 🔄 Movement: L=-11 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.2mm, Turn=0.1°
+2025-09-11 20:18:05,538 - INFO - 🔄 Movement: L=-13 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,559 - INFO - 🔄 Movement: L=-12 ticks (0.5mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,579 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,599 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,620 - INFO - 🔄 Movement: L=-14 ticks (0.6mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,640 - INFO - 🔄 Movement: L=-15 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,661 - INFO - 🔄 Movement: L=-16 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.4mm, Turn=0.2°
+2025-09-11 20:18:05,683 - INFO - 🔄 Movement: L=-15 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.3mm, Turn=0.2°
+2025-09-11 20:18:05,703 - INFO - 🔄 Movement: L=-16 ticks (0.7mm), R=0 ticks (-0.0mm), Center=0.4mm, Turn=0.2°
+2025-09-11 20:18:37,864 - INFO - 🛑 Cleaning up...
