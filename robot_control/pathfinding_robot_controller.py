@@ -39,7 +39,7 @@ except ImportError:
 class PathfindingRobotController:
     """Main controller for pathfinding robot system"""
     
-    def __init__(self, port='/dev/ttyUSB2', baudrate=115200, enable_collision_avoidance=False, enable_lidar=True, lidar_port='/dev/ttyUSB1'):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, enable_collision_avoidance=False, enable_lidar=True, lidar_port='/dev/ttyUSB1'):
         # Setup logging
         self.setup_logging()
         self.logger = logging.getLogger('PathfindingRobot')
@@ -821,8 +821,8 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='Pathfinding Robot Controller')
-    parser.add_argument('--port', '-p', default='/dev/ttyUSB2', 
-                       help='Arduino serial port (default: /dev/ttyUSB2)')
+    parser.add_argument('--port', '-p', default='/dev/ttyUSB0', 
+                       help='Arduino serial port (default: /dev/ttyUSB0)')
     parser.add_argument('--baudrate', '-b', type=int, default=115200,
                        help='Serial baudrate (default: 115200)')
     parser.add_argument('--lidar-port', default='/dev/ttyUSB1',

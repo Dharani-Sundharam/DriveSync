@@ -27,10 +27,10 @@ class OptimizedRobotController:
         # Robot specifications - YOUR EXACT MEASUREMENTS
         self.MOTOR_A_TICKS_PER_REV = 4993  # Left motor
         self.MOTOR_B_TICKS_PER_REV = 4966  # Right motor
-        self.WHEEL_DIAMETER = 0.05  # 5 cm in meters
+        self.WHEEL_DIAMETER = 0.07  # 5 cm in meters
         self.WHEEL_RADIUS = self.WHEEL_DIAMETER / 2
         self.WHEEL_CIRCUMFERENCE = math.pi * self.WHEEL_DIAMETER
-        self.WHEEL_BASE = 0.15  # Estimated 15cm between wheel centers (adjust as needed)
+        self.WHEEL_BASE = 0.20  # Estimated 15cm between wheel centers (adjust as needed)
         
         # Calculate meters per tick for each wheel
         self.LEFT_METERS_PER_TICK = self.WHEEL_CIRCUMFERENCE / self.MOTOR_A_TICKS_PER_REV
