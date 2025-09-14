@@ -27,10 +27,10 @@ class OptimizedRobotController:
         # Robot specifications - YOUR EXACT MEASUREMENTS
         self.MOTOR_A_TICKS_PER_REV = 4993  # Left motor
         self.MOTOR_B_TICKS_PER_REV = 4966  # Right motor
-        self.WHEEL_DIAMETER = 0.07  # 5 cm in meters
+        self.WHEEL_DIAMETER = 0.035  # Reduce from 50cm to 3.5cm to match real movement
         self.WHEEL_RADIUS = self.WHEEL_DIAMETER / 2
         self.WHEEL_CIRCUMFERENCE = math.pi * self.WHEEL_DIAMETER
-        self.WHEEL_BASE = 0.20  # Estimated 15cm between wheel centers (adjust as needed)
+        self.WHEEL_BASE = 0.10  # Reduce from 57cm to 10cm to match real movement
         
         # Calculate meters per tick for each wheel
         self.LEFT_METERS_PER_TICK = self.WHEEL_CIRCUMFERENCE / self.MOTOR_A_TICKS_PER_REV
@@ -279,8 +279,9 @@ class OptimizedRobotController:
         # Linear velocity (forward/backward motion)
         distance_center = (distance_left + distance_right) / 2.0
         
-        # Angular velocity (rotation) - Fixed for corrected motor mapping
+        # Angular velocity (rotation) - Apply calibration factor for rotation accuracy
         delta_theta = (distance_left - distance_right) / self.WHEEL_BASE
+        delta_theta *= 0.95  # Calibration factor to reduce rotation angle (adjust as needed)
         
         # Calculate new position using differential drive equations
         if abs(delta_theta) < 1e-6:
@@ -399,10 +400,12 @@ class SmoothVisualizer:
         self.GRAY = (64, 64, 64)
         self.LIGHT_GRAY = (128, 128, 128)
         
-        # Map parameters
-        self.scale = 1000  # pixels per meter
+        # Map parameters - adjusted for 3m x 3m workspace filling screen
+        min_dimension = min(self.width, self.height)
+        self.scale = min_dimension / 3.2  # Scale to fill screen with minimal margins
         self.center_x = self.width // 2
         self.center_y = self.height // 2
+        self.workspace_size = 3.0  # 3m x 3m workspace
         
         # Fonts
         self.font = pygame.font.Font(None, 32)
@@ -420,17 +423,20 @@ class SmoothVisualizer:
         return screen_x, screen_y
         
     def draw_grid(self):
-        """Draw optimized grid"""
+        """Draw optimized grid for 3m workspace"""
         grid_spacing = 0.1 * self.scale  # 10cm
         
-        # Only draw visible grid lines
-        start_x = max(0, int(self.center_x - 10 * grid_spacing))
-        end_x = min(self.width, int(self.center_x + 10 * grid_spacing))
-        start_y = max(0, int(self.center_y - 6 * grid_spacing))
-        end_y = min(self.height, int(self.center_y + 6 * grid_spacing))
+        # Bigger workspace - draw within 3m range filling screen
+        workspace_pixels = int(self.workspace_size * self.scale / 2)  # 1.5m from center
         
-        # Vertical lines
-        for i in range(-10, 11):
+        start_x = max(0, int(self.center_x - workspace_pixels))
+        end_x = min(self.width, int(self.center_x + workspace_pixels))
+        start_y = max(0, int(self.center_y - workspace_pixels))
+        end_y = min(self.height, int(self.center_y + workspace_pixels))
+        
+        # Vertical lines for bigger workspace
+        grid_count = int(self.workspace_size / 0.1)  # Number of 10cm grids
+        for i in range(-grid_count//2, grid_count//2 + 1):
             x = self.center_x + i * grid_spacing
             if start_x <= x <= end_x:
                 color = self.WHITE if i == 0 else self.GRAY
@@ -438,7 +444,7 @@ class SmoothVisualizer:
                 pygame.draw.line(self.screen, color, (x, start_y), (x, end_y), width)
                 
         # Horizontal lines
-        for i in range(-6, 7):
+        for i in range(-grid_count//2, grid_count//2 + 1):
             y = self.center_y + i * grid_spacing
             if start_y <= y <= end_y:
                 color = self.WHITE if i == 0 else self.GRAY
