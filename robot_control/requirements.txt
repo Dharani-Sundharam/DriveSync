@@ -4,3 +4,5 @@ opencv-python>=4.5.0
 ultralytics>=8.0.0
 numpy>=1.21.0
 pillow>=8.0.0
+ydlidar>=1.0.0
+matplotlib>=3.5.0

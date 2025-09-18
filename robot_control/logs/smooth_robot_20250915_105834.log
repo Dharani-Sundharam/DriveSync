@@ -1,0 +1,12 @@
+2025-09-15 10:58:36,541 - INFO - ✅ Arduino responding on /dev/ttyUSB0
+2025-09-15 10:58:36,541 - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-15 10:58:36,542 - INFO - 📐 Differential Drive Specifications:
+2025-09-15 10:58:36,542 - INFO -    Wheel diameter: 3.5 cm
+2025-09-15 10:58:36,542 - INFO -    Wheel base: 10.0 cm
+2025-09-15 10:58:36,542 - INFO -    Left motor: 4993 ticks/rev
+2025-09-15 10:58:36,542 - INFO -    Right motor: 4966 ticks/rev
+2025-09-15 10:58:36,542 - INFO -    Left resolution: 0.022 mm/tick
+2025-09-15 10:58:36,542 - INFO -    Right resolution: 0.022 mm/tick
+2025-09-15 10:58:36,542 - INFO -    360° turn needs: L=14266 ticks, R=14189 ticks
+2025-09-15 10:58:36,543 - INFO - 🔄 High-performance threads started
+2025-09-15 10:59:04,952 - INFO - 🛑 Cleaning up...

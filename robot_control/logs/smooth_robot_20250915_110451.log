@@ -1,0 +1,10 @@
+2025-09-15 11:04:53,424 - ERROR - ❌ Failed to connect: 'utf-8' codec can't decode byte 0xf8 in position 0: invalid start byte
+2025-09-15 11:04:53,429 - INFO - 🚀 Optimized Robot Controller Initialized
+2025-09-15 11:04:53,429 - INFO - 📐 Differential Drive Specifications:
+2025-09-15 11:04:53,429 - INFO -    Wheel diameter: 3.5 cm
+2025-09-15 11:04:53,429 - INFO -    Wheel base: 10.0 cm
+2025-09-15 11:04:53,429 - INFO -    Left motor: 4993 ticks/rev
+2025-09-15 11:04:53,430 - INFO -    Right motor: 4966 ticks/rev
+2025-09-15 11:04:53,430 - INFO -    Left resolution: 0.022 mm/tick
+2025-09-15 11:04:53,430 - INFO -    Right resolution: 0.022 mm/tick
+2025-09-15 11:04:53,430 - INFO -    360° turn needs: L=14266 ticks, R=14189 ticks
